@@ -7,13 +7,13 @@ use \Cake\Utility\Inflector;
 
 class CakeLteView extends AppView
 {
-    protected function _paths(?string $plugin = NULL, bool $cached = true): array
+    protected function _paths(?string $plugin = null, bool $cached = true): array
     {
         $prefix = $this->request->getParam('prefix') ? Inflector::camelize($this->request->getParam('prefix')) : false;
         $theme = $this->theme;
 
         $templatePaths = App::path(static::NAME_TEMPLATE);
-
+        dd( $templatePaths);
         $pluginPaths = [];
 
         foreach ($templatePaths as $templateCurrent) {
@@ -41,7 +41,7 @@ class CakeLteView extends AppView
             $themePaths,
             parent::_paths($plugin, $cached)
         );
-
+die('$paths');
         return $this->_paths = $paths;
     }
 }

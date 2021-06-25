@@ -1,9 +1,11 @@
-<form action="#" method="get" class="sidebar-form">
-    <div class="input-group">
-        <input type="text" name="q" class="form-control" placeholder="Search...">
-        <span class="input-group-btn">
-            <button type="submit" name="search" id="search-btn" class="btn btn-flat"><i class="fa fa-search"></i>
+  <!-- SidebarSearch Form -->
+  <div class="form-inline">
+        <div class="input-group" data-widget="sidebar-search">
+          <input class="form-control form-control-sidebar" type="search" placeholder="Search" aria-label="Search">
+          <div class="input-group-append">
+            <button class="btn btn-sidebar">
+              <i class="fas fa-search fa-fw"></i>
             </button>
-        </span>
-    </div>
-</form>
+          </div>
+        </div>
+      </div>

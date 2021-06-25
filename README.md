@@ -13,7 +13,20 @@ You can install using [composer](http://getcomposer.org).
 
 ```
 composer require ahmed3bead/cakelte
+
+
 ```
+### Copy Assets
+
+After above command Run this command
+
+
+```
+
+bin/cake plugin assets symlink
+
+```
+
 
 ### Enable Plugin
 
