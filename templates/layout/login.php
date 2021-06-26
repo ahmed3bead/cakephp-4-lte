@@ -38,8 +38,8 @@
     <a href="<?php echo $this->Url->build(); ?>"><?php echo Configure::read('Theme.logo.large') ?></a>
   </div>
   <!-- /.login-logo -->
-  <div class="login-box-body">
-    <p class="login-box-msg">Sign in to start your session</p>
+  <div class="login-card-body">
+    <p class="login-card-msg">Sign in to start your session</p>
 
     <?php echo $this->fetch('content'); ?>
 
@@ -62,7 +62,7 @@
     <?php endif; ?>
 
   </div>
-  <!-- /.login-box-body -->
+  <!-- /.login-card-body -->
 </div>
 <!-- /.login-box -->
 

@@ -24,27 +24,27 @@
   </p>
   <div class="row">
     <div class="col-sm-6">
-      <div class="box box-primary">
-        <div class="box-header with-border">
-          <h3 class="box-title">Ready</h3>
+      <div class="box card-primary">
+        <div class="card-header with-border">
+          <h3 class="card-title">Ready</h3>
           <span class="label label-primary pull-right"><i class="fa fa-html5"></i></span>
-        </div><!-- /.box-header -->
-        <div class="box-body">
+        </div><!-- /.card-header -->
+        <div class="card-body">
           <p>Compiled and ready to use in production. Download this version if you don't want to customize AdminLTE's LESS files.</p>
           <a href="http://almsaeedstudio.com/download/AdminLTE-dist" class="btn btn-primary"><i class="fa fa-download"></i> Download</a>
-        </div><!-- /.box-body -->
+        </div><!-- /.card-body -->
       </div><!-- /.box -->
     </div><!-- /.col -->
     <div class="col-sm-6">
-      <div class="box box-danger">
-        <div class="box-header with-border">
-          <h3 class="box-title">Source Code</h3>
+      <div class="box card-danger">
+        <div class="card-header with-border">
+          <h3 class="card-title">Source Code</h3>
           <span class="label label-danger pull-right"><i class="fa fa-database"></i></span>
-        </div><!-- /.box-header -->
-        <div class="box-body">
+        </div><!-- /.card-header -->
+        <div class="card-body">
           <p>All files including the compiled CSS. Download this version if you plan on customizing the template. <b>Requires a LESS compiler.</b></p>
           <a href="http://almsaeedstudio.com/download/AdminLTE" class="btn btn-danger"><i class="fa fa-download"></i> Download</a>
-        </div><!-- /.box-body -->
+        </div><!-- /.card-body -->
       </div><!-- /.box -->
     </div><!-- /.col -->
   </div><!-- /.row -->
@@ -133,8 +133,8 @@ AdminLTE/
   <p class="lead">Skins can be found in the dist/css/skins folder.
     Choose and the skin file that you want then add the appropriate
     class to the body tag to change the template's appearance. Here is the list of available skins:</p>
-  <div class="box box-solid" style="max-width: 300px;">
-    <div class="box-body no-padding">
+  <div class="box card-solid" style="max-width: 300px;">
+    <div class="card-body no-padding">
       <table id="layout-skins-list" class="table table-striped bring-up nth-2-center">
         <thead>
           <tr>
@@ -193,7 +193,7 @@ AdminLTE/
           </tr>
         </tbody>
       </table>
-    </div><!-- /.box-body -->
+    </div><!-- /.card-body -->
   </div><!-- /.box -->
 </section>
 
@@ -352,8 +352,8 @@ AdminLTE/
     navbar differs slightly from Bootstrap because it has components that Bootstrap doesn't provide.
     The navbar can be constructed in two way. This an example for the normal navbar and next we will provide an example for
     the top nav layout.</p>
-  <div class="box box-solid">
-    <div class="box-body" style="position: relative;">
+  <div class="box card-solid">
+    <div class="card-body" style="position: relative;">
       <span class="eg">Main Header Example</span>
       <header class="main-header" style="position: relative;">
         <!-- Logo -->
@@ -631,8 +631,8 @@ AdminLTE/
     <h4>Reminder!</h4>
     <p>To use this main header instead of the regular one, you must add the <code>layout-top-nav</code> class to the body tag.</p>
   </div>
-  <div class="box box-solid">
-    <div class="box-body layout-top-nav">
+  <div class="box card-solid">
+    <div class="card-body layout-top-nav">
       <span class="eg">Top Nav Example</span>
       <header class="main-header">
         <nav class="navbar navbar-static-top">
@@ -832,121 +832,121 @@ AdminLTE/
   <div class="row">
     <div class="col-md-3 col-sm-6 col-xs-12">
       <div class="info-box">
-        <span class="info-box-icon bg-aqua"><i class="fa fa-envelope-o"></i></span>
-        <div class="info-box-content">
-          <span class="info-box-text">Messages</span>
-          <span class="info-box-number">1,410</span>
-        </div><!-- /.info-box-content -->
+        <span class="info-card-icon bg-aqua"><i class="fa fa-envelope-o"></i></span>
+        <div class="info-card-content">
+          <span class="info-card-text">Messages</span>
+          <span class="info-card-number">1,410</span>
+        </div><!-- /.info-card-content -->
       </div><!-- /.info-box -->
     </div><!-- /.col -->
     <div class="col-md-3 col-sm-6 col-xs-12">
       <div class="info-box">
-        <span class="info-box-icon bg-green"><i class="fa fa-flag-o"></i></span>
-        <div class="info-box-content">
-          <span class="info-box-text">Bookmarks</span>
-          <span class="info-box-number">410</span>
-        </div><!-- /.info-box-content -->
+        <span class="info-card-icon bg-green"><i class="fa fa-flag-o"></i></span>
+        <div class="info-card-content">
+          <span class="info-card-text">Bookmarks</span>
+          <span class="info-card-number">410</span>
+        </div><!-- /.info-card-content -->
       </div><!-- /.info-box -->
     </div><!-- /.col -->
     <div class="col-md-3 col-sm-6 col-xs-12">
       <div class="info-box">
-        <span class="info-box-icon bg-yellow"><i class="fa fa-files-o"></i></span>
-        <div class="info-box-content">
-          <span class="info-box-text">Uploads</span>
-          <span class="info-box-number">13,648</span>
-        </div><!-- /.info-box-content -->
+        <span class="info-card-icon bg-yellow"><i class="fa fa-files-o"></i></span>
+        <div class="info-card-content">
+          <span class="info-card-text">Uploads</span>
+          <span class="info-card-number">13,648</span>
+        </div><!-- /.info-card-content -->
       </div><!-- /.info-box -->
     </div><!-- /.col -->
     <div class="col-md-3 col-sm-6 col-xs-12">
       <div class="info-box">
-        <span class="info-box-icon bg-red"><i class="fa fa-star-o"></i></span>
-        <div class="info-box-content">
-          <span class="info-box-text">Likes</span>
-          <span class="info-box-number">93,139</span>
-        </div><!-- /.info-box-content -->
+        <span class="info-card-icon bg-red"><i class="fa fa-star-o"></i></span>
+        <div class="info-card-content">
+          <span class="info-card-text">Likes</span>
+          <span class="info-card-number">93,139</span>
+        </div><!-- /.info-card-content -->
       </div><!-- /.info-box -->
     </div><!-- /.col -->
   </div><!-- /.row -->
   <p class="lead">Markup</p>
   <pre class="prettyprint"><code class="lang-html">&LT;div class="info-box">
   &LT;!-- Apply any bg-* class to to the icon to color it -->
-  &LT;span class="info-box-icon bg-red">&LT;i class="fa fa-star-o">&LT;/i>&LT;/span>
-  &LT;div class="info-box-content">
-    &LT;span class="info-box-text">Likes&LT;/span>
-    &LT;span class="info-box-number">93,139&LT;/span>
-  &LT;/div>&LT;!-- /.info-box-content -->
+  &LT;span class="info-card-icon bg-red">&LT;i class="fa fa-star-o">&LT;/i>&LT;/span>
+  &LT;div class="info-card-content">
+    &LT;span class="info-card-text">Likes&LT;/span>
+    &LT;span class="info-card-number">93,139&LT;/span>
+  &LT;/div>&LT;!-- /.info-card-content -->
 &LT;/div>&LT;!-- /.info-box --></code></pre>
 
   <h4>Second Type of Info Boxes</h4>
   <div class="row">
     <div class="col-md-3 col-sm-6 col-xs-12">
       <div class="info-box bg-aqua">
-        <span class="info-box-icon"><i class="fa fa-bookmark-o"></i></span>
-        <div class="info-box-content">
-          <span class="info-box-text">Bookmarks</span>
-          <span class="info-box-number">41,410</span>
+        <span class="info-card-icon"><i class="fa fa-bookmark-o"></i></span>
+        <div class="info-card-content">
+          <span class="info-card-text">Bookmarks</span>
+          <span class="info-card-number">41,410</span>
           <div class="progress">
             <div class="progress-bar" style="width: 70%"></div>
           </div>
           <span class="progress-description">
             70% Increase in 30 Days
           </span>
-        </div><!-- /.info-box-content -->
+        </div><!-- /.info-card-content -->
       </div><!-- /.info-box -->
     </div><!-- /.col -->
     <div class="col-md-3 col-sm-6 col-xs-12">
       <div class="info-box bg-green">
-        <span class="info-box-icon"><i class="fa fa-thumbs-o-up"></i></span>
-        <div class="info-box-content">
-          <span class="info-box-text">Likes</span>
-          <span class="info-box-number">41,410</span>
+        <span class="info-card-icon"><i class="fa fa-thumbs-o-up"></i></span>
+        <div class="info-card-content">
+          <span class="info-card-text">Likes</span>
+          <span class="info-card-number">41,410</span>
           <div class="progress">
             <div class="progress-bar" style="width: 70%"></div>
           </div>
           <span class="progress-description">
             70% Increase in 30 Days
           </span>
-        </div><!-- /.info-box-content -->
+        </div><!-- /.info-card-content -->
       </div><!-- /.info-box -->
     </div><!-- /.col -->
     <div class="col-md-3 col-sm-6 col-xs-12">
       <div class="info-box bg-yellow">
-        <span class="info-box-icon"><i class="fa fa-calendar"></i></span>
-        <div class="info-box-content">
-          <span class="info-box-text">Events</span>
-          <span class="info-box-number">41,410</span>
+        <span class="info-card-icon"><i class="fa fa-calendar"></i></span>
+        <div class="info-card-content">
+          <span class="info-card-text">Events</span>
+          <span class="info-card-number">41,410</span>
           <div class="progress">
             <div class="progress-bar" style="width: 70%"></div>
           </div>
           <span class="progress-description">
             70% Increase in 30 Days
           </span>
-        </div><!-- /.info-box-content -->
+        </div><!-- /.info-card-content -->
       </div><!-- /.info-box -->
     </div><!-- /.col -->
     <div class="col-md-3 col-sm-6 col-xs-12">
       <div class="info-box bg-red">
-        <span class="info-box-icon"><i class="fa fa-comments-o"></i></span>
-        <div class="info-box-content">
-          <span class="info-box-text">Comments</span>
-          <span class="info-box-number">41,410</span>
+        <span class="info-card-icon"><i class="fa fa-comments-o"></i></span>
+        <div class="info-card-content">
+          <span class="info-card-text">Comments</span>
+          <span class="info-card-number">41,410</span>
           <div class="progress">
             <div class="progress-bar" style="width: 70%"></div>
           </div>
           <span class="progress-description">
             70% Increase in 30 Days
           </span>
-        </div><!-- /.info-box-content -->
+        </div><!-- /.info-card-content -->
       </div><!-- /.info-box -->
     </div><!-- /.col -->
   </div><!-- /.row -->
   <p class="lead">Markup</p>
   <pre class="prettyprint"><code class="lang-html">&LT;!-- Apply any bg-* class to to the info-box to color it -->
 &LT;div class="info-box bg-red">
-  &LT;span class="info-box-icon">&LT;i class="fa fa-comments-o">&LT;/i>&LT;/span>
-  &LT;div class="info-box-content">
-    &LT;span class="info-box-text">Likes&LT;/span>
-    &LT;span class="info-box-number">41,410&LT;/span>
+  &LT;span class="info-card-icon">&LT;i class="fa fa-comments-o">&LT;/i>&LT;/span>
+  &LT;div class="info-card-content">
+    &LT;span class="info-card-text">Likes&LT;/span>
+    &LT;span class="info-card-number">41,410&LT;/span>
     &LT;!-- The progress section is optional -->
     &LT;div class="progress">
       &LT;div class="progress-bar" style="width: 70%">&LT;/div>
@@ -954,7 +954,7 @@ AdminLTE/
     &LT;span class="progress-description">
       70% Increase in 30 Days
     &LT;/span>
-  &LT;/div>&LT;!-- /.info-box-content -->
+  &LT;/div>&LT;!-- /.info-card-content -->
 &LT;/div>&LT;!-- /.info-box --></code></pre>
   <p class="lead">The only thing you need to change to alternate between these style is change the placement of the bg-* class. For the
     first style apply any bg-* class to the icon itself. For the other style, apply the bg-* class to the info-box div.</p>
@@ -965,354 +965,354 @@ AdminLTE/
     use it for anything from displaying charts to just blocks of text. It comes in many different
     styles that we will explore below.</p>
   <h4>Default Box Markup</h4>
-  <div class="box">
-    <div class="box-header with-border">
-      <h3 class="box-title">Default Box Example</h3>
-      <div class="box-tools pull-right">
+  <div class="card">
+    <div class="card-header with-border">
+      <h3 class="card-title">Default Box Example</h3>
+      <div class="card-tools pull-right">
         <!-- Buttons, labels, and many other things can be placed here! -->
         <!-- Here is a label for example -->
         <span class="label label-primary">Label</span>
-      </div><!-- /.box-tools -->
-    </div><!-- /.box-header -->
-    <div class="box-body">
+      </div><!-- /.card-tools -->
+    </div><!-- /.card-header -->
+    <div class="card-body">
       The body of the box
-    </div><!-- /.box-body -->
-    <div class="box-footer">
+    </div><!-- /.card-body -->
+    <div class="card-footer">
       The footer of the box
-    </div><!-- box-footer -->
+    </div><!-- card-footer -->
   </div><!-- /.box -->
-  <pre class="prettyprint">&LT;div class="box">
-  &LT;div class="box-header with-border">
-    &LT;h3 class="box-title">Default Box Example&LT;/h3>
-    &LT;div class="box-tools pull-right">
+  <pre class="prettyprint">&LT;div class="card">
+  &LT;div class="card-header with-border">
+    &LT;h3 class="card-title">Default Box Example&LT;/h3>
+    &LT;div class="card-tools pull-right">
       &LT;!-- Buttons, labels, and many other things can be placed here! -->
       &LT;!-- Here is a label for example -->
       &LT;span class="label label-primary">Label&LT;/span>
-    &LT;/div>&LT;!-- /.box-tools -->
-  &LT;/div>&LT;!-- /.box-header -->
-  &LT;div class="box-body">
+    &LT;/div>&LT;!-- /.card-tools -->
+  &LT;/div>&LT;!-- /.card-header -->
+  &LT;div class="card-body">
     The body of the box
-  &LT;/div>&LT;!-- /.box-body -->
-  &LT;div class="box-footer">
+  &LT;/div>&LT;!-- /.card-body -->
+  &LT;div class="card-footer">
     The footer of the box
-  &LT;/div>&LT;!-- box-footer -->
+  &LT;/div>&LT;!-- card-footer -->
 &LT;/div>&LT;!-- /.box --></pre>
   <h4>Box Variants</h4>
   <p class="lead">You can change the style of the box by adding any of the contextual classes.</p>
   <div class="row">
     <div class="col-md-4">
-      <div class="box">
-        <div class="box-header with-border">
-          <h3 class="box-title">Default Box Example</h3>
-        </div><!-- /.box-header -->
-        <div class="box-body">
+      <div class="card">
+        <div class="card-header with-border">
+          <h3 class="card-title">Default Box Example</h3>
+        </div><!-- /.card-header -->
+        <div class="card-body">
           The body of the box
-        </div><!-- /.box-body -->
+        </div><!-- /.card-body -->
       </div><!-- /.box -->
     </div>
     <div class="col-md-4">
-      <div class="box box-primary">
-        <div class="box-header with-border">
-          <h3 class="box-title">Primary Box Example</h3>
-        </div><!-- /.box-header -->
-        <div class="box-body">
+      <div class="box card-primary">
+        <div class="card-header with-border">
+          <h3 class="card-title">Primary Box Example</h3>
+        </div><!-- /.card-header -->
+        <div class="card-body">
           The body of the box
-        </div><!-- /.box-body -->
+        </div><!-- /.card-body -->
       </div><!-- /.box -->
     </div>
     <div class="col-md-4">
-      <div class="box box-info">
-        <div class="box-header with-border">
-          <h3 class="box-title">Info Box Example</h3>
-        </div><!-- /.box-header -->
-        <div class="box-body">
+      <div class="box card-info">
+        <div class="card-header with-border">
+          <h3 class="card-title">Info Box Example</h3>
+        </div><!-- /.card-header -->
+        <div class="card-body">
           The body of the box
-        </div><!-- /.box-body -->
+        </div><!-- /.card-body -->
       </div><!-- /.box -->
     </div>
     <div class="clearfix"></div>
     <div class="col-md-4">
-      <div class="box box-warning">
-        <div class="box-header with-border">
-          <h3 class="box-title">Warning Box Example</h3>
-        </div><!-- /.box-header -->
-        <div class="box-body">
+      <div class="box card-warning">
+        <div class="card-header with-border">
+          <h3 class="card-title">Warning Box Example</h3>
+        </div><!-- /.card-header -->
+        <div class="card-body">
           The body of the box
-        </div><!-- /.box-body -->
+        </div><!-- /.card-body -->
       </div><!-- /.box -->
     </div>
     <div class="col-md-4">
-      <div class="box box-success">
-        <div class="box-header with-border">
-          <h3 class="box-title">Success Box Example</h3>
-        </div><!-- /.box-header -->
-        <div class="box-body">
+      <div class="box card-success">
+        <div class="card-header with-border">
+          <h3 class="card-title">Success Box Example</h3>
+        </div><!-- /.card-header -->
+        <div class="card-body">
           The body of the box
-        </div><!-- /.box-body -->
+        </div><!-- /.card-body -->
       </div><!-- /.box -->
     </div>
     <div class="col-md-4">
-      <div class="box box-danger">
-        <div class="box-header with-border">
-          <h3 class="box-title">Danger Box Example</h3>
-        </div><!-- /.box-header -->
-        <div class="box-body">
+      <div class="box card-danger">
+        <div class="card-header with-border">
+          <h3 class="card-title">Danger Box Example</h3>
+        </div><!-- /.card-header -->
+        <div class="card-body">
           The body of the box
-        </div><!-- /.box-body -->
+        </div><!-- /.card-body -->
       </div><!-- /.box -->
     </div>
   </div><!-- /.row -->
-  <pre class="prettyprint">&LT;div class="box box-default">...&LT;/div>
-&LT;div class="box box-primary">...&LT;/div>
-&LT;div class="box box-info">...&LT;/div>
-&LT;div class="box box-warning">...&LT;/div>
-&LT;div class="box box-success">...&LT;/div>
-&LT;div class="box box-danger">...&LT;/div></pre>
+  <pre class="prettyprint">&LT;div class="box card-default">...&LT;/div>
+&LT;div class="box card-primary">...&LT;/div>
+&LT;div class="box card-info">...&LT;/div>
+&LT;div class="box card-warning">...&LT;/div>
+&LT;div class="box card-success">...&LT;/div>
+&LT;div class="box card-danger">...&LT;/div></pre>
 
   <h4>Solid Box</h4>
   <p class="lead">Solid Boxes are alternative ways to display boxes.
-    They can be created by simply adding the box-solid class to the box component.
+    They can be created by simply adding the card-solid class to the box component.
     You may also use contextual classes with you solid boxes.</p>
   <div class="row">
     <div class="col-md-4">
-      <div class="box box-solid box-default">
-        <div class="box-header">
-          <h3 class="box-title">Default Solid Box Example</h3>
-        </div><!-- /.box-header -->
-        <div class="box-body">
+      <div class="box card-solid card-default">
+        <div class="card-header">
+          <h3 class="card-title">Default Solid Box Example</h3>
+        </div><!-- /.card-header -->
+        <div class="card-body">
           The body of the box
-        </div><!-- /.box-body -->
+        </div><!-- /.card-body -->
       </div><!-- /.box -->
     </div>
     <div class="col-md-4">
-      <div class="box box-solid box-primary">
-        <div class="box-header">
-          <h3 class="box-title">Primary Solid Box Example</h3>
-        </div><!-- /.box-header -->
-        <div class="box-body">
+      <div class="box card-solid card-primary">
+        <div class="card-header">
+          <h3 class="card-title">Primary Solid Box Example</h3>
+        </div><!-- /.card-header -->
+        <div class="card-body">
           The body of the box
-        </div><!-- /.box-body -->
+        </div><!-- /.card-body -->
       </div><!-- /.box -->
     </div>
     <div class="col-md-4">
-      <div class="box box-solid box-info">
-        <div class="box-header">
-          <h3 class="box-title">Info Solid Box Example</h3>
-        </div><!-- /.box-header -->
-        <div class="box-body">
+      <div class="box card-solid card-info">
+        <div class="card-header">
+          <h3 class="card-title">Info Solid Box Example</h3>
+        </div><!-- /.card-header -->
+        <div class="card-body">
           The body of the box
-        </div><!-- /.box-body -->
+        </div><!-- /.card-body -->
       </div><!-- /.box -->
     </div>
     <div class="clearfix"></div>
     <div class="col-md-4">
-      <div class="box box-solid box-warning">
-        <div class="box-header">
-          <h3 class="box-title">Warning Solid Box Example</h3>
-        </div><!-- /.box-header -->
-        <div class="box-body">
+      <div class="box card-solid card-warning">
+        <div class="card-header">
+          <h3 class="card-title">Warning Solid Box Example</h3>
+        </div><!-- /.card-header -->
+        <div class="card-body">
           The body of the box
-        </div><!-- /.box-body -->
+        </div><!-- /.card-body -->
       </div><!-- /.box -->
     </div>
     <div class="col-md-4">
-      <div class="box box-solid box-success">
-        <div class="box-header">
-          <h3 class="box-title">Success Solid Box Example</h3>
-        </div><!-- /.box-header -->
-        <div class="box-body">
+      <div class="box card-solid card-success">
+        <div class="card-header">
+          <h3 class="card-title">Success Solid Box Example</h3>
+        </div><!-- /.card-header -->
+        <div class="card-body">
           The body of the box
-        </div><!-- /.box-body -->
+        </div><!-- /.card-body -->
       </div><!-- /.box -->
     </div>
     <div class="col-md-4">
-      <div class="box box-solid box-danger">
-        <div class="box-header">
-          <h3 class="box-title">Danger Solid Box Example</h3>
-        </div><!-- /.box-header -->
-        <div class="box-body">
+      <div class="box card-solid card-danger">
+        <div class="card-header">
+          <h3 class="card-title">Danger Solid Box Example</h3>
+        </div><!-- /.card-header -->
+        <div class="card-body">
           The body of the box
-        </div><!-- /.box-body -->
+        </div><!-- /.card-body -->
       </div><!-- /.box -->
     </div>
   </div><!-- /.row -->
   <pre class="prettyprint">
-&LT;div class="box box-solid box-default">...&LT;/div>
-&LT;div class="box box-solid box-primary">...&LT;/div>
-&LT;div class="box box-solid box-info">...&LT;/div>
-&LT;div class="box box-solid box-warning">...&LT;/div>
-&LT;div class="box box-solid box-success">...&LT;/div>
-&LT;div class="box box-solid box-danger">...&LT;/div></pre>
+&LT;div class="box card-solid card-default">...&LT;/div>
+&LT;div class="box card-solid card-primary">...&LT;/div>
+&LT;div class="box card-solid card-info">...&LT;/div>
+&LT;div class="box card-solid card-warning">...&LT;/div>
+&LT;div class="box card-solid card-success">...&LT;/div>
+&LT;div class="box card-solid card-danger">...&LT;/div></pre>
   <h4>Box Tools</h4>
   <p class="lead">Boxes can contain tools to deploy a specific event or provide simple info. The following examples makes use
     of multiple AdminLTE components within the header of the box.</p>
   <p>AdminLTE data-widget attribute provides boxes with the ability to collapse or be removed. The buttons
-    are placed in the box-tools which is placed in the box-header.</p>
+    are placed in the card-tools which is placed in the card-header.</p>
   <pre class="prettyprint">
 &LT;!-- This will cause the box to be removed when clicked -->
-&LT;button class="btn btn-box-tool" data-widget="remove" data-toggle="tooltip" title="Remove">&LT;i class="fa fa-times">&LT;/i>&LT;/button>
+&LT;button class="btn btn-card-tool" data-widget="remove" data-toggle="tooltip" title="Remove">&LT;i class="fa fa-times">&LT;/i>&LT;/button>
 &LT;!-- This will cause the box to collapse when clicked -->
-&LT;button class="btn btn-box-tool" data-widget="collapse" data-toggle="tooltip" title="Collapse">&LT;i class="fa fa-minus">&LT;/i>&LT;/button></pre>
+&LT;button class="btn btn-card-tool" data-widget="collapse" data-toggle="tooltip" title="Collapse">&LT;i class="fa fa-minus">&LT;/i>&LT;/button></pre>
   <div class="row">
     <div class="col-md-4">
-      <div class="box box-default">
-        <div class="box-header with-border">
-          <h3 class="box-title">Collapsable</h3>
-          <div class="box-tools pull-right">
-            <button class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i></button>
-          </div><!-- /.box-tools -->
-        </div><!-- /.box-header -->
-        <div class="box-body">
+      <div class="box card-default">
+        <div class="card-header with-border">
+          <h3 class="card-title">Collapsable</h3>
+          <div class="card-tools pull-right">
+            <button class="btn btn-card-tool" data-widget="collapse"><i class="fa fa-minus"></i></button>
+          </div><!-- /.card-tools -->
+        </div><!-- /.card-header -->
+        <div class="card-body">
           The body of the box
-        </div><!-- /.box-body -->
+        </div><!-- /.card-body -->
       </div><!-- /.box -->
       <pre class="prettyprint">
-&LT;div class="box box-default">
-  &LT;div class="box-header with-border">
-    &LT;h3 class="box-title">Collapsable&LT;/h3>
-    &LT;div class="box-tools pull-right">
-      &LT;button class="btn btn-box-tool" data-widget="collapse">&LT;i class="fa fa-minus">&LT;/i>&LT;/button>
-    &LT;/div>&LT;!-- /.box-tools -->
-  &LT;/div>&LT;!-- /.box-header -->
-  &LT;div class="box-body">
+&LT;div class="box card-default">
+  &LT;div class="card-header with-border">
+    &LT;h3 class="card-title">Collapsable&LT;/h3>
+    &LT;div class="card-tools pull-right">
+      &LT;button class="btn btn-card-tool" data-widget="collapse">&LT;i class="fa fa-minus">&LT;/i>&LT;/button>
+    &LT;/div>&LT;!-- /.card-tools -->
+  &LT;/div>&LT;!-- /.card-header -->
+  &LT;div class="card-body">
     The body of the box
-  &LT;/div>&LT;!-- /.box-body -->
+  &LT;/div>&LT;!-- /.card-body -->
 &LT;/div>&LT;!-- /.box --></pre>
     </div>
     <div class="col-md-4">
-      <div class="box box-default">
-        <div class="box-header with-border">
-          <h3 class="box-title">Removable</h3>
-          <div class="box-tools pull-right">
-            <button class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i></button>
-          </div><!-- /.box-tools -->
-        </div><!-- /.box-header -->
-        <div class="box-body">
+      <div class="box card-default">
+        <div class="card-header with-border">
+          <h3 class="card-title">Removable</h3>
+          <div class="card-tools pull-right">
+            <button class="btn btn-card-tool" data-widget="remove"><i class="fa fa-times"></i></button>
+          </div><!-- /.card-tools -->
+        </div><!-- /.card-header -->
+        <div class="card-body">
           The body of the box
-        </div><!-- /.box-body -->
+        </div><!-- /.card-body -->
       </div><!-- /.box -->
       <pre class="prettyprint">
-&LT;div class="box box-default">
-  &LT;div class="box-header with-border">
-    &LT;h3 class="box-title">Removable&LT;/h3>
-    &LT;div class="box-tools pull-right">
-      &LT;button class="btn btn-box-tool" data-widget="remove">&LT;i class="fa fa-times">&LT;/i>&LT;/button>
-    &LT;/div>&LT;!-- /.box-tools -->
-  &LT;/div>&LT;!-- /.box-header -->
-  &LT;div class="box-body">
+&LT;div class="box card-default">
+  &LT;div class="card-header with-border">
+    &LT;h3 class="card-title">Removable&LT;/h3>
+    &LT;div class="card-tools pull-right">
+      &LT;button class="btn btn-card-tool" data-widget="remove">&LT;i class="fa fa-times">&LT;/i>&LT;/button>
+    &LT;/div>&LT;!-- /.card-tools -->
+  &LT;/div>&LT;!-- /.card-header -->
+  &LT;div class="card-body">
     The body of the box
-  &LT;/div>&LT;!-- /.box-body -->
+  &LT;/div>&LT;!-- /.card-body -->
 &LT;/div>&LT;!-- /.box --></pre>
     </div>
     <div class="col-md-4">
-      <div class="box box-default collapsed-box">
-        <div class="box-header with-border">
-          <h3 class="box-title">Expandable</h3>
-          <div class="box-tools pull-right">
-            <button class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-plus"></i></button>
-          </div><!-- /.box-tools -->
-        </div><!-- /.box-header -->
-        <div class="box-body">
+      <div class="box card-default collapsed-box">
+        <div class="card-header with-border">
+          <h3 class="card-title">Expandable</h3>
+          <div class="card-tools pull-right">
+            <button class="btn btn-card-tool" data-widget="collapse"><i class="fa fa-plus"></i></button>
+          </div><!-- /.card-tools -->
+        </div><!-- /.card-header -->
+        <div class="card-body">
           The body of the box
-        </div><!-- /.box-body -->
+        </div><!-- /.card-body -->
       </div><!-- /.box -->
       <pre class="prettyprint">
-&LT;div class="box box-default collapsed-box">
-  &LT;div class="box-header with-border">
-    &LT;h3 class="box-title">Expandable&LT;/h3>
-    &LT;div class="box-tools pull-right">
-      &LT;button class="btn btn-box-tool" data-widget="collapse">&LT;i class="fa fa-plus">&LT;/i>&LT;/button>
-    &LT;/div>&LT;!-- /.box-tools -->
-  &LT;/div>&LT;!-- /.box-header -->
-  &LT;div class="box-body">
+&LT;div class="box card-default collapsed-box">
+  &LT;div class="card-header with-border">
+    &LT;h3 class="card-title">Expandable&LT;/h3>
+    &LT;div class="card-tools pull-right">
+      &LT;button class="btn btn-card-tool" data-widget="collapse">&LT;i class="fa fa-plus">&LT;/i>&LT;/button>
+    &LT;/div>&LT;!-- /.card-tools -->
+  &LT;/div>&LT;!-- /.card-header -->
+  &LT;div class="card-body">
     The body of the box
-  &LT;/div>&LT;!-- /.box-body -->
+  &LT;/div>&LT;!-- /.card-body -->
 &LT;/div>&LT;!-- /.box --></pre>
     </div>
   </div><!-- /.row -->
   <p>We can also add labels, badges, pagination, tooltips, inputs and many more in the box tools. A few examples:</p>
   <div class="row">
     <div class="col-md-4">
-      <div class="box box-default">
-        <div class="box-header with-border">
-          <h3 class="box-title">Labels</h3>
-          <div class="box-tools pull-right">
+      <div class="box card-default">
+        <div class="card-header with-border">
+          <h3 class="card-title">Labels</h3>
+          <div class="card-tools pull-right">
             <span class="label label-default">Some Label</span>
-          </div><!-- /.box-tools -->
-        </div><!-- /.box-header -->
-        <div class="box-body">
+          </div><!-- /.card-tools -->
+        </div><!-- /.card-header -->
+        <div class="card-body">
           The body of the box
-        </div><!-- /.box-body -->
+        </div><!-- /.card-body -->
       </div><!-- /.box -->
       <pre class="prettyprint">
-&LT;div class="box box-default">
-  &LT;div class="box-header with-border">
-    &LT;h3 class="box-title">Labels&LT;/h3>
-    &LT;div class="box-tools pull-right">
+&LT;div class="box card-default">
+  &LT;div class="card-header with-border">
+    &LT;h3 class="card-title">Labels&LT;/h3>
+    &LT;div class="card-tools pull-right">
       &LT;span class="label label-default">8 New Messages&LT;/span>
-    &LT;/div>&LT;!-- /.box-tools -->
-  &LT;/div>&LT;!-- /.box-header -->
-  &LT;div class="box-body">
+    &LT;/div>&LT;!-- /.card-tools -->
+  &LT;/div>&LT;!-- /.card-header -->
+  &LT;div class="card-body">
     The body of the box
-  &LT;/div>&LT;!-- /.box-body -->
+  &LT;/div>&LT;!-- /.card-body -->
 &LT;/div>&LT;!-- /.box --></pre>
     </div>
     <div class="col-md-4">
-      <div class="box box-default">
-        <div class="box-header with-border">
-          <h3 class="box-title">Input</h3>
-          <div class="box-tools pull-right">
+      <div class="box card-default">
+        <div class="card-header with-border">
+          <h3 class="card-title">Input</h3>
+          <div class="card-tools pull-right">
             <div class="has-feedback">
               <input type="text" class="form-control input-sm" placeholder="Search...">
               <span class="glyphicon glyphicon-search form-control-feedback text-muted"></span>
             </div>
-          </div><!-- /.box-tools -->
-        </div><!-- /.box-header -->
-        <div class="box-body">
+          </div><!-- /.card-tools -->
+        </div><!-- /.card-header -->
+        <div class="card-body">
           The body of the box
-        </div><!-- /.box-body -->
+        </div><!-- /.card-body -->
       </div><!-- /.box -->
       <pre class="prettyprint">
-&LT;div class="box box-default">
-  &LT;div class="box-header with-border">
-    &LT;h3 class="box-title">Input&LT;/h3>
-    &LT;div class="box-tools pull-right">
+&LT;div class="box card-default">
+  &LT;div class="card-header with-border">
+    &LT;h3 class="card-title">Input&LT;/h3>
+    &LT;div class="card-tools pull-right">
       &LT;div class="has-feedback">
         &LT;input type="text" class="form-control input-sm" placeholder="Search...">
         &LT;span class="glyphicon glyphicon-search form-control-feedback">&LT;/span>
       &LT;/div>
-    &LT;/div>&LT;!-- /.box-tools -->
-  &LT;/div>&LT;!-- /.box-header -->
-  &LT;div class="box-body">
+    &LT;/div>&LT;!-- /.card-tools -->
+  &LT;/div>&LT;!-- /.card-header -->
+  &LT;div class="card-body">
     The body of the box
-  &LT;/div>&LT;!-- /.box-body -->
+  &LT;/div>&LT;!-- /.card-body -->
 &LT;/div>&LT;!-- /.box --></pre>
     </div>
     <div class="col-md-4">
-      <div class="box box-default">
-        <div class="box-header with-border">
-          <h3 class="box-title">Tootips on buttons</h3>
-          <div class="box-tools pull-right">
-            <button class="btn btn-box-tool" data-widget="collapse" data-toggle="tooltip" title="Collapse"><i class="fa fa-minus"></i></button>
-            <button class="btn btn-box-tool" data-widget="remove" data-toggle="tooltip" title="Remove"><i class="fa fa-times"></i></button>
-          </div><!-- /.box-tools -->
-        </div><!-- /.box-header -->
-        <div class="box-body">
+      <div class="box card-default">
+        <div class="card-header with-border">
+          <h3 class="card-title">Tootips on buttons</h3>
+          <div class="card-tools pull-right">
+            <button class="btn btn-card-tool" data-widget="collapse" data-toggle="tooltip" title="Collapse"><i class="fa fa-minus"></i></button>
+            <button class="btn btn-card-tool" data-widget="remove" data-toggle="tooltip" title="Remove"><i class="fa fa-times"></i></button>
+          </div><!-- /.card-tools -->
+        </div><!-- /.card-header -->
+        <div class="card-body">
           The body of the box
-        </div><!-- /.box-body -->
+        </div><!-- /.card-body -->
       </div><!-- /.box -->
       <pre class="prettyprint">
-&LT;div class="box box-default">
-  &LT;div class="box-header with-border">
-    &LT;h3 class="box-title">Tooltips on buttons&LT;/h3>
-    &LT;div class="box-tools pull-right">
-      &LT;button class="btn btn-box-tool" data-widget="collapse" data-toggle="tooltip" title="Collapse">&LT;i class="fa fa-minus">&LT;/i>&LT;/button>
-      &LT;button class="btn btn-box-tool" data-widget="remove" data-toggle="tooltip" title="Remove">&LT;i class="fa fa-times">&LT;/i>&LT;/button>
-    &LT;/div>&LT;!-- /.box-tools -->
-  &LT;/div>&LT;!-- /.box-header -->
-  &LT;div class="box-body">
+&LT;div class="box card-default">
+  &LT;div class="card-header with-border">
+    &LT;h3 class="card-title">Tooltips on buttons&LT;/h3>
+    &LT;div class="card-tools pull-right">
+      &LT;button class="btn btn-card-tool" data-widget="collapse" data-toggle="tooltip" title="Collapse">&LT;i class="fa fa-minus">&LT;/i>&LT;/button>
+      &LT;button class="btn btn-card-tool" data-widget="remove" data-toggle="tooltip" title="Remove">&LT;i class="fa fa-times">&LT;/i>&LT;/button>
+    &LT;/div>&LT;!-- /.card-tools -->
+  &LT;/div>&LT;!-- /.card-header -->
+  &LT;div class="card-body">
     The body of the box
-  &LT;/div>&LT;!-- /.box-body -->
+  &LT;/div>&LT;!-- /.card-body -->
 &LT;/div>&LT;!-- /.box --></pre>
     </div><!-- /.col -->
   </div><!-- /.row -->
@@ -1321,19 +1321,19 @@ AdminLTE/
     the collapse/remove buttons explicitly by calling <code>.activateBox()</code>:
   </p>
   <pre class="prettyprint"><code class="html">&LT;script>
-    $("#box-widget").activateBox();
+    $("#card-widget").activateBox();
 &LT;/script></code></pre>
 
   <h4>Loading States</h4>
   <div class="row">
     <div class="col-md-6">
-      <div class="box box-default">
-        <div class="box-header with-border">
-          <h3 class="box-title">Loading state</h3>
+      <div class="box card-default">
+        <div class="card-header with-border">
+          <h3 class="card-title">Loading state</h3>
         </div>
-        <div class="box-body">
+        <div class="card-body">
           The body of the box
-        </div><!-- /.box-body -->
+        </div><!-- /.card-body -->
         <!-- Loading (remove the following to stop the loading)-->
         <div class="overlay">
           <i class="fa fa-refresh fa-spin"></i>
@@ -1343,13 +1343,13 @@ AdminLTE/
     </div><!-- /.col -->
 
     <div class="col-md-6">
-      <div class="box box-default box-solid">
-        <div class="box-header with-border">
-          <h3 class="box-title">Loading state (.box-solid)</h3>
+      <div class="box card-default card-solid">
+        <div class="card-header with-border">
+          <h3 class="card-title">Loading state (.card-solid)</h3>
         </div>
-        <div class="box-body">
+        <div class="card-body">
           The body of the box
-        </div><!-- /.box-body -->
+        </div><!-- /.card-body -->
         <!-- Loading (remove the following to stop the loading)-->
         <div class="overlay">
           <i class="fa fa-refresh fa-spin"></i>
@@ -1372,17 +1372,17 @@ AdminLTE/
   <div class="row">
     <div class="col-md-3">
       <!-- DIRECT CHAT PRIMARY -->
-      <div class="box box-primary direct-chat direct-chat-primary">
-        <div class="box-header with-border">
-          <h3 class="box-title">Direct Chat</h3>
-          <div class="box-tools pull-right">
+      <div class="box card-primary direct-chat direct-chat-primary">
+        <div class="card-header with-border">
+          <h3 class="card-title">Direct Chat</h3>
+          <div class="card-tools pull-right">
             <span data-toggle="tooltip" title="3 New Messages" class="badge bg-light-blue">3</span>
-            <button class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i></button>
-            <button class="btn btn-box-tool" data-toggle="tooltip" title="Contacts" data-widget="chat-pane-toggle"><i class="fa fa-comments"></i></button>
-            <button class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i></button>
+            <button class="btn btn-card-tool" data-widget="collapse"><i class="fa fa-minus"></i></button>
+            <button class="btn btn-card-tool" data-toggle="tooltip" title="Contacts" data-widget="chat-pane-toggle"><i class="fa fa-comments"></i></button>
+            <button class="btn btn-card-tool" data-widget="remove"><i class="fa fa-times"></i></button>
           </div>
-        </div><!-- /.box-header -->
-        <div class="box-body">
+        </div><!-- /.card-header -->
+        <div class="card-body">
           <!-- Conversations are loaded here -->
           <div class="direct-chat-messages">
             <!-- Message. Default to the left -->
@@ -1429,8 +1429,8 @@ AdminLTE/
               </li><!-- End Contact Item -->
             </ul><!-- /.contatcts-list -->
           </div><!-- /.direct-chat-pane -->
-        </div><!-- /.box-body -->
-        <div class="box-footer">
+        </div><!-- /.card-body -->
+        <div class="card-footer">
           <form action="#" method="post">
             <div class="input-group">
               <input type="text" name="message" placeholder="Type Message ..." class="form-control">
@@ -1439,23 +1439,23 @@ AdminLTE/
               </span>
             </div>
           </form>
-        </div><!-- /.box-footer-->
+        </div><!-- /.card-footer-->
       </div><!--/.direct-chat -->
     </div><!-- /.col -->
 
     <div class="col-md-3">
       <!-- DIRECT CHAT SUCCESS -->
-      <div class="box box-success direct-chat direct-chat-success">
-        <div class="box-header with-border">
-          <h3 class="box-title">Direct Chat</h3>
-          <div class="box-tools pull-right">
+      <div class="box card-success direct-chat direct-chat-success">
+        <div class="card-header with-border">
+          <h3 class="card-title">Direct Chat</h3>
+          <div class="card-tools pull-right">
             <span data-toggle="tooltip" title="3 New Messages" class="badge bg-green">3</span>
-            <button class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i></button>
-            <button class="btn btn-box-tool" data-toggle="tooltip" title="Contacts" data-widget="chat-pane-toggle"><i class="fa fa-comments"></i></button>
-            <button class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i></button>
+            <button class="btn btn-card-tool" data-widget="collapse"><i class="fa fa-minus"></i></button>
+            <button class="btn btn-card-tool" data-toggle="tooltip" title="Contacts" data-widget="chat-pane-toggle"><i class="fa fa-comments"></i></button>
+            <button class="btn btn-card-tool" data-widget="remove"><i class="fa fa-times"></i></button>
           </div>
-        </div><!-- /.box-header -->
-        <div class="box-body">
+        </div><!-- /.card-header -->
+        <div class="card-body">
           <!-- Conversations are loaded here -->
           <div class="direct-chat-messages">
             <!-- Message. Default to the left -->
@@ -1502,8 +1502,8 @@ AdminLTE/
               </li><!-- End Contact Item -->
             </ul><!-- /.contatcts-list -->
           </div><!-- /.direct-chat-pane -->
-        </div><!-- /.box-body -->
-        <div class="box-footer">
+        </div><!-- /.card-body -->
+        <div class="card-footer">
           <form action="#" method="post">
             <div class="input-group">
               <input type="text" name="message" placeholder="Type Message ..." class="form-control">
@@ -1512,23 +1512,23 @@ AdminLTE/
               </span>
             </div>
           </form>
-        </div><!-- /.box-footer-->
+        </div><!-- /.card-footer-->
       </div><!--/.direct-chat -->
     </div><!-- /.col -->
 
     <div class="col-md-3">
       <!-- DIRECT CHAT WARNING -->
-      <div class="box box-warning direct-chat direct-chat-warning">
-        <div class="box-header with-border">
-          <h3 class="box-title">Direct Chat</h3>
-          <div class="box-tools pull-right">
+      <div class="box card-warning direct-chat direct-chat-warning">
+        <div class="card-header with-border">
+          <h3 class="card-title">Direct Chat</h3>
+          <div class="card-tools pull-right">
             <span data-toggle="tooltip" title="3 New Messages" class="badge bg-yellow">3</span>
-            <button class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i></button>
-            <button class="btn btn-box-tool" data-toggle="tooltip" title="Contacts" data-widget="chat-pane-toggle"><i class="fa fa-comments"></i></button>
-            <button class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i></button>
+            <button class="btn btn-card-tool" data-widget="collapse"><i class="fa fa-minus"></i></button>
+            <button class="btn btn-card-tool" data-toggle="tooltip" title="Contacts" data-widget="chat-pane-toggle"><i class="fa fa-comments"></i></button>
+            <button class="btn btn-card-tool" data-widget="remove"><i class="fa fa-times"></i></button>
           </div>
-        </div><!-- /.box-header -->
-        <div class="box-body">
+        </div><!-- /.card-header -->
+        <div class="card-body">
           <!-- Conversations are loaded here -->
           <div class="direct-chat-messages">
             <!-- Message. Default to the left -->
@@ -1575,8 +1575,8 @@ AdminLTE/
               </li><!-- End Contact Item -->
             </ul><!-- /.contatcts-list -->
           </div><!-- /.direct-chat-pane -->
-        </div><!-- /.box-body -->
-        <div class="box-footer">
+        </div><!-- /.card-body -->
+        <div class="card-footer">
           <form action="#" method="post">
             <div class="input-group">
               <input type="text" name="message" placeholder="Type Message ..." class="form-control">
@@ -1585,23 +1585,23 @@ AdminLTE/
               </span>
             </div>
           </form>
-        </div><!-- /.box-footer-->
+        </div><!-- /.card-footer-->
       </div><!--/.direct-chat -->
     </div><!-- /.col -->
 
     <div class="col-md-3">
       <!-- DIRECT CHAT DANGER -->
-      <div class="box box-danger direct-chat direct-chat-danger">
-        <div class="box-header with-border">
-          <h3 class="box-title">Direct Chat</h3>
-          <div class="box-tools pull-right">
+      <div class="box card-danger direct-chat direct-chat-danger">
+        <div class="card-header with-border">
+          <h3 class="card-title">Direct Chat</h3>
+          <div class="card-tools pull-right">
             <span data-toggle="tooltip" title="3 New Messages" class="badge bg-red">3</span>
-            <button class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i></button>
-            <button class="btn btn-box-tool" data-toggle="tooltip" title="Contacts" data-widget="chat-pane-toggle"><i class="fa fa-comments"></i></button>
-            <button class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i></button>
+            <button class="btn btn-card-tool" data-widget="collapse"><i class="fa fa-minus"></i></button>
+            <button class="btn btn-card-tool" data-toggle="tooltip" title="Contacts" data-widget="chat-pane-toggle"><i class="fa fa-comments"></i></button>
+            <button class="btn btn-card-tool" data-widget="remove"><i class="fa fa-times"></i></button>
           </div>
-        </div><!-- /.box-header -->
-        <div class="box-body">
+        </div><!-- /.card-header -->
+        <div class="card-body">
           <!-- Conversations are loaded here -->
           <div class="direct-chat-messages">
             <!-- Message. Default to the left -->
@@ -1648,8 +1648,8 @@ AdminLTE/
               </li><!-- End Contact Item -->
             </ul><!-- /.contatcts-list -->
           </div><!-- /.direct-chat-pane -->
-        </div><!-- /.box-body -->
-        <div class="box-footer">
+        </div><!-- /.card-body -->
+        <div class="card-footer">
           <form action="#" method="post">
             <div class="input-group">
               <input type="text" name="message" placeholder="Type Message ..." class="form-control">
@@ -1658,27 +1658,27 @@ AdminLTE/
               </span>
             </div>
           </form>
-        </div><!-- /.box-footer-->
+        </div><!-- /.card-footer-->
       </div><!--/.direct-chat -->
     </div><!-- /.col -->
   </div><!-- /.row -->
   <p class="lead">Direct Chat Markup</p>
   <pre class="prettyprint"><code class="html">
-&LT;!-- Construct the box with style you want. Here we are using box-danger -->
+&LT;!-- Construct the box with style you want. Here we are using card-danger -->
 &LT;!-- Then add the class direct-chat and choose the direct-chat-* contexual class -->
 &LT;!-- The contextual class should match the box, so we are using direct-chat-danger -->
-&LT;div class="box box-danger direct-chat direct-chat-danger">
-  &LT;div class="box-header with-border">
-    &LT;h3 class="box-title">Direct Chat&LT;/h3>
-    &LT;div class="box-tools pull-right">
+&LT;div class="box card-danger direct-chat direct-chat-danger">
+  &LT;div class="card-header with-border">
+    &LT;h3 class="card-title">Direct Chat&LT;/h3>
+    &LT;div class="card-tools pull-right">
       &LT;span data-toggle="tooltip" title="3 New Messages" class="badge bg-red">3&LT;/span>
-      &LT;button class="btn btn-box-tool" data-widget="collapse">&LT;i class="fa fa-minus">&LT;/i>&LT;/button>
-      &LT;!-- In box-tools add this button if you intend to use the contacts pane -->
-      &LT;button class="btn btn-box-tool" data-toggle="tooltip" title="Contacts" data-widget="chat-pane-toggle">&LT;i class="fa fa-comments">&LT;/i>&LT;/button>
-      &LT;button class="btn btn-box-tool" data-widget="remove">&LT;i class="fa fa-times">&LT;/i>&LT;/button>
+      &LT;button class="btn btn-card-tool" data-widget="collapse">&LT;i class="fa fa-minus">&LT;/i>&LT;/button>
+      &LT;!-- In card-tools add this button if you intend to use the contacts pane -->
+      &LT;button class="btn btn-card-tool" data-toggle="tooltip" title="Contacts" data-widget="chat-pane-toggle">&LT;i class="fa fa-comments">&LT;/i>&LT;/button>
+      &LT;button class="btn btn-card-tool" data-widget="remove">&LT;i class="fa fa-times">&LT;/i>&LT;/button>
     &LT;/div>
-  &LT;/div>&LT;!-- /.box-header -->
-  &LT;div class="box-body">
+  &LT;/div>&LT;!-- /.card-header -->
+  &LT;div class="card-body">
     &LT;!-- Conversations are loaded here -->
     &LT;div class="direct-chat-messages">
       &LT;!-- Message. Default to the left -->
@@ -1723,15 +1723,15 @@ AdminLTE/
         &LT;/li>&LT;!-- End Contact Item -->
       &LT;/ul>&LT;!-- /.contatcts-list -->
     &LT;/div>&LT;!-- /.direct-chat-pane -->
-  &LT;/div>&LT;!-- /.box-body -->
-  &LT;div class="box-footer">
+  &LT;/div>&LT;!-- /.card-body -->
+  &LT;div class="card-footer">
     &LT;div class="input-group">
       &LT;input type="text" name="message" placeholder="Type Message ..." class="form-control">
       &LT;span class="input-group-btn">
         &LT;button type="button" class="btn btn-danger btn-flat">Send&LT;/button>
       &LT;/span>
     &LT;/div>
-  &LT;/div>&LT;!-- /.box-footer-->
+  &LT;/div>&LT;!-- /.card-footer-->
 &LT;/div>&LT;!--/.direct-chat -->
 </code></pre>
 
@@ -1741,17 +1741,17 @@ AdminLTE/
   <div class="row">
     <div class="col-md-6">
       <!-- DIRECT CHAT WARNING -->
-      <div class="box box-primary box-solid direct-chat direct-chat-primary">
-        <div class="box-header">
-          <h3 class="box-title">Direct Chat in a Solid Box</h3>
-          <div class="box-tools pull-right">
+      <div class="box card-primary card-solid direct-chat direct-chat-primary">
+        <div class="card-header">
+          <h3 class="card-title">Direct Chat in a Solid Box</h3>
+          <div class="card-tools pull-right">
             <span data-toggle="tooltip" title="3 New Messages" class="badge bg-light-blue">3</span>
-            <button class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i></button>
-            <button class="btn btn-box-tool" data-toggle="tooltip" title="Contacts" data-widget="chat-pane-toggle"><i class="fa fa-comments"></i></button>
-            <button class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i></button>
+            <button class="btn btn-card-tool" data-widget="collapse"><i class="fa fa-minus"></i></button>
+            <button class="btn btn-card-tool" data-toggle="tooltip" title="Contacts" data-widget="chat-pane-toggle"><i class="fa fa-comments"></i></button>
+            <button class="btn btn-card-tool" data-widget="remove"><i class="fa fa-times"></i></button>
           </div>
-        </div><!-- /.box-header -->
-        <div class="box-body">
+        </div><!-- /.card-header -->
+        <div class="card-body">
           <!-- Conversations are loaded here -->
           <div class="direct-chat-messages">
             <!-- Message. Default to the left -->
@@ -1798,8 +1798,8 @@ AdminLTE/
               </li><!-- End Contact Item -->
             </ul><!-- /.contatcts-list -->
           </div><!-- /.direct-chat-pane -->
-        </div><!-- /.box-body -->
-        <div class="box-footer">
+        </div><!-- /.card-body -->
+        <div class="card-footer">
           <form action="#" method="post">
             <div class="input-group">
               <input type="text" name="message" placeholder="Type Message ..." class="form-control">
@@ -1808,23 +1808,23 @@ AdminLTE/
               </span>
             </div>
           </form>
-        </div><!-- /.box-footer-->
+        </div><!-- /.card-footer-->
       </div><!--/.direct-chat -->
     </div><!-- /.col -->
 
     <div class="col-md-6">
       <!-- DIRECT CHAT DANGER -->
-      <div class="box box-info box-solid direct-chat direct-chat-info">
-        <div class="box-header">
-          <h3 class="box-title">Direct Chat in a Solid Box</h3>
-          <div class="box-tools pull-right">
+      <div class="box card-info card-solid direct-chat direct-chat-info">
+        <div class="card-header">
+          <h3 class="card-title">Direct Chat in a Solid Box</h3>
+          <div class="card-tools pull-right">
             <span data-toggle="tooltip" title="3 New Messages" class="badge bg-aqua">3</span>
-            <button class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i></button>
-            <button class="btn btn-box-tool" data-toggle="tooltip" title="Contacts" data-widget="chat-pane-toggle"><i class="fa fa-comments"></i></button>
-            <button class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i></button>
+            <button class="btn btn-card-tool" data-widget="collapse"><i class="fa fa-minus"></i></button>
+            <button class="btn btn-card-tool" data-toggle="tooltip" title="Contacts" data-widget="chat-pane-toggle"><i class="fa fa-comments"></i></button>
+            <button class="btn btn-card-tool" data-widget="remove"><i class="fa fa-times"></i></button>
           </div>
-        </div><!-- /.box-header -->
-        <div class="box-body">
+        </div><!-- /.card-header -->
+        <div class="card-body">
           <!-- Conversations are loaded here -->
           <div class="direct-chat-messages">
             <!-- Message. Default to the left -->
@@ -1871,8 +1871,8 @@ AdminLTE/
               </li><!-- End Contact Item -->
             </ul><!-- /.contatcts-list -->
           </div><!-- /.direct-chat-pane -->
-        </div><!-- /.box-body -->
-        <div class="box-footer">
+        </div><!-- /.card-body -->
+        <div class="card-footer">
           <form action="#" method="post">
             <div class="input-group">
               <input type="text" name="message" placeholder="Type Message ..." class="form-control">
@@ -1881,7 +1881,7 @@ AdminLTE/
               </span>
             </div>
           </form>
-        </div><!-- /.box-footer-->
+        </div><!-- /.card-footer-->
       </div><!--/.direct-chat -->
     </div><!-- /.col -->
   </div><!-- /.row -->

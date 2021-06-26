@@ -15,17 +15,17 @@
     <section class="content">
 
       <!-- SELECT2 EXAMPLE -->
-      <div class="box box-default">
-        <div class="box-header with-border">
-          <h3 class="box-title">Select2</h3>
+      <div class="box card-default">
+        <div class="card-header with-border">
+          <h3 class="card-title">Select2</h3>
 
-          <div class="box-tools pull-right">
-            <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i></button>
-            <button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-remove"></i></button>
+          <div class="card-tools pull-right">
+            <button type="button" class="btn btn-card-tool" data-widget="collapse"><i class="fa fa-minus"></i></button>
+            <button type="button" class="btn btn-card-tool" data-widget="remove"><i class="fa fa-remove"></i></button>
           </div>
         </div>
-        <!-- /.box-header -->
-        <div class="box-body">
+        <!-- /.card-header -->
+        <div class="card-body">
           <div class="row">
             <div class="col-md-6">
               <div class="form-group">
@@ -88,8 +88,8 @@
           </div>
           <!-- /.row -->
         </div>
-        <!-- /.box-body -->
-        <div class="box-footer">
+        <!-- /.card-body -->
+        <div class="card-footer">
           Visit <a href="https://select2.github.io/">Select2 documentation</a> for more examples and information about
           the plugin.
         </div>
@@ -99,11 +99,11 @@
       <div class="row">
         <div class="col-md-6">
 
-          <div class="box box-danger">
-            <div class="box-header">
-              <h3 class="box-title">Input masks</h3>
+          <div class="box card-danger">
+            <div class="card-header">
+              <h3 class="card-title">Input masks</h3>
             </div>
-            <div class="box-body">
+            <div class="card-body">
               <!-- Date dd/mm/yyyy -->
               <div class="form-group">
                 <label>Date masks:</label>
@@ -173,15 +173,15 @@
               <!-- /.form group -->
 
             </div>
-            <!-- /.box-body -->
+            <!-- /.card-body -->
           </div>
           <!-- /.box -->
 
-          <div class="box box-info">
-            <div class="box-header">
-              <h3 class="box-title">Color & Time Picker</h3>
+          <div class="box card-info">
+            <div class="card-header">
+              <h3 class="card-title">Color & Time Picker</h3>
             </div>
-            <div class="box-body">
+            <div class="card-body">
               <!-- Color Picker -->
               <div class="form-group">
                 <label>Color picker:</label>
@@ -221,18 +221,18 @@
                 <!-- /.form group -->
               </div>
             </div>
-            <!-- /.box-body -->
+            <!-- /.card-body -->
           </div>
           <!-- /.box -->
 
         </div>
         <!-- /.col (left) -->
         <div class="col-md-6">
-          <div class="box box-primary">
-            <div class="box-header">
-              <h3 class="box-title">Date picker</h3>
+          <div class="box card-primary">
+            <div class="card-header">
+              <h3 class="card-title">Date picker</h3>
             </div>
-            <div class="box-body">
+            <div class="card-body">
               <!-- Date -->
               <div class="form-group">
                 <label>Date:</label>
@@ -291,16 +291,16 @@
               <!-- /.form group -->
 
             </div>
-            <!-- /.box-body -->
+            <!-- /.card-body -->
           </div>
           <!-- /.box -->
 
           <!-- iCheck -->
-          <div class="box box-success">
-            <div class="box-header">
-              <h3 class="box-title">iCheck - Checkbox &amp; Radio Inputs</h3>
+          <div class="box card-success">
+            <div class="card-header">
+              <h3 class="card-title">iCheck - Checkbox &amp; Radio Inputs</h3>
             </div>
-            <div class="box-body">
+            <div class="card-body">
               <!-- Minimal style -->
 
               <!-- checkbox -->
@@ -391,8 +391,8 @@
                 </label>
               </div>
             </div>
-            <!-- /.box-body -->
-            <div class="box-footer">
+            <!-- /.card-body -->
+            <div class="card-footer">
               Many more skins available. <a href="http://fronteed.com/iCheck/">Documentation</a>
             </div>
           </div>

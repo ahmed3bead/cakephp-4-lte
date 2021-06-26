@@ -889,10 +889,10 @@
             <div class="card-body p-0">
               <textarea id="codeMirrorDemo" class="p-3">
 <div class="info-box bg-gradient-info">
-  <span class="info-box-icon"><i class="far fa-bookmark"></i></span>
-  <div class="info-box-content">
-    <span class="info-box-text">Bookmarks</span>
-    <span class="info-box-number">41,410</span>
+  <span class="info-card-icon"><i class="far fa-bookmark"></i></span>
+  <div class="info-card-content">
+    <span class="info-card-text">Bookmarks</span>
+    <span class="info-card-number">41,410</span>
     <div class="progress">
       <div class="progress-bar" style="width: 70%"></div>
     </div>

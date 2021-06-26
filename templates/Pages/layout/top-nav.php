@@ -27,14 +27,14 @@
       <p>The construction of this layout differs from the normal one. In other words, the HTML markup of the navbar
         and the content will slightly differ than that of the normal layout.</p>
     </div>
-    <div class="box box-default">
-      <div class="box-header with-border">
-        <h3 class="box-title">Blank Box</h3>
+    <div class="box card-default">
+      <div class="card-header with-border">
+        <h3 class="card-title">Blank Box</h3>
       </div>
-      <div class="box-body">
+      <div class="card-body">
         The great content goes here
       </div>
-      <!-- /.box-body -->
+      <!-- /.card-body -->
     </div>
     <!-- /.box -->
   </section>

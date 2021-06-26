@@ -17,8 +17,8 @@
         <div class="col-md-3">
 
           <!-- Profile Image -->
-          <div class="box box-primary">
-            <div class="box-body box-profile">
+          <div class="box card-primary">
+            <div class="card-body card-profile">
               <?php echo $this->Html->image('user4-128x128.jpg', ['class' => 'profile-user-img img-responsive img-circle', 'alt' => 'User profile picture']); ?>
 
               <h3 class="profile-username text-center">Nina Mcintire</h3>
@@ -39,17 +39,17 @@
 
               <a href="#" class="btn btn-primary btn-block"><b>Follow</b></a>
             </div>
-            <!-- /.box-body -->
+            <!-- /.card-body -->
           </div>
           <!-- /.box -->
 
           <!-- About Me Box -->
-          <div class="box box-primary">
-            <div class="box-header with-border">
-              <h3 class="box-title">About Me</h3>
+          <div class="box card-primary">
+            <div class="card-header with-border">
+              <h3 class="card-title">About Me</h3>
             </div>
-            <!-- /.box-header -->
-            <div class="box-body">
+            <!-- /.card-header -->
+            <div class="card-body">
               <strong><i class="fa fa-book margin-r-5"></i> Education</strong>
 
               <p class="text-muted">
@@ -80,7 +80,7 @@
 
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam fermentum enim neque.</p>
             </div>
-            <!-- /.box-body -->
+            <!-- /.card-body -->
           </div>
           <!-- /.box -->
         </div>
@@ -100,7 +100,7 @@
                     <?php echo $this->Html->image('user1-128x128.jpg', ['class' => 'img-circle img-bordered-sm', 'alt' => 'User Image']); ?>
                         <span class="username">
                           <a href="#">Jonathan Burke Jr.</a>
-                          <a href="#" class="pull-right btn-box-tool"><i class="fa fa-times"></i></a>
+                          <a href="#" class="pull-right btn-card-tool"><i class="fa fa-times"></i></a>
                         </span>
                     <span class="description">Shared publicly - 7:30 PM today</span>
                   </div>
@@ -131,7 +131,7 @@
                     <?php echo $this->Html->image('user7-128x128.jpg', ['class' => 'img-circle img-bordered-sm', 'alt' => 'User Image']); ?>
                         <span class="username">
                           <a href="#">Sarah Ross</a>
-                          <a href="#" class="pull-right btn-box-tool"><i class="fa fa-times"></i></a>
+                          <a href="#" class="pull-right btn-card-tool"><i class="fa fa-times"></i></a>
                         </span>
                     <span class="description">Sent you a message - 3 days ago</span>
                   </div>
@@ -163,7 +163,7 @@
                     <?php echo $this->Html->image('user6-128x128.jpg', ['class' => 'img-circle img-bordered-sm', 'alt' => 'user image']); ?>
                         <span class="username">
                           <a href="#">Adam Jones</a>
-                          <a href="#" class="pull-right btn-box-tool"><i class="fa fa-times"></i></a>
+                          <a href="#" class="pull-right btn-card-tool"><i class="fa fa-times"></i></a>
                         </span>
                     <span class="description">Posted 5 photos - 5 days ago</span>
                   </div>

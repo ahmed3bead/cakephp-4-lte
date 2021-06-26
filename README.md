@@ -167,6 +167,7 @@ There are 7 element files.
         - user-panel
     - aside-control-sidebar
     - aside-main-sidebar
+    - breadcrumb
     - footer
     - nav-top
 

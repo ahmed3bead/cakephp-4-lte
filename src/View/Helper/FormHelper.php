@@ -41,7 +41,7 @@ class FormHelper extends CakeFormHelper {
         'radio' => '<input type="radio" name="{{name}}" value="{{value}}"{{attrs}}>',
         'radioWrapper' => '<div class="radio">{{label}}</div>',
         'textarea' => '<textarea name="{{name}}"{{attrs}}>{{value}}</textarea>',
-        'submitContainer' => '<div class="box-footer {{required}}">{{content}}</div>'
+        'submitContainer' => '<div class="card-footer {{required}}">{{content}}</div>'
     ];
 
     public function __construct(View $View, array $config = [])

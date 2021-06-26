@@ -16,16 +16,16 @@
         <div class="col-md-3">
           <a href="<?php echo $this->Url->build(['controller' => 'pages', 'action' => 'display', 'mailbox', 'compose']); ?>" class="btn btn-primary margin-bottom">Compose</a>
 
-          <div class="box box-solid">
-            <div class="box-header with-border">
-              <h3 class="box-title">Folders</h3>
+          <div class="box card-solid">
+            <div class="card-header with-border">
+              <h3 class="card-title">Folders</h3>
 
-              <div class="box-tools">
-                <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i>
+              <div class="card-tools">
+                <button type="button" class="btn btn-card-tool" data-widget="collapse"><i class="fa fa-minus"></i>
                 </button>
               </div>
             </div>
-            <div class="box-body no-padding">
+            <div class="card-body no-padding">
               <ul class="nav nav-pills nav-stacked">
                 <li class="active"><a href="#"><i class="fa fa-inbox"></i> Inbox
                   <span class="label label-primary pull-right">12</span></a></li>
@@ -36,48 +36,48 @@
                 <li><a href="#"><i class="fa fa-trash-o"></i> Trash</a></li>
               </ul>
             </div>
-            <!-- /.box-body -->
+            <!-- /.card-body -->
           </div>
           <!-- /. box -->
-          <div class="box box-solid">
-            <div class="box-header with-border">
-              <h3 class="box-title">Labels</h3>
+          <div class="box card-solid">
+            <div class="card-header with-border">
+              <h3 class="card-title">Labels</h3>
 
-              <div class="box-tools">
-                <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i>
+              <div class="card-tools">
+                <button type="button" class="btn btn-card-tool" data-widget="collapse"><i class="fa fa-minus"></i>
                 </button>
               </div>
             </div>
-            <div class="box-body no-padding">
+            <div class="card-body no-padding">
               <ul class="nav nav-pills nav-stacked">
                 <li><a href="#"><i class="fa fa-circle-o text-red"></i> Important</a></li>
                 <li><a href="#"><i class="fa fa-circle-o text-yellow"></i> Promotions</a></li>
                 <li><a href="#"><i class="fa fa-circle-o text-light-blue"></i> Social</a></li>
               </ul>
             </div>
-            <!-- /.box-body -->
+            <!-- /.card-body -->
           </div>
           <!-- /.box -->
         </div>
         <!-- /.col -->
         <div class="col-md-9">
-          <div class="box box-primary">
-            <div class="box-header with-border">
-              <h3 class="box-title">Inbox</h3>
+          <div class="box card-primary">
+            <div class="card-header with-border">
+              <h3 class="card-title">Inbox</h3>
 
-              <div class="box-tools pull-right">
+              <div class="card-tools pull-right">
                 <div class="has-feedback">
                   <input type="text" class="form-control input-sm" placeholder="Search Mail">
                   <span class="glyphicon glyphicon-search form-control-feedback"></span>
                 </div>
               </div>
-              <!-- /.box-tools -->
+              <!-- /.card-tools -->
             </div>
-            <!-- /.box-header -->
-            <div class="box-body no-padding">
-              <div class="mailbox-controls">
+            <!-- /.card-header -->
+            <div class="card-body no-padding">
+              <div class="mailcard-controls">
                 <!-- Check all button -->
-                <button type="button" class="btn btn-default btn-sm checkbox-toggle"><i class="fa fa-square-o"></i>
+                <button type="button" class="btn btn-default btn-sm checkcard-toggle"><i class="fa fa-square-o"></i>
                 </button>
                 <div class="btn-group">
                   <button type="button" class="btn btn-default btn-sm"><i class="fa fa-trash-o"></i></button>
@@ -96,155 +96,155 @@
                 </div>
                 <!-- /.pull-right -->
               </div>
-              <div class="table-responsive mailbox-messages">
+              <div class="table-responsive mailcard-messages">
                 <table class="table table-hover table-striped">
                   <tbody>
                   <tr>
                     <td><input type="checkbox"></td>
-                    <td class="mailbox-star"><a href="#"><i class="fa fa-star text-yellow"></i></a></td>
-                    <td class="mailbox-name"><a href="<?php echo $this->Url->build(['controller' => 'pages', 'action' => 'display', 'mailbox', 'read-mail']); ?>">Alexander Pierce</a></td>
-                    <td class="mailbox-subject"><b>AdminLTE 2.0 Issue</b> - Trying to find a solution to this problem...
+                    <td class="mailcard-star"><a href="#"><i class="fa fa-star text-yellow"></i></a></td>
+                    <td class="mailcard-name"><a href="<?php echo $this->Url->build(['controller' => 'pages', 'action' => 'display', 'mailbox', 'read-mail']); ?>">Alexander Pierce</a></td>
+                    <td class="mailcard-subject"><b>AdminLTE 2.0 Issue</b> - Trying to find a solution to this problem...
                     </td>
-                    <td class="mailbox-attachment"></td>
-                    <td class="mailbox-date">5 mins ago</td>
+                    <td class="mailcard-attachment"></td>
+                    <td class="mailcard-date">5 mins ago</td>
                   </tr>
                   <tr>
                     <td><input type="checkbox"></td>
-                    <td class="mailbox-star"><a href="#"><i class="fa fa-star-o text-yellow"></i></a></td>
-                    <td class="mailbox-name"><a href="<?php echo $this->Url->build(['controller' => 'pages', 'action' => 'display', 'mailbox', 'read-mail']); ?>">Alexander Pierce</a></td>
-                    <td class="mailbox-subject"><b>AdminLTE 2.0 Issue</b> - Trying to find a solution to this problem...
+                    <td class="mailcard-star"><a href="#"><i class="fa fa-star-o text-yellow"></i></a></td>
+                    <td class="mailcard-name"><a href="<?php echo $this->Url->build(['controller' => 'pages', 'action' => 'display', 'mailbox', 'read-mail']); ?>">Alexander Pierce</a></td>
+                    <td class="mailcard-subject"><b>AdminLTE 2.0 Issue</b> - Trying to find a solution to this problem...
                     </td>
-                    <td class="mailbox-attachment"><i class="fa fa-paperclip"></i></td>
-                    <td class="mailbox-date">28 mins ago</td>
+                    <td class="mailcard-attachment"><i class="fa fa-paperclip"></i></td>
+                    <td class="mailcard-date">28 mins ago</td>
                   </tr>
                   <tr>
                     <td><input type="checkbox"></td>
-                    <td class="mailbox-star"><a href="#"><i class="fa fa-star-o text-yellow"></i></a></td>
-                    <td class="mailbox-name"><a href="<?php echo $this->Url->build(['controller' => 'pages', 'action' => 'display', 'mailbox', 'read-mail']); ?>">Alexander Pierce</a></td>
-                    <td class="mailbox-subject"><b>AdminLTE 2.0 Issue</b> - Trying to find a solution to this problem...
+                    <td class="mailcard-star"><a href="#"><i class="fa fa-star-o text-yellow"></i></a></td>
+                    <td class="mailcard-name"><a href="<?php echo $this->Url->build(['controller' => 'pages', 'action' => 'display', 'mailbox', 'read-mail']); ?>">Alexander Pierce</a></td>
+                    <td class="mailcard-subject"><b>AdminLTE 2.0 Issue</b> - Trying to find a solution to this problem...
                     </td>
-                    <td class="mailbox-attachment"><i class="fa fa-paperclip"></i></td>
-                    <td class="mailbox-date">11 hours ago</td>
+                    <td class="mailcard-attachment"><i class="fa fa-paperclip"></i></td>
+                    <td class="mailcard-date">11 hours ago</td>
                   </tr>
                   <tr>
                     <td><input type="checkbox"></td>
-                    <td class="mailbox-star"><a href="#"><i class="fa fa-star text-yellow"></i></a></td>
-                    <td class="mailbox-name"><a href="<?php echo $this->Url->build(['controller' => 'pages', 'action' => 'display', 'mailbox', 'read-mail']); ?>">Alexander Pierce</a></td>
-                    <td class="mailbox-subject"><b>AdminLTE 2.0 Issue</b> - Trying to find a solution to this problem...
+                    <td class="mailcard-star"><a href="#"><i class="fa fa-star text-yellow"></i></a></td>
+                    <td class="mailcard-name"><a href="<?php echo $this->Url->build(['controller' => 'pages', 'action' => 'display', 'mailbox', 'read-mail']); ?>">Alexander Pierce</a></td>
+                    <td class="mailcard-subject"><b>AdminLTE 2.0 Issue</b> - Trying to find a solution to this problem...
                     </td>
-                    <td class="mailbox-attachment"></td>
-                    <td class="mailbox-date">15 hours ago</td>
+                    <td class="mailcard-attachment"></td>
+                    <td class="mailcard-date">15 hours ago</td>
                   </tr>
                   <tr>
                     <td><input type="checkbox"></td>
-                    <td class="mailbox-star"><a href="#"><i class="fa fa-star text-yellow"></i></a></td>
-                    <td class="mailbox-name"><a href="<?php echo $this->Url->build(['controller' => 'pages', 'action' => 'display', 'mailbox', 'read-mail']); ?>">Alexander Pierce</a></td>
-                    <td class="mailbox-subject"><b>AdminLTE 2.0 Issue</b> - Trying to find a solution to this problem...
+                    <td class="mailcard-star"><a href="#"><i class="fa fa-star text-yellow"></i></a></td>
+                    <td class="mailcard-name"><a href="<?php echo $this->Url->build(['controller' => 'pages', 'action' => 'display', 'mailbox', 'read-mail']); ?>">Alexander Pierce</a></td>
+                    <td class="mailcard-subject"><b>AdminLTE 2.0 Issue</b> - Trying to find a solution to this problem...
                     </td>
-                    <td class="mailbox-attachment"><i class="fa fa-paperclip"></i></td>
-                    <td class="mailbox-date">Yesterday</td>
+                    <td class="mailcard-attachment"><i class="fa fa-paperclip"></i></td>
+                    <td class="mailcard-date">Yesterday</td>
                   </tr>
                   <tr>
                     <td><input type="checkbox"></td>
-                    <td class="mailbox-star"><a href="#"><i class="fa fa-star-o text-yellow"></i></a></td>
-                    <td class="mailbox-name"><a href="<?php echo $this->Url->build(['controller' => 'pages', 'action' => 'display', 'mailbox', 'read-mail']); ?>">Alexander Pierce</a></td>
-                    <td class="mailbox-subject"><b>AdminLTE 2.0 Issue</b> - Trying to find a solution to this problem...
+                    <td class="mailcard-star"><a href="#"><i class="fa fa-star-o text-yellow"></i></a></td>
+                    <td class="mailcard-name"><a href="<?php echo $this->Url->build(['controller' => 'pages', 'action' => 'display', 'mailbox', 'read-mail']); ?>">Alexander Pierce</a></td>
+                    <td class="mailcard-subject"><b>AdminLTE 2.0 Issue</b> - Trying to find a solution to this problem...
                     </td>
-                    <td class="mailbox-attachment"><i class="fa fa-paperclip"></i></td>
-                    <td class="mailbox-date">2 days ago</td>
+                    <td class="mailcard-attachment"><i class="fa fa-paperclip"></i></td>
+                    <td class="mailcard-date">2 days ago</td>
                   </tr>
                   <tr>
                     <td><input type="checkbox"></td>
-                    <td class="mailbox-star"><a href="#"><i class="fa fa-star-o text-yellow"></i></a></td>
-                    <td class="mailbox-name"><a href="<?php echo $this->Url->build(['controller' => 'pages', 'action' => 'display', 'mailbox', 'read-mail']); ?>">Alexander Pierce</a></td>
-                    <td class="mailbox-subject"><b>AdminLTE 2.0 Issue</b> - Trying to find a solution to this problem...
+                    <td class="mailcard-star"><a href="#"><i class="fa fa-star-o text-yellow"></i></a></td>
+                    <td class="mailcard-name"><a href="<?php echo $this->Url->build(['controller' => 'pages', 'action' => 'display', 'mailbox', 'read-mail']); ?>">Alexander Pierce</a></td>
+                    <td class="mailcard-subject"><b>AdminLTE 2.0 Issue</b> - Trying to find a solution to this problem...
                     </td>
-                    <td class="mailbox-attachment"><i class="fa fa-paperclip"></i></td>
-                    <td class="mailbox-date">2 days ago</td>
+                    <td class="mailcard-attachment"><i class="fa fa-paperclip"></i></td>
+                    <td class="mailcard-date">2 days ago</td>
                   </tr>
                   <tr>
                     <td><input type="checkbox"></td>
-                    <td class="mailbox-star"><a href="#"><i class="fa fa-star text-yellow"></i></a></td>
-                    <td class="mailbox-name"><a href="<?php echo $this->Url->build(['controller' => 'pages', 'action' => 'display', 'mailbox', 'read-mail']); ?>">Alexander Pierce</a></td>
-                    <td class="mailbox-subject"><b>AdminLTE 2.0 Issue</b> - Trying to find a solution to this problem...
+                    <td class="mailcard-star"><a href="#"><i class="fa fa-star text-yellow"></i></a></td>
+                    <td class="mailcard-name"><a href="<?php echo $this->Url->build(['controller' => 'pages', 'action' => 'display', 'mailbox', 'read-mail']); ?>">Alexander Pierce</a></td>
+                    <td class="mailcard-subject"><b>AdminLTE 2.0 Issue</b> - Trying to find a solution to this problem...
                     </td>
-                    <td class="mailbox-attachment"></td>
-                    <td class="mailbox-date">2 days ago</td>
+                    <td class="mailcard-attachment"></td>
+                    <td class="mailcard-date">2 days ago</td>
                   </tr>
                   <tr>
                     <td><input type="checkbox"></td>
-                    <td class="mailbox-star"><a href="#"><i class="fa fa-star text-yellow"></i></a></td>
-                    <td class="mailbox-name"><a href="<?php echo $this->Url->build(['controller' => 'pages', 'action' => 'display', 'mailbox', 'read-mail']); ?>">Alexander Pierce</a></td>
-                    <td class="mailbox-subject"><b>AdminLTE 2.0 Issue</b> - Trying to find a solution to this problem...
+                    <td class="mailcard-star"><a href="#"><i class="fa fa-star text-yellow"></i></a></td>
+                    <td class="mailcard-name"><a href="<?php echo $this->Url->build(['controller' => 'pages', 'action' => 'display', 'mailbox', 'read-mail']); ?>">Alexander Pierce</a></td>
+                    <td class="mailcard-subject"><b>AdminLTE 2.0 Issue</b> - Trying to find a solution to this problem...
                     </td>
-                    <td class="mailbox-attachment"></td>
-                    <td class="mailbox-date">2 days ago</td>
+                    <td class="mailcard-attachment"></td>
+                    <td class="mailcard-date">2 days ago</td>
                   </tr>
                   <tr>
                     <td><input type="checkbox"></td>
-                    <td class="mailbox-star"><a href="#"><i class="fa fa-star-o text-yellow"></i></a></td>
-                    <td class="mailbox-name"><a href="<?php echo $this->Url->build(['controller' => 'pages', 'action' => 'display', 'mailbox', 'read-mail']); ?>">Alexander Pierce</a></td>
-                    <td class="mailbox-subject"><b>AdminLTE 2.0 Issue</b> - Trying to find a solution to this problem...
+                    <td class="mailcard-star"><a href="#"><i class="fa fa-star-o text-yellow"></i></a></td>
+                    <td class="mailcard-name"><a href="<?php echo $this->Url->build(['controller' => 'pages', 'action' => 'display', 'mailbox', 'read-mail']); ?>">Alexander Pierce</a></td>
+                    <td class="mailcard-subject"><b>AdminLTE 2.0 Issue</b> - Trying to find a solution to this problem...
                     </td>
-                    <td class="mailbox-attachment"></td>
-                    <td class="mailbox-date">2 days ago</td>
+                    <td class="mailcard-attachment"></td>
+                    <td class="mailcard-date">2 days ago</td>
                   </tr>
                   <tr>
                     <td><input type="checkbox"></td>
-                    <td class="mailbox-star"><a href="#"><i class="fa fa-star-o text-yellow"></i></a></td>
-                    <td class="mailbox-name"><a href="<?php echo $this->Url->build(['controller' => 'pages', 'action' => 'display', 'mailbox', 'read-mail']); ?>">Alexander Pierce</a></td>
-                    <td class="mailbox-subject"><b>AdminLTE 2.0 Issue</b> - Trying to find a solution to this problem...
+                    <td class="mailcard-star"><a href="#"><i class="fa fa-star-o text-yellow"></i></a></td>
+                    <td class="mailcard-name"><a href="<?php echo $this->Url->build(['controller' => 'pages', 'action' => 'display', 'mailbox', 'read-mail']); ?>">Alexander Pierce</a></td>
+                    <td class="mailcard-subject"><b>AdminLTE 2.0 Issue</b> - Trying to find a solution to this problem...
                     </td>
-                    <td class="mailbox-attachment"><i class="fa fa-paperclip"></i></td>
-                    <td class="mailbox-date">4 days ago</td>
+                    <td class="mailcard-attachment"><i class="fa fa-paperclip"></i></td>
+                    <td class="mailcard-date">4 days ago</td>
                   </tr>
                   <tr>
                     <td><input type="checkbox"></td>
-                    <td class="mailbox-star"><a href="#"><i class="fa fa-star text-yellow"></i></a></td>
-                    <td class="mailbox-name"><a href="<?php echo $this->Url->build(['controller' => 'pages', 'action' => 'display', 'mailbox', 'read-mail']); ?>">Alexander Pierce</a></td>
-                    <td class="mailbox-subject"><b>AdminLTE 2.0 Issue</b> - Trying to find a solution to this problem...
+                    <td class="mailcard-star"><a href="#"><i class="fa fa-star text-yellow"></i></a></td>
+                    <td class="mailcard-name"><a href="<?php echo $this->Url->build(['controller' => 'pages', 'action' => 'display', 'mailbox', 'read-mail']); ?>">Alexander Pierce</a></td>
+                    <td class="mailcard-subject"><b>AdminLTE 2.0 Issue</b> - Trying to find a solution to this problem...
                     </td>
-                    <td class="mailbox-attachment"></td>
-                    <td class="mailbox-date">12 days ago</td>
+                    <td class="mailcard-attachment"></td>
+                    <td class="mailcard-date">12 days ago</td>
                   </tr>
                   <tr>
                     <td><input type="checkbox"></td>
-                    <td class="mailbox-star"><a href="#"><i class="fa fa-star-o text-yellow"></i></a></td>
-                    <td class="mailbox-name"><a href="<?php echo $this->Url->build(['controller' => 'pages', 'action' => 'display', 'mailbox', 'read-mail']); ?>">Alexander Pierce</a></td>
-                    <td class="mailbox-subject"><b>AdminLTE 2.0 Issue</b> - Trying to find a solution to this problem...
+                    <td class="mailcard-star"><a href="#"><i class="fa fa-star-o text-yellow"></i></a></td>
+                    <td class="mailcard-name"><a href="<?php echo $this->Url->build(['controller' => 'pages', 'action' => 'display', 'mailbox', 'read-mail']); ?>">Alexander Pierce</a></td>
+                    <td class="mailcard-subject"><b>AdminLTE 2.0 Issue</b> - Trying to find a solution to this problem...
                     </td>
-                    <td class="mailbox-attachment"><i class="fa fa-paperclip"></i></td>
-                    <td class="mailbox-date">12 days ago</td>
+                    <td class="mailcard-attachment"><i class="fa fa-paperclip"></i></td>
+                    <td class="mailcard-date">12 days ago</td>
                   </tr>
                   <tr>
                     <td><input type="checkbox"></td>
-                    <td class="mailbox-star"><a href="#"><i class="fa fa-star text-yellow"></i></a></td>
-                    <td class="mailbox-name"><a href="<?php echo $this->Url->build(['controller' => 'pages', 'action' => 'display', 'mailbox', 'read-mail']); ?>">Alexander Pierce</a></td>
-                    <td class="mailbox-subject"><b>AdminLTE 2.0 Issue</b> - Trying to find a solution to this problem...
+                    <td class="mailcard-star"><a href="#"><i class="fa fa-star text-yellow"></i></a></td>
+                    <td class="mailcard-name"><a href="<?php echo $this->Url->build(['controller' => 'pages', 'action' => 'display', 'mailbox', 'read-mail']); ?>">Alexander Pierce</a></td>
+                    <td class="mailcard-subject"><b>AdminLTE 2.0 Issue</b> - Trying to find a solution to this problem...
                     </td>
-                    <td class="mailbox-attachment"><i class="fa fa-paperclip"></i></td>
-                    <td class="mailbox-date">14 days ago</td>
+                    <td class="mailcard-attachment"><i class="fa fa-paperclip"></i></td>
+                    <td class="mailcard-date">14 days ago</td>
                   </tr>
                   <tr>
                     <td><input type="checkbox"></td>
-                    <td class="mailbox-star"><a href="#"><i class="fa fa-star text-yellow"></i></a></td>
-                    <td class="mailbox-name"><a href="<?php echo $this->Url->build(['controller' => 'pages', 'action' => 'display', 'mailbox', 'read-mail']); ?>">Alexander Pierce</a></td>
-                    <td class="mailbox-subject"><b>AdminLTE 2.0 Issue</b> - Trying to find a solution to this problem...
+                    <td class="mailcard-star"><a href="#"><i class="fa fa-star text-yellow"></i></a></td>
+                    <td class="mailcard-name"><a href="<?php echo $this->Url->build(['controller' => 'pages', 'action' => 'display', 'mailbox', 'read-mail']); ?>">Alexander Pierce</a></td>
+                    <td class="mailcard-subject"><b>AdminLTE 2.0 Issue</b> - Trying to find a solution to this problem...
                     </td>
-                    <td class="mailbox-attachment"><i class="fa fa-paperclip"></i></td>
-                    <td class="mailbox-date">15 days ago</td>
+                    <td class="mailcard-attachment"><i class="fa fa-paperclip"></i></td>
+                    <td class="mailcard-date">15 days ago</td>
                   </tr>
                   </tbody>
                 </table>
                 <!-- /.table -->
               </div>
-              <!-- /.mail-box-messages -->
+              <!-- /.mail-card-messages -->
             </div>
-            <!-- /.box-body -->
-            <div class="box-footer no-padding">
-              <div class="mailbox-controls">
+            <!-- /.card-body -->
+            <div class="card-footer no-padding">
+              <div class="mailcard-controls">
                 <!-- Check all button -->
-                <button type="button" class="btn btn-default btn-sm checkbox-toggle"><i class="fa fa-square-o"></i>
+                <button type="button" class="btn btn-default btn-sm checkcard-toggle"><i class="fa fa-square-o"></i>
                 </button>
                 <div class="btn-group">
                   <button type="button" class="btn btn-default btn-sm"><i class="fa fa-trash-o"></i></button>
@@ -284,28 +284,28 @@
   $(function () {
     //Enable iCheck plugin for checkboxes
     //iCheck for checkbox and radio inputs
-    $('.mailbox-messages input[type="checkbox"]').iCheck({
+    $('.mailcard-messages input[type="checkbox"]').iCheck({
       checkboxClass: 'icheckbox_flat-blue',
       radioClass: 'iradio_flat-blue'
     });
 
     //Enable check and uncheck all functionality
-    $(".checkbox-toggle").click(function () {
+    $(".checkcard-toggle").click(function () {
       var clicks = $(this).data('clicks');
       if (clicks) {
         //Uncheck all checkboxes
-        $(".mailbox-messages input[type='checkbox']").iCheck("uncheck");
+        $(".mailcard-messages input[type='checkbox']").iCheck("uncheck");
         $(".fa", this).removeClass("fa-check-square-o").addClass('fa-square-o');
       } else {
         //Check all checkboxes
-        $(".mailbox-messages input[type='checkbox']").iCheck("check");
+        $(".mailcard-messages input[type='checkbox']").iCheck("check");
         $(".fa", this).removeClass("fa-square-o").addClass('fa-check-square-o');
       }
       $(this).data("clicks", !clicks);
     });
 
     //Handle starring for glyphicon and font awesome
-    $(".mailbox-star").click(function (e) {
+    $(".mailcard-star").click(function (e) {
       e.preventDefault();
       //detect type
       var $this = $(this).find("a > i");

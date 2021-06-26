@@ -15,16 +15,16 @@
         <div class="col-md-3">
           <a href="<?php echo $this->Url->build(['controller' => 'pages', 'action' => 'display', 'mailbox', 'compose']); ?>" class="btn btn-primary margin-bottom">Compose</a>
 
-          <div class="box box-solid">
-            <div class="box-header with-border">
-              <h3 class="box-title">Folders</h3>
+          <div class="box card-solid">
+            <div class="card-header with-border">
+              <h3 class="card-title">Folders</h3>
 
-              <div class="box-tools">
-                <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i>
+              <div class="card-tools">
+                <button type="button" class="btn btn-card-tool" data-widget="collapse"><i class="fa fa-minus"></i>
                 </button>
               </div>
             </div>
-            <div class="box-body no-padding">
+            <div class="card-body no-padding">
               <ul class="nav nav-pills nav-stacked">
                 <li><a href="mailbox.html"><i class="fa fa-inbox"></i> Inbox
                   <span class="label label-primary pull-right">12</span></a></li>
@@ -35,49 +35,49 @@
                 <li><a href="#"><i class="fa fa-trash-o"></i> Trash</a></li>
               </ul>
             </div>
-            <!-- /.box-body -->
+            <!-- /.card-body -->
           </div>
           <!-- /. box -->
-          <div class="box box-solid">
-            <div class="box-header with-border">
-              <h3 class="box-title">Labels</h3>
+          <div class="box card-solid">
+            <div class="card-header with-border">
+              <h3 class="card-title">Labels</h3>
 
-              <div class="box-tools">
-                <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i>
+              <div class="card-tools">
+                <button type="button" class="btn btn-card-tool" data-widget="collapse"><i class="fa fa-minus"></i>
                 </button>
               </div>
             </div>
-            <div class="box-body no-padding">
+            <div class="card-body no-padding">
               <ul class="nav nav-pills nav-stacked">
                 <li><a href="#"><i class="fa fa-circle-o text-red"></i> Important</a></li>
                 <li><a href="#"><i class="fa fa-circle-o text-yellow"></i> Promotions</a></li>
                 <li><a href="#"><i class="fa fa-circle-o text-light-blue"></i> Social</a></li>
               </ul>
             </div>
-            <!-- /.box-body -->
+            <!-- /.card-body -->
           </div>
           <!-- /.box -->
         </div>
         <!-- /.col -->
         <div class="col-md-9">
-          <div class="box box-primary">
-            <div class="box-header with-border">
-              <h3 class="box-title">Read Mail</h3>
+          <div class="box card-primary">
+            <div class="card-header with-border">
+              <h3 class="card-title">Read Mail</h3>
 
-              <div class="box-tools pull-right">
-                <a href="#" class="btn btn-box-tool" data-toggle="tooltip" title="Previous"><i class="fa fa-chevron-left"></i></a>
-                <a href="#" class="btn btn-box-tool" data-toggle="tooltip" title="Next"><i class="fa fa-chevron-right"></i></a>
+              <div class="card-tools pull-right">
+                <a href="#" class="btn btn-card-tool" data-toggle="tooltip" title="Previous"><i class="fa fa-chevron-left"></i></a>
+                <a href="#" class="btn btn-card-tool" data-toggle="tooltip" title="Next"><i class="fa fa-chevron-right"></i></a>
               </div>
             </div>
-            <!-- /.box-header -->
-            <div class="box-body no-padding">
-              <div class="mailbox-read-info">
+            <!-- /.card-header -->
+            <div class="card-body no-padding">
+              <div class="mailcard-read-info">
                 <h3>Message Subject Is Placed Here</h3>
                 <h5>From: help@example.com
-                  <span class="mailbox-read-time pull-right">15 Feb. 2016 11:03 PM</span></h5>
+                  <span class="mailcard-read-time pull-right">15 Feb. 2016 11:03 PM</span></h5>
               </div>
-              <!-- /.mailbox-read-info -->
-              <div class="mailbox-controls with-border text-center">
+              <!-- /.mailcard-read-info -->
+              <div class="mailcard-controls with-border text-center">
                 <div class="btn-group">
                   <button type="button" class="btn btn-default btn-sm" data-toggle="tooltip" data-container="body" title="Delete">
                     <i class="fa fa-trash-o"></i></button>
@@ -90,8 +90,8 @@
                 <button type="button" class="btn btn-default btn-sm" data-toggle="tooltip" title="Print">
                   <i class="fa fa-print"></i></button>
               </div>
-              <!-- /.mailbox-controls -->
-              <div class="mailbox-read-message">
+              <!-- /.mailcard-controls -->
+              <div class="mailcard-read-message">
                 <p>Hello John,</p>
 
                 <p>Keffiyeh blog actually fashion axe vegan, irony biodiesel. Cold-pressed hoodie chillwave put a bird
@@ -127,50 +127,50 @@
 
                 <p>Thanks,<br>Jane</p>
               </div>
-              <!-- /.mailbox-read-message -->
+              <!-- /.mailcard-read-message -->
             </div>
-            <!-- /.box-body -->
-            <div class="box-footer">
-              <ul class="mailbox-attachments clearfix">
+            <!-- /.card-body -->
+            <div class="card-footer">
+              <ul class="mailcard-attachments clearfix">
                 <li>
-                  <span class="mailbox-attachment-icon"><i class="fa fa-file-pdf-o"></i></span>
+                  <span class="mailcard-attachment-icon"><i class="fa fa-file-pdf-o"></i></span>
 
-                  <div class="mailbox-attachment-info">
-                    <a href="#" class="mailbox-attachment-name"><i class="fa fa-paperclip"></i> Sep2014-report.pdf</a>
-                        <span class="mailbox-attachment-size">
+                  <div class="mailcard-attachment-info">
+                    <a href="#" class="mailcard-attachment-name"><i class="fa fa-paperclip"></i> Sep2014-report.pdf</a>
+                        <span class="mailcard-attachment-size">
                           1,245 KB
                           <a href="#" class="btn btn-default btn-xs pull-right"><i class="fa fa-cloud-download"></i></a>
                         </span>
                   </div>
                 </li>
                 <li>
-                  <span class="mailbox-attachment-icon"><i class="fa fa-file-word-o"></i></span>
+                  <span class="mailcard-attachment-icon"><i class="fa fa-file-word-o"></i></span>
 
-                  <div class="mailbox-attachment-info">
-                    <a href="#" class="mailbox-attachment-name"><i class="fa fa-paperclip"></i> App Description.docx</a>
-                        <span class="mailbox-attachment-size">
+                  <div class="mailcard-attachment-info">
+                    <a href="#" class="mailcard-attachment-name"><i class="fa fa-paperclip"></i> App Description.docx</a>
+                        <span class="mailcard-attachment-size">
                           1,245 KB
                           <a href="#" class="btn btn-default btn-xs pull-right"><i class="fa fa-cloud-download"></i></a>
                         </span>
                   </div>
                 </li>
                 <li>
-                  <span class="mailbox-attachment-icon has-img"><?php echo $this->Html->image('photo1.png', ['alt' => 'Attachment']); ?></span>
+                  <span class="mailcard-attachment-icon has-img"><?php echo $this->Html->image('photo1.png', ['alt' => 'Attachment']); ?></span>
 
-                  <div class="mailbox-attachment-info">
-                    <a href="#" class="mailbox-attachment-name"><i class="fa fa-camera"></i> photo1.png</a>
-                        <span class="mailbox-attachment-size">
+                  <div class="mailcard-attachment-info">
+                    <a href="#" class="mailcard-attachment-name"><i class="fa fa-camera"></i> photo1.png</a>
+                        <span class="mailcard-attachment-size">
                           2.67 MB
                           <a href="#" class="btn btn-default btn-xs pull-right"><i class="fa fa-cloud-download"></i></a>
                         </span>
                   </div>
                 </li>
                 <li>
-                  <span class="mailbox-attachment-icon has-img"><?php echo $this->Html->image('photo2.png', ['alt' => 'Attachment']); ?></span>
+                  <span class="mailcard-attachment-icon has-img"><?php echo $this->Html->image('photo2.png', ['alt' => 'Attachment']); ?></span>
 
-                  <div class="mailbox-attachment-info">
-                    <a href="#" class="mailbox-attachment-name"><i class="fa fa-camera"></i> photo2.png</a>
-                        <span class="mailbox-attachment-size">
+                  <div class="mailcard-attachment-info">
+                    <a href="#" class="mailcard-attachment-name"><i class="fa fa-camera"></i> photo2.png</a>
+                        <span class="mailcard-attachment-size">
                           1.9 MB
                           <a href="#" class="btn btn-default btn-xs pull-right"><i class="fa fa-cloud-download"></i></a>
                         </span>
@@ -178,8 +178,8 @@
                 </li>
               </ul>
             </div>
-            <!-- /.box-footer -->
-            <div class="box-footer">
+            <!-- /.card-footer -->
+            <div class="card-footer">
               <div class="pull-right">
                 <button type="button" class="btn btn-default"><i class="fa fa-reply"></i> Reply</button>
                 <button type="button" class="btn btn-default"><i class="fa fa-share"></i> Forward</button>
@@ -187,7 +187,7 @@
               <button type="button" class="btn btn-default"><i class="fa fa-trash-o"></i> Delete</button>
               <button type="button" class="btn btn-default"><i class="fa fa-print"></i> Print</button>
             </div>
-            <!-- /.box-footer -->
+            <!-- /.card-footer -->
           </div>
           <!-- /. box -->
         </div>

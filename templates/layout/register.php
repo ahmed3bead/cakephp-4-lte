@@ -38,8 +38,8 @@
     <a href="<?php echo $this->Url->build(); ?>"><?php echo Configure::read('Theme.logo.large') ?></a>
   </div>
 
-  <div class="register-box-body">
-    <p class="login-box-msg">Register a new membership</p>
+  <div class="register-card-body">
+    <p class="login-card-msg">Register a new membership</p>
 
     <?php echo $this->fetch('content'); ?>
 
