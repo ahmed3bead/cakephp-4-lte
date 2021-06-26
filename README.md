@@ -59,6 +59,8 @@ public function beforeRender(EventInterface  $event)
 public function initialize()
 {
     $this->loadHelper('Form', ['className' => 'CakeLte.Form']);
+    $this->loadHelper('Paginator', ['templates' => 'CakeLte.paginator-templates']);
+
 }
 ```
 
