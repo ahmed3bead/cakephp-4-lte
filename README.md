@@ -1,4 +1,4 @@
-# CakePHP CakeLte Theme (0.0.1)
+# CakePHP AdminLTE 3 Theme (0.0.1)
 
 **What's the news**
 
