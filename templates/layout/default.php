@@ -44,6 +44,8 @@ use Cake\Core\Configure; ?>
 
       <?php echo $this->Flash->render(); ?>
       <?php echo $this->Flash->render('auth'); ?>
+      <?php echo $this->element('breadcrumb'); ?>
+
       <?php echo $this->fetch('content'); ?>
 
     </div>
@@ -87,12 +89,7 @@ use Cake\Core\Configure; ?>
   <!-- AdminLTE -->
   <?php echo $this->Html->script('CakeLte./js/adminlte.js'); ?>
 
-  <!-- OPTIONAL SCRIPTS -->
-  <?php echo $this->Html->script('CakeLte./plugins/chart.js/Chart.min'); ?>
-  <!-- AdminLTE for demo purposes -->
-  <?php echo $this->Html->script('CakeLte./js/demo.js'); ?>
-  <!-- AdminLTE dashboard demo (This is only for demo purposes) -->
-  <?php echo $this->Html->script('CakeLte./js/pages/dashboard3.js'); ?>
+
 
 
 

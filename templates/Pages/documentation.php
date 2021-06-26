@@ -153,11 +153,11 @@ AdminLTE/
           </tr>
           <tr>
             <td><code>skin-yellow</code></td>
-            <td><a href="#" data-skin="skin-yellow" class="btn btn-warning btn-xs"><i class="fa fa-eye"></i></a></td>
+            <td><a href="#" data-skin="skin-yellow" class="btn bg-gradient-primary"><i class="fa fa-eye"></i></a></td>
           </tr>
           <tr>
             <td><code>skin-yellow-light</code></td>
-            <td><a href="#" data-skin="skin-yellow-light" class="btn btn-warning btn-xs"><i class="fa fa-eye"></i></a></td>
+            <td><a href="#" data-skin="skin-yellow-light" class="btn bg-gradient-primary"><i class="fa fa-eye"></i></a></td>
           </tr>
           <tr>
             <td><code>skin-green</code></td>
@@ -177,11 +177,11 @@ AdminLTE/
           </tr>
           <tr>
             <td><code>skin-red</code></td>
-            <td><a href="#" data-skin="skin-red" class="btn btn-danger btn-xs"><i class="fa fa-eye"></i></a></td>
+            <td><a href="#" data-skin="skin-red" class="btn bg-gradient-danger"><i class="fa fa-eye"></i></a></td>
           </tr>
           <tr>
             <td><code>skin-red-light</code></td>
-            <td><a href="#" data-skin="skin-red-light" class="btn btn-danger btn-xs"><i class="fa fa-eye"></i></a></td>
+            <td><a href="#" data-skin="skin-red-light" class="btn bg-gradient-danger"><i class="fa fa-eye"></i></a></td>
           </tr>
           <tr>
             <td><code>skin-black</code></td>

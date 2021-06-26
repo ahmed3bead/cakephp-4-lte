@@ -13,7 +13,7 @@ class CakeLteView extends AppView
         $theme = $this->theme;
 
         $templatePaths = App::path(static::NAME_TEMPLATE);
-        dd( $templatePaths);
+       
         $pluginPaths = [];
 
         foreach ($templatePaths as $templateCurrent) {
@@ -41,7 +41,7 @@ class CakeLteView extends AppView
             $themePaths,
             parent::_paths($plugin, $cached)
         );
-die('$paths');
+
         return $this->_paths = $paths;
     }
 }

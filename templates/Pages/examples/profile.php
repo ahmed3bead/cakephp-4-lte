@@ -150,7 +150,7 @@
                         <input class="form-control input-sm" placeholder="Response">
                       </div>
                       <div class="col-sm-3">
-                        <button type="submit" class="btn btn-danger pull-right btn-block btn-sm">Send</button>
+                        <button type="submit" class="btn btn-danger pull-right btn-sm">Send</button>
                       </div>
                     </div>
                   </form>
@@ -235,7 +235,7 @@
                       </div>
                       <div class="timeline-footer">
                         <a class="btn btn-primary btn-xs">Read more</a>
-                        <a class="btn btn-danger btn-xs">Delete</a>
+                        <a class="btn bg-gradient-danger">Delete</a>
                       </div>
                     </div>
                   </li>
