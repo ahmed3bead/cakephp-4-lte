@@ -12,7 +12,9 @@ The CakePHP was updated version compatible to 4.2.0.
 You can install using [composer](http://getcomposer.org).
 
 ```
-composer require ahmedebead/cakelte "^0.1"
+composer require ahmed3bead/cakelte
+
+
 ```
 ### Copy Assets
 
