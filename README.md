@@ -1,4 +1,5 @@
-# CakePHP AdminLTE 3 Theme (0.3.1)
+# CakePHP AdminLTE 3 Theme
+[![Latest Stable Version](http://poser.pugx.org/ahmedebead/cakephp-4-lte/v)](https://packagist.org/packages/ahmedebead/cakephp-4-lte) [![Total Downloads](http://poser.pugx.org/ahmedebead/cakephp-4-lte/downloads)](https://packagist.org/packages/ahmedebead/cakephp-4-lte) [![Latest Unstable Version](http://poser.pugx.org/ahmedebead/cakephp-4-lte/v/unstable)](https://packagist.org/packages/ahmedebead/cakephp-4-lte) [![License](http://poser.pugx.org/ahmedebead/cakephp-4-lte/license)](https://packagist.org/packages/ahmedebead/cakephp-4-lte)
 
 ![RTL Support](https://github.com/ahmed3bead/cakephp-4-lte/blob/main/webroot/theme-images/ltr.png?raw=true)
 
