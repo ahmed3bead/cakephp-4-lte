@@ -243,7 +243,8 @@ When you configure `App.defaultLocale` to `pt_BR` this Locale is util.
 
 Added link to default page of CakePHP.
 
-![Page debug](docs/page-debug.png)
+![Depug page](https://github.com/ahmed3bead/cakephp-4-lte/blob/main/webroot/theme-images/debug.png?raw=true)
+
 
 # Contributing
 
