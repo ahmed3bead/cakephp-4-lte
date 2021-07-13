@@ -34,7 +34,7 @@ bin/cake plugin assets symlink
 
 public function bootstrap()
 {
-    $this->addPlugin('CakephpLte');
+    $this->addPlugin('CakephpLte', ['autoload' => true, 'bootstrap' => true, 'routes' => true]);
 }
 ```
 
