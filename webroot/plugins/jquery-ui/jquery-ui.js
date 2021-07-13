@@ -4306,7 +4306,7 @@
     //>>demos: http://jqueryui.com/accordion/
     //>>css.structure: ../../themes/base/core.css
     //>>css.structure: ../../themes/base/accordion.css
-    //>>css.theme: ../../themes/base/CakeLteTheme.css
+    //>>css.theme: ../../themes/base/CakephpLteTheme.css
 
 
 
@@ -4930,7 +4930,7 @@
     //>>demos: http://jqueryui.com/menu/
     //>>css.structure: ../../themes/base/core.css
     //>>css.structure: ../../themes/base/menu.css
-    //>>css.theme: ../../themes/base/CakeLteTheme.css
+    //>>css.theme: ../../themes/base/CakephpLteTheme.css
 
 
 
@@ -5582,7 +5582,7 @@
     //>>demos: http://jqueryui.com/autocomplete/
     //>>css.structure: ../../themes/base/core.css
     //>>css.structure: ../../themes/base/autocomplete.css
-    //>>css.theme: ../../themes/base/CakeLteTheme.css
+    //>>css.theme: ../../themes/base/CakephpLteTheme.css
 
 
 
@@ -6246,7 +6246,7 @@
     //>>demos: http://jqueryui.com/controlgroup/
     //>>css.structure: ../../themes/base/core.css
     //>>css.structure: ../../themes/base/controlgroup.css
-    //>>css.theme: ../../themes/base/CakeLteTheme.css
+    //>>css.theme: ../../themes/base/CakephpLteTheme.css
 
 
     var controlgroupCornerRegex = /ui-corner-([a-z]){2,6}/g;
@@ -6532,7 +6532,7 @@
     //>>css.structure: ../../themes/base/core.css
     //>>css.structure: ../../themes/base/button.css
     //>>css.structure: ../../themes/base/checkboxradio.css
-    //>>css.theme: ../../themes/base/CakeLteTheme.css
+    //>>css.theme: ../../themes/base/CakephpLteTheme.css
 
 
 
@@ -6801,7 +6801,7 @@
     //>>demos: http://jqueryui.com/button/
     //>>css.structure: ../../themes/base/core.css
     //>>css.structure: ../../themes/base/button.css
-    //>>css.theme: ../../themes/base/CakeLteTheme.css
+    //>>css.theme: ../../themes/base/CakephpLteTheme.css
 
 
 
@@ -7168,7 +7168,7 @@
     //>>demos: http://jqueryui.com/datepicker/
     //>>css.structure: ../../themes/base/core.css
     //>>css.structure: ../../themes/base/datepicker.css
-    //>>css.theme: ../../themes/base/CakeLteTheme.css
+    //>>css.theme: ../../themes/base/CakephpLteTheme.css
 
 
 
@@ -10804,7 +10804,7 @@
     //>>demos: http://jqueryui.com/resizable/
     //>>css.structure: ../../themes/base/core.css
     //>>css.structure: ../../themes/base/resizable.css
-    //>>css.theme: ../../themes/base/CakeLteTheme.css
+    //>>css.theme: ../../themes/base/CakephpLteTheme.css
 
 
 
@@ -11998,7 +11998,7 @@
     //>>demos: http://jqueryui.com/dialog/
     //>>css.structure: ../../themes/base/core.css
     //>>css.structure: ../../themes/base/dialog.css
-    //>>css.theme: ../../themes/base/CakeLteTheme.css
+    //>>css.theme: ../../themes/base/CakephpLteTheme.css
 
 
 
@@ -13396,7 +13396,7 @@
     //>>demos: http://jqueryui.com/progressbar/
     //>>css.structure: ../../themes/base/core.css
     //>>css.structure: ../../themes/base/progressbar.css
-    //>>css.theme: ../../themes/base/CakeLteTheme.css
+    //>>css.theme: ../../themes/base/CakephpLteTheme.css
 
 
 
@@ -13712,12 +13712,16 @@
                 x2 = event.pageX,
                 y2 = event.pageY;
 
-            if (x1 > x2) { tmp = x2;
+            if (x1 > x2) {
+                tmp = x2;
                 x2 = x1;
-                x1 = tmp; }
-            if (y1 > y2) { tmp = y2;
+                x1 = tmp;
+            }
+            if (y1 > y2) {
+                tmp = y2;
                 y2 = y1;
-                y1 = tmp; }
+                y1 = tmp;
+            }
             this.helper.css({ left: x1, top: y1, width: x2 - x1, height: y2 - y1 });
 
             this.selectees.each(function() {
@@ -13859,7 +13863,7 @@
     //>>demos: http://jqueryui.com/selectmenu/
     //>>css.structure: ../../themes/base/core.css
     //>>css.structure: ../../themes/base/selectmenu.css, ../../themes/base/button.css
-    //>>css.theme: ../../themes/base/CakeLteTheme.css
+    //>>css.theme: ../../themes/base/CakephpLteTheme.css
 
 
 
@@ -14523,7 +14527,7 @@
     //>>demos: http://jqueryui.com/slider/
     //>>css.structure: ../../themes/base/core.css
     //>>css.structure: ../../themes/base/slider.css
-    //>>css.theme: ../../themes/base/CakeLteTheme.css
+    //>>css.theme: ../../themes/base/CakephpLteTheme.css
 
 
 
@@ -16801,7 +16805,7 @@
     //>>demos: http://jqueryui.com/spinner/
     //>>css.structure: ../../themes/base/core.css
     //>>css.structure: ../../themes/base/spinner.css
-    //>>css.theme: ../../themes/base/CakeLteTheme.css
+    //>>css.theme: ../../themes/base/CakephpLteTheme.css
 
 
 
@@ -17360,7 +17364,7 @@
     //>>demos: http://jqueryui.com/tabs/
     //>>css.structure: ../../themes/base/core.css
     //>>css.structure: ../../themes/base/tabs.css
-    //>>css.theme: ../../themes/base/CakeLteTheme.css
+    //>>css.theme: ../../themes/base/CakephpLteTheme.css
 
 
 
@@ -18267,7 +18271,7 @@
     //>>demos: http://jqueryui.com/tooltip/
     //>>css.structure: ../../themes/base/core.css
     //>>css.structure: ../../themes/base/tooltip.css
-    //>>css.theme: ../../themes/base/CakeLteTheme.css
+    //>>css.theme: ../../themes/base/CakephpLteTheme.css
 
 
 

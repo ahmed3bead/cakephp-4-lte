@@ -11,19 +11,19 @@
     <!-- Tell the browser to be responsive to screen width -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Font Awesome -->
-    <?php echo $this->Html->css('CakeLte./plugins/fontawesome-free/css/all.min.css'); ?>
+    <?php echo $this->Html->css('CakephpLte./plugins/fontawesome-free/css/all.min.css'); ?>
     <!-- Ionicons -->
     <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
     <!-- Theme style -->
-    <?php echo $this->Html->css('CakeLte./css/adminlte.min.css'); ?>
+    <?php echo $this->Html->css('CakephpLte./css/adminlte.min.css'); ?>
 
     <!-- Google Font: Source Sans Pro -->
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
 
     <!-- Bootstrap 4 rtl -->
-    <?php echo $this->Html->css('CakeLte./css/bootstrap.rtl.min.css'); ?>
+    <?php echo $this->Html->css('CakephpLte./css/bootstrap.rtl.min.css'); ?>
     <!-- Custom CSS rtl -->
-    <?php echo $this->Html->css('CakeLte./css/rtl.css'); ?>
+    <?php echo $this->Html->css('CakephpLte./css/rtl.css'); ?>
 
 </head>
 
@@ -69,7 +69,7 @@
                         <a href="#" class="dropdown-item">
                             <!-- Message Start -->
                             <div class="media">
-                                <?= $this->Html->image('CakeLte./img/user2-160x160.jpg', ['alt' => 'User Image', 'class' => 'img-size-50 mr-3 img-circle']); ?>
+                                <?= $this->Html->image('CakephpLte./img/user2-160x160.jpg', ['alt' => 'User Image', 'class' => 'img-size-50 mr-3 img-circle']); ?>
 
                                 <div class="media-body">
                                     <h3 class="dropdown-item-title">
@@ -120,7 +120,7 @@
         <aside class="main-sidebar sidebar-dark-primary elevation-4">
             <!-- Brand Logo -->
             <a href="#" class="brand-link">
-                <?php echo $this->Html->image('CakeLte./img/aeLogo.png', ['alt' => 'CakeLte Loho', 'class' => 'animation__shake', 'height' => "60", 'width' => "60"]); ?>
+                <?php echo $this->Html->image('CakephpLte./img/aeLogo.png', ['alt' => 'CakephpLte Loho', 'class' => 'animation__shake', 'height' => "60", 'width' => "60"]); ?>
                 <span class="brand-text font-weight-light">اسم الموقع</span>
             </a>
 
@@ -129,7 +129,7 @@
                 <!-- Sidebar user panel (optional) -->
                 <div class="user-panel mt-3 pb-3 mb-3 d-flex">
                     <div class="image">
-                        <?= $this->Html->image('CakeLte./img/user2-160x160.jpg', ['alt' => 'User Image', 'class' => 'img-circle elevation-2']); ?>
+                        <?= $this->Html->image('CakephpLte./img/user2-160x160.jpg', ['alt' => 'User Image', 'class' => 'img-circle elevation-2']); ?>
                     </div>
                     <div class="info">
                         <a href="#" class="d-block">احمد عبيد</a>
@@ -286,11 +286,11 @@
 
 
     <!-- jQuery -->
-    <?php echo $this->Html->script('CakeLte./plugins/jquery/jquery.min.js'); ?>
+    <?php echo $this->Html->script('CakephpLte./plugins/jquery/jquery.min.js'); ?>
 
 
     <!-- jQuery UI 1.11.4 -->
-    <?php echo $this->Html->script('CakeLte./plugins/jquery-ui/jquery-ui.min.js'); ?>
+    <?php echo $this->Html->script('CakephpLte./plugins/jquery-ui/jquery-ui.min.js'); ?>
     <script>
         $.widget.bridge('uibutton', $.ui.button)
     </script>
@@ -298,12 +298,12 @@
 
 
     <!-- Bootstrap -->
-    <?php echo $this->Html->script('CakeLte./plugins/bootstrap/js/bootstrap.bundle.min.js'); ?>
+    <?php echo $this->Html->script('CakephpLte./plugins/bootstrap/js/bootstrap.bundle.min.js'); ?>
 
     <!-- Bootstrap 4 rtl -->
-    <?php echo $this->Html->script('CakeLte./js/bootstrap.rtl.min.js'); ?>
+    <?php echo $this->Html->script('CakephpLte./js/bootstrap.rtl.min.js'); ?>
 
-    <?php echo $this->Html->script('CakeLte./js/adminlte.js'); ?>
+    <?php echo $this->Html->script('CakephpLte./js/adminlte.js'); ?>
 
 </body>
 

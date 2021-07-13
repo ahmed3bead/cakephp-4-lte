@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title><?php echo Configure::read('CakeLteTheme.title'); ?></title>
+    <title><?php echo Configure::read('CakephpLteTheme.title'); ?></title>
     <!-- Tell the browser to be responsive to screen width -->
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
     <!-- Bootstrap 3.3.5 -->
@@ -17,7 +17,7 @@
     <?php echo $this->Html->css('AdminLTE.AdminLTE.min'); ?>
 <!-- AdminLTE Skins. Choose a skin from the css/skins
     folder instead of downloading all of them to reduce the load. -->
-    <?php echo $this->Html->css('AdminLTE.skins/skin-'. Configure::read('CakeLteTheme.skin') .'.min'); ?>
+    <?php echo $this->Html->css('AdminLTE.skins/skin-'. Configure::read('CakephpLteTheme.skin') .'.min'); ?>
 
     <?php echo $this->fetch('css'); ?>
 
@@ -31,7 +31,7 @@
 </head>
 <!-- ADD THE CLASS fixed TO GET A FIXED HEADER AND SIDEBAR LAYOUT -->
 <!-- the fixed layout is not compatible with sidebar-mini -->
-<body class="hold-transition skin-<?php echo Configure::read('CakeLteTheme.skin'); ?> fixed sidebar-mini">
+<body class="hold-transition skin-<?php echo Configure::read('CakephpLteTheme.skin'); ?> fixed sidebar-mini">
     <!-- Site wrapper -->
     <div class="wrapper">
 
@@ -39,9 +39,9 @@
             <!-- Logo -->
             <a href="<?php echo $this->Url->build('/'); ?>" class="logo">
                 <!-- mini logo for sidebar mini 50x50 pixels -->
-                <span class="logo-mini"><?php echo Configure::read('CakeLteTheme.logo.mini'); ?></span>
+                <span class="logo-mini"><?php echo Configure::read('CakephpLteTheme.logo.mini'); ?></span>
                 <!-- logo for regular state and mobile devices -->
-                <span class="logo-lg"><?php echo Configure::read('CakeLteTheme.logo.large'); ?></span>
+                <span class="logo-lg"><?php echo Configure::read('CakephpLteTheme.logo.large'); ?></span>
             </a>
             <!-- Header Navbar: style can be found in header.less -->
             <?php echo $this->element('nav-top') ?>

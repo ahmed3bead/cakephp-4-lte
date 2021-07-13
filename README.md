@@ -5,7 +5,7 @@
 
 **What's the news**
 
-The CakeLte was updated version to 3.1.0.
+The CakephpLte was updated version to 3.1.0.
 
 The CakePHP was updated version compatible to 4.2.0.
 
@@ -34,7 +34,7 @@ bin/cake plugin assets symlink
 
 public function bootstrap()
 {
-    $this->addPlugin('CakeLte');
+    $this->addPlugin('CakephpLte');
 }
 ```
 
@@ -46,7 +46,7 @@ use Cake\Event\EventInterface;
 
 public function beforeRender(EventInterface  $event)
 {
-    $this->viewBuilder()->setTheme('CakeLte');
+    $this->viewBuilder()->setTheme('CakephpLte');
 }
 ```
 
@@ -57,8 +57,8 @@ public function beforeRender(EventInterface  $event)
 
 public function initialize()
 {
-    $this->loadHelper('Form', ['className' => 'CakeLte.Form']);
-    $this->loadHelper('Paginator', ['templates' => 'CakeLte.paginator-templates']);
+    $this->loadHelper('Form', ['className' => 'CakephpLte.Form']);
+    $this->loadHelper('Paginator', ['templates' => 'CakephpLte.paginator-templates']);
 
 }
 ```
@@ -72,8 +72,8 @@ public function initialize()
 // new config/cakelte.php file
 
 return [
-    'CakeLteTheme' => [
-        'title' => 'CakeLte',
+    'CakephpLteTheme' => [
+        'title' => 'CakephpLte',
         'logo' => [
             'mini' => '<b>AE</b>LT',
             'large' => '<b>Admin</b>LTE'
@@ -102,13 +102,13 @@ Just add rtl css and js to your layout (if you overwrite it )
 ```php
 // Css
      <!-- Bootstrap 4 rtl -->
-     echo $this->Html->css('CakeLte./css/bootstrap.rtl.min.css'); 
+     echo $this->Html->css('CakephpLte./css/bootstrap.rtl.min.css'); 
      <!-- Custom CSS rtl -->
-     echo $this->Html->css('CakeLte./css/rtl.css'); 
+     echo $this->Html->css('CakephpLte./css/rtl.css'); 
 
 // JS
      <!-- Bootstrap 4 rtl -->
-     echo $this->Html->script('CakeLte./js/bootstrap.rtl.min.js'); 
+     echo $this->Html->script('CakephpLte./js/bootstrap.rtl.min.js'); 
 
 ```
 
@@ -137,7 +137,7 @@ There are 2 layout files.
 
 ### View Blocks
 
-There are 3 Blocks where you can extend your CakeLteTheme.
+There are 3 Blocks where you can extend your CakephpLteTheme.
 
 - **css**
 
@@ -148,7 +148,7 @@ There are 3 Blocks where you can extend your CakeLteTheme.
 One example is `src/Template/Pages/home.ctp`:
 
 ```php
-<?php echo $this->Html->css('CakeLte./bower_components/morris.js/morris', ['block' => 'css']); ?>
+<?php echo $this->Html->css('CakephpLte./bower_components/morris.js/morris', ['block' => 'css']); ?>
 ```
 
 - **script**
@@ -160,7 +160,7 @@ One example is `src/Template/Pages/home.ctp`:
 One example is `src/Template/Pages/home.ctp`:
 
 ```php
-<?php echo $this->Html->script('CakeLte./bower_components/morris.js/morris.min', ['block' => 'script']); ?>
+<?php echo $this->Html->script('CakephpLte./bower_components/morris.js/morris.min', ['block' => 'script']); ?>
 ```
 
 - **scriptBottom**
@@ -208,12 +208,12 @@ The theme is prepared to show Flash Messages.
 One of the better Cake features. The theme is prepared to use Bake. 
 
 ```
-bin/cake bake all user --theme CakeLte
+bin/cake bake all user --theme CakephpLte
 ```
 
 ### View
 
-- **CakeLteView**
+- **CakephpLteView**
 
 This is one the better theme feature. It change the pattern how Cake show view files.
 

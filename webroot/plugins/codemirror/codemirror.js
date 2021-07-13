@@ -43,8 +43,10 @@
 
     var presto_version = presto && userAgent.match(/Version\/(\d*\.\d*)/);
     if (presto_version) { presto_version = Number(presto_version[1]); }
-    if (presto_version && presto_version >= 15) { presto = false;
-        webkit = true; }
+    if (presto_version && presto_version >= 15) {
+        presto = false;
+        webkit = true;
+    }
     // Some browsers use the wrong event properties to signal cmd/ctrl on OS X
     var flipCtrlCmd = mac && (qtwebkit || presto && (presto_version == null || presto_version < 12.11));
     var captureRightClick = gecko || (ie && ie_version >= 9);
@@ -139,8 +141,12 @@
 
     var selectInput = function(node) { node.select(); };
     if (ios) // Mobile Safari apparently has a bug where select() is broken.
-    { selectInput = function(node) { node.selectionStart = 0;
-            node.selectionEnd = node.value.length; }; } else if (ie) // Suppress mysterious IE10 errors
+    {
+        selectInput = function(node) {
+            node.selectionStart = 0;
+            node.selectionEnd = node.value.length;
+        };
+    } else if (ie) // Suppress mysterious IE10 errors
     { selectInput = function(node) { try { node.select(); } catch (_e) {} }; }
 
     function bind(f) {
@@ -488,8 +494,10 @@
                     for (++i$7; i$7 < len && types[i$7] != "L"; ++i$7) {}
                     for (var j$2 = pos; j$2 < i$7;) {
                         if (countsAsNum.test(types[j$2])) {
-                            if (pos < j$2) { order.splice(at, 0, new BidiSpan(1, pos, j$2));
-                                at += isRTL; }
+                            if (pos < j$2) {
+                                order.splice(at, 0, new BidiSpan(1, pos, j$2));
+                                at += isRTL;
+                            }
                             var nstart = j$2;
                             for (++j$2; j$2 < i$7 && countsAsNum.test(types[j$2]); ++j$2) {}
                             order.splice(at, 0, new BidiSpan(2, nstart, j$2));
@@ -612,8 +620,10 @@
         return e.defaultPrevented != null ? e.defaultPrevented : e.returnValue == false
     }
 
-    function e_stop(e) { e_preventDefault(e);
-        e_stopPropagation(e); }
+    function e_stop(e) {
+        e_preventDefault(e);
+        e_stopPropagation(e);
+    }
 
     function e_target(e) { return e.target || e.srcElement }
 
@@ -1333,8 +1343,11 @@
     // left (we don't store arrays for lines without spans).
     function removeMarkedSpan(spans, span) {
         var r;
-        for (var i = 0; i < spans.length; ++i) { if (spans[i] != span) {
-                (r || (r = [])).push(spans[i]); } }
+        for (var i = 0; i < spans.length; ++i) {
+            if (spans[i] != span) {
+                (r || (r = [])).push(spans[i]);
+            }
+        }
         return r
     }
     // Add a span to a line.
@@ -1422,12 +1435,14 @@
                     if (!found$1) {
                         span$1.from = offset;
                         if (sameLine) {
-                            (first || (first = [])).push(span$1); }
+                            (first || (first = [])).push(span$1);
+                        }
                     }
                 } else {
                     span$1.from += offset;
                     if (sameLine) {
-                        (first || (first = [])).push(span$1); }
+                        (first || (first = [])).push(span$1);
+                    }
                 }
             }
         }
@@ -1443,7 +1458,8 @@
             if (gap > 0 && first) {
                 for (var i$2 = 0; i$2 < first.length; ++i$2) {
                     if (first[i$2].to == null) {
-                        (gapMarkers || (gapMarkers = [])).push(new MarkedSpan(first[i$2].marker, null, null)); }
+                        (gapMarkers || (gapMarkers = [])).push(new MarkedSpan(first[i$2].marker, null, null));
+                    }
                 }
             }
             for (var i$3 = 0; i$3 < gap; ++i$3) { newMarkers.push(gapMarkers); }
@@ -1471,7 +1487,8 @@
                 for (var i = 0; i < line.markedSpans.length; ++i) {
                     var mark = line.markedSpans[i].marker;
                     if (mark.readOnly && (!markers || indexOf(markers, mark) == -1)) {
-                        (markers || (markers = [])).push(mark); }
+                        (markers || (markers = [])).push(mark);
+                    }
                 }
             }
         });
@@ -1994,14 +2011,17 @@
                         if (m.css) { css = (css ? css + ";" : "") + m.css; }
                         if (m.startStyle && sp.from == pos) { spanStartStyle += " " + m.startStyle; }
                         if (m.endStyle && sp.to == nextChange) {
-                            (endStyles || (endStyles = [])).push(m.endStyle, sp.to); }
+                            (endStyles || (endStyles = [])).push(m.endStyle, sp.to);
+                        }
                         // support for the old title property
                         // https://github.com/codemirror/CodeMirror/pull/5673
                         if (m.title) {
-                            (attributes || (attributes = {})).title = m.title; }
+                            (attributes || (attributes = {})).title = m.title;
+                        }
                         if (m.attributes) {
                             for (var attr in m.attributes) {
-                                (attributes || (attributes = {}))[attr] = m.attributes[attr]; }
+                                (attributes || (attributes = {}))[attr] = m.attributes[attr];
+                            }
                         }
                         if (m.collapsed && (!collapsed || compareCollapsedMarkers(collapsed.marker, m) < 0)) { collapsed = sp; }
                     } else if (sp.from > pos && nextChange > sp.from) {
@@ -2033,8 +2053,11 @@
                         builder.addToken(builder, tokenText, style ? style + spanStyle : spanStyle,
                             spanStartStyle, pos + tokenText.length == nextChange ? spanEndStyle : "", css, attributes);
                     }
-                    if (end >= upto) { text = text.slice(upto - pos);
-                        pos = upto; break }
+                    if (end >= upto) {
+                        text = text.slice(upto - pos);
+                        pos = upto;
+                        break
+                    }
                     pos = end;
                     spanStartStyle = "";
                 }
@@ -2173,8 +2196,10 @@
         var cls = lineView.bgClass ? lineView.bgClass + " " + (lineView.line.bgClass || "") : lineView.line.bgClass;
         if (cls) { cls += " CodeMirror-linebackground"; }
         if (lineView.background) {
-            if (cls) { lineView.background.className = cls; } else { lineView.background.parentNode.removeChild(lineView.background);
-                lineView.background = null; }
+            if (cls) { lineView.background.className = cls; } else {
+                lineView.background.parentNode.removeChild(lineView.background);
+                lineView.background = null;
+            }
         } else if (cls) {
             var wrap = ensureLineWrapped(lineView);
             lineView.background = wrap.insertBefore(elt("div", null, cls), wrap.firstChild);
@@ -2585,8 +2610,10 @@
             bottom: bot
         };
         if (!rect.left && !rect.right) { result.bogus = true; }
-        if (!cm.options.singleCursorHeightPerLine) { result.rtop = rtop;
-            result.rbottom = rbot; }
+        if (!cm.options.singleCursorHeightPerLine) {
+            result.rtop = rtop;
+            result.rbottom = rbot;
+        }
 
         return result
     }
@@ -3050,8 +3077,10 @@
 
         var x, y, space = display.lineSpace.getBoundingClientRect();
         // Fails unpredictably on IE[67] when mouse is dragged around quickly.
-        try { x = e.clientX - space.left;
-            y = e.clientY - space.top; } catch (e$1) { return null }
+        try {
+            x = e.clientX - space.left;
+            y = e.clientY - space.top;
+        } catch (e$1) { return null }
         var coords = coordsChar(cm, x, y),
             line;
         if (forRect && coords.xRel > 0 && (line = getLine(cm.doc, coords.line).text).length == coords.ch) {
@@ -4391,8 +4420,10 @@
         for (var i = 0; i < gutters.length; i++) {
             var name = gutters[i],
                 style = null;
-            if (typeof name != "string") { style = name.style;
-                name = name.className; }
+            if (typeof name != "string") {
+                style = name.style;
+                name = name.className;
+            }
             if (name == "CodeMirror-linenumbers") {
                 if (!lineNumbers) { continue } else { sawLineNumbers = true; }
             }
@@ -4477,8 +4508,10 @@
         d.wrapper = elt("div", [d.scrollbarFiller, d.gutterFiller, d.scroller], "CodeMirror");
 
         // Work around IE7 z-index bug (not perfect, hence IE7 not really being supported)
-        if (ie && ie_version < 8) { d.gutters.style.zIndex = -1;
-            d.scroller.style.paddingRight = 0; }
+        if (ie && ie_version < 8) {
+            d.gutters.style.zIndex = -1;
+            d.scroller.style.paddingRight = 0;
+        }
         if (!webkit && !(gecko && mobile)) { d.scroller.draggable = true; }
 
         if (place) {
@@ -5051,7 +5084,8 @@
             n = 0;
         doc.iter(Math.max(doc.first, from), Math.min(doc.first + doc.size, to), function(line) {
             if (line.markedSpans) {
-                (existing || (existing = change["spans_" + doc.id] = {}))[n] = line.markedSpans; }
+                (existing || (existing = change["spans_" + doc.id] = {}))[n] = line.markedSpans;
+            }
             ++n;
         });
     }
@@ -5598,7 +5632,8 @@
             };
             if (changeHandler) { signalLater(cm, "change", cm, obj); }
             if (changesHandler) {
-                (cm.curOp.changeObjs || (cm.curOp.changeObjs = [])).push(obj); }
+                (cm.curOp.changeObjs || (cm.curOp.changeObjs = [])).push(obj);
+            }
         }
         cm.display.selForContextMenu = null;
     }
@@ -5608,7 +5643,8 @@
 
         if (!to) { to = from; }
         if (cmp(to, from) < 0) {
-            (assign = [to, from], from = assign[0], to = assign[1]); }
+            (assign = [to, from], from = assign[0], to = assign[1]);
+        }
         if (typeof code == "string") { code = doc.splitLines(code); }
         makeChange(doc, { from: from, to: to, text: code, origin: origin });
     }
@@ -5636,8 +5672,10 @@
             var sub = array[i],
                 ok = true;
             if (sub.ranges) {
-                if (!sub.copied) { sub = array[i] = sub.deepCopy();
-                    sub.copied = true; }
+                if (!sub.copied) {
+                    sub = array[i] = sub.deepCopy();
+                    sub.copied = true;
+                }
                 for (var j = 0; j < sub.ranges.length; j++) {
                     rebaseHistSelSingle(sub.ranges[j].anchor, from, to, diff);
                     rebaseHistSelSingle(sub.ranges[j].head, from, to, diff);
@@ -5766,8 +5804,10 @@
                         oldHeight = child.height;
                     child.removeInner(at, rm);
                     this.height -= oldHeight - child.height;
-                    if (sz == rm) { this.children.splice(i--, 1);
-                        child.parent = null; }
+                    if (sz == rm) {
+                        this.children.splice(i--, 1);
+                        child.parent = null;
+                    }
                     if ((n -= rm) == 0) { break }
                     at = 0;
                 } else { at -= sz; }
@@ -6051,7 +6091,8 @@
         if (!this.lines.length && this.doc.cm) {
             var op = this.doc.cm.curOp;
             if (!op.maybeHiddenMarkers || indexOf(op.maybeHiddenMarkers, this) == -1) {
-                (op.maybeUnhiddenMarkers || (op.maybeUnhiddenMarkers = [])).push(this); }
+                (op.maybeUnhiddenMarkers || (op.maybeUnhiddenMarkers = [])).push(this);
+            }
         }
         this.lines.push(line);
     };
@@ -7555,8 +7596,11 @@
         if (eventInWidget(cm.display, e) || signalDOMEvent(cm, e) || e.ctrlKey && !e.altKey || mac && e.metaKey) { return }
         var keyCode = e.keyCode,
             charCode = e.charCode;
-        if (presto && keyCode == lastStoppedKey) { lastStoppedKey = null;
-            e_preventDefault(e); return }
+        if (presto && keyCode == lastStoppedKey) {
+            lastStoppedKey = null;
+            e_preventDefault(e);
+            return
+        }
         if ((presto && (!e.which || e.which < 10)) && handleKeyBinding(cm, e)) { return }
         var ch = String.fromCharCode(charCode == null ? keyCode : charCode);
         // Some browsers fire keypress events for backspace
@@ -7702,8 +7746,12 @@
                 e_preventDefault(e);
                 if (!behavior.addNew) { extendSelection(cm.doc, pos, null, null, behavior.extend); }
                 // Work around unexplainable focus problem in IE9 (#2127) and Chrome (#3081)
-                if ((webkit && !safari) || ie && ie_version == 9) { setTimeout(function() { display.wrapper.ownerDocument.body.focus({ preventScroll: true });
-                        display.input.focus(); }, 20); } else { display.input.focus(); }
+                if ((webkit && !safari) || ie && ie_version == 9) {
+                    setTimeout(function() {
+                        display.wrapper.ownerDocument.body.focus({ preventScroll: true });
+                        display.input.focus();
+                    }, 20);
+                } else { display.input.focus(); }
             }
         });
         var mouseMove = function(e2) {
@@ -7906,8 +7954,10 @@
             mX = e.touches[0].clientX;
             mY = e.touches[0].clientY;
         } else {
-            try { mX = e.clientX;
-                mY = e.clientY; } catch (e$1) { return false }
+            try {
+                mX = e.clientX;
+                mY = e.clientY;
+            } catch (e$1) { return false }
         }
         if (mX >= Math.floor(cm.display.gutters.getBoundingClientRect().right)) { return false }
         if (prevent) { e_preventDefault(e); }
@@ -7951,7 +8001,7 @@
 
     function themeChanged(cm) {
         cm.display.wrapper.className = cm.display.wrapper.className.replace(/\s*cm-s-\S+/g, "") +
-            cm.options.CakeLteTheme.replace(/(^|\s)\s*/g, " cm-s-");
+            cm.options.CakephpLteTheme.replace(/(^|\s)\s*/g, " cm-s-");
         clearCaches(cm);
     }
 
@@ -8313,8 +8363,12 @@
 
         d.dragFunctions = {
             enter: function(e) { if (!signalDOMEvent(cm, e)) { e_stop(e); } },
-            over: function(e) { if (!signalDOMEvent(cm, e)) { onDragOver(cm, e);
-                    e_stop(e); } },
+            over: function(e) {
+                if (!signalDOMEvent(cm, e)) {
+                    onDragOver(cm, e);
+                    e_stop(e);
+                }
+            },
             start: function(e) { return onDragStart(cm, e); },
             drop: operation(cm, onDrop),
             leave: function(e) { if (!signalDOMEvent(cm, e)) { clearDragCursor(cm); } }
@@ -8375,8 +8429,12 @@
 
         var indentString = "",
             pos = 0;
-        if (cm.options.indentWithTabs) { for (var i = Math.floor(indentation / tabSize); i; --i) { pos += tabSize;
-                indentString += "\t"; } }
+        if (cm.options.indentWithTabs) {
+            for (var i = Math.floor(indentation / tabSize); i; --i) {
+                pos += tabSize;
+                indentString += "\t";
+            }
+        }
         if (pos < indentation) { indentString += spaceStr(indentation - pos); }
 
         if (indentString != curSpaceString) {
@@ -8535,8 +8593,10 @@
 
         CodeMirror.prototype = {
             constructor: CodeMirror,
-            focus: function() { window.focus();
-                this.display.input.focus(); },
+            focus: function() {
+                window.focus();
+                this.display.input.focus();
+            },
 
             setOption: function(option, value) {
                 var options = this.options,
@@ -8707,8 +8767,10 @@
                     lineObj;
                 if (typeof line == "number") {
                     var last = this.doc.first + this.doc.size - 1;
-                    if (line < this.doc.first) { line = this.doc.first; } else if (line > last) { line = last;
-                        end = true; }
+                    if (line < this.doc.first) { line = this.doc.first; } else if (line > last) {
+                        line = last;
+                        end = true;
+                    }
                     lineObj = getLine(this.doc, line);
                 } else {
                     lineObj = line;
@@ -8765,8 +8827,10 @@
 
             findPosH: function(from, amount, unit, visually) {
                 var dir = 1;
-                if (amount < 0) { dir = -1;
-                    amount = -amount; }
+                if (amount < 0) {
+                    dir = -1;
+                    amount = -amount;
+                }
                 var cur = clipPos(this.doc, from);
                 for (var i = 0; i < amount; ++i) {
                     cur = findPosH(this.doc, cur, dir, unit, visually);
@@ -8797,8 +8861,10 @@
             findPosV: function(from, amount, unit, goalColumn) {
                 var dir = 1,
                     x = goalColumn;
-                if (amount < 0) { dir = -1;
-                    amount = -amount; }
+                if (amount < 0) {
+                    dir = -1;
+                    amount = -amount;
+                }
                 var cur = clipPos(this.doc, from);
                 for (var i = 0; i < amount; ++i) {
                     var coords = cursorCoords(this, cur, "div");
@@ -9022,9 +9088,11 @@
                     "p";
                 if (group && !first && !type) { type = "s"; }
                 if (sawType && sawType != type) {
-                    if (dir < 0) { dir = 1;
+                    if (dir < 0) {
+                        dir = 1;
                         moveOnce();
-                        pos.sticky = "after"; }
+                        pos.sticky = "after";
+                    }
                     break
                 }
 
@@ -9360,11 +9428,15 @@
         var newText = cm.doc.splitLines(domTextBetween(cm, fromNode, toNode, fromLine, toLine));
         var oldText = getBetween(cm.doc, Pos(fromLine, 0), Pos(toLine, getLine(cm.doc, toLine).text.length));
         while (newText.length > 1 && oldText.length > 1) {
-            if (lst(newText) == lst(oldText)) { newText.pop();
+            if (lst(newText) == lst(oldText)) {
+                newText.pop();
                 oldText.pop();
-                toLine--; } else if (newText[0] == oldText[0]) { newText.shift();
+                toLine--;
+            } else if (newText[0] == oldText[0]) {
+                newText.shift();
                 oldText.shift();
-                fromLine++; } else { break }
+                fromLine++;
+            } else { break }
         }
 
         var cutFront = 0,
@@ -9812,9 +9884,13 @@
 
         function p() {
             var changed = input.poll();
-            if (!changed && !missed) { missed = true;
-                input.polling.set(60, p); } else { input.pollingFast = false;
-                input.slowPoll(); }
+            if (!changed && !missed) {
+                missed = true;
+                input.polling.set(60, p);
+            } else {
+                input.pollingFast = false;
+                input.slowPoll();
+            }
         }
         input.polling.set(20, p);
     };

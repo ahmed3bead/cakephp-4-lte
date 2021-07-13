@@ -1,7 +1,7 @@
 <?php
 declare(strict_types=1);
 
-namespace CakeLte;
+namespace CakephpLte;
 
 use Cake\Core\BasePlugin;
 use Cake\Core\PluginApplicationInterface;
@@ -9,7 +9,7 @@ use Cake\Http\MiddlewareQueue;
 use Cake\Routing\RouteBuilder;
 
 /**
- * Plugin for CakeLte
+ * Plugin for CakephpLte
  */
 class Plugin extends BasePlugin
 {
@@ -41,7 +41,7 @@ class Plugin extends BasePlugin
     public function routes(RouteBuilder $routes): void
     {
         $routes->plugin(
-            'CakeLte',
+            'CakephpLte',
             ['path' => '/cake-lte'],
             function (RouteBuilder $builder) {
                 // Add custom routes here

@@ -1,11 +1,11 @@
 <?php
-namespace CakeLte\View;
+namespace CakephpLte\View;
 
 use \App\View\AppView;
 use \Cake\Core\App;
 use \Cake\Utility\Inflector;
 
-class CakeLteView extends AppView
+class CakephpLteView extends AppView
 {
     protected function _paths(?string $plugin = null, bool $cached = true): array
     {

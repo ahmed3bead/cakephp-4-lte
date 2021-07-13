@@ -8,21 +8,21 @@ use Cake\Core\Configure; ?>
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title><?php echo Configure::read('CakeLteCakeLteTheme.title'); ?> | <?php echo $this->fetch('title'); ?></title>
+  <title><?php echo Configure::read('CakephpLteCakephpLteTheme.title'); ?> | <?php echo $this->fetch('title'); ?></title>
 
   <!-- Google Font: Source Sans Pro -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
   <!-- Font Awesome Icons -->
-  <?php echo $this->Html->css('CakeLte./plugins/fontawesome-free/css/all.min.css'); ?>
+  <?php echo $this->Html->css('CakephpLte./plugins/fontawesome-free/css/all.min.css'); ?>
   <!-- IonIcons -->
   <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
   <!-- Theme style -->
-  <?php echo $this->Html->css('CakeLte./css/adminlte.min.css'); ?>
+  <?php echo $this->Html->css('CakephpLte./css/adminlte.min.css'); ?>
 
   <!-- Bootstrap 4 rtl -->
-  <?php echo $this->Html->css('CakeLte./css/bootstrap.rtl.min.css'); ?>
+  <?php echo $this->Html->css('CakephpLte./css/bootstrap.rtl.min.css'); ?>
   <!-- Custom CSS rtl -->
-  <?php echo $this->Html->css('CakeLte./css/rtl.css'); ?>
+  <?php echo $this->Html->css('CakephpLte./css/rtl.css'); ?>
 
   <?php echo $this->fetch('css'); ?>
 
@@ -33,7 +33,7 @@ use Cake\Core\Configure; ?>
 
     <!-- Preloader -->
     <div class="preloader flex-column justify-content-center align-items-center">
-      <?php echo $this->Html->image('CakeLte./img/aeLogo.png', ['alt' => 'CakeLte Loho', 'class' => 'animation__shake', 'height' => "60", 'width' => "60"]); ?>
+      <?php echo $this->Html->image('CakephpLte./img/aeLogo.png', ['alt' => 'CakephpLte Loho', 'class' => 'animation__shake', 'height' => "60", 'width' => "60"]); ?>
 
     </div>
 
@@ -68,11 +68,11 @@ use Cake\Core\Configure; ?>
 
 
     <!-- jQuery -->
-    <?php echo $this->Html->script('CakeLte./plugins/jquery/jquery.min.js'); ?>
+    <?php echo $this->Html->script('CakephpLte./plugins/jquery/jquery.min.js'); ?>
 
 
     <!-- jQuery UI 1.11.4 -->
-    <?php echo $this->Html->script('CakeLte./plugins/jquery-ui/jquery-ui.min.js'); ?>
+    <?php echo $this->Html->script('CakephpLte./plugins/jquery-ui/jquery-ui.min.js'); ?>
 
 
     <!-- Resolve conflict in jQuery UI tooltip with Bootstrap tooltip -->
@@ -80,13 +80,13 @@ use Cake\Core\Configure; ?>
 
 
     <!-- Bootstrap -->
-    <?php echo $this->Html->script('CakeLte./plugins/bootstrap/js/bootstrap.bundle.min.js'); ?>
+    <?php echo $this->Html->script('CakephpLte./plugins/bootstrap/js/bootstrap.bundle.min.js'); ?>
 
     <!-- Bootstrap 4 rtl -->
-    <?php echo $this->Html->script('CakeLte./js/bootstrap.rtl.min.js'); ?>
+    <?php echo $this->Html->script('CakephpLte./js/bootstrap.rtl.min.js'); ?>
 
     <!-- AdminLTE -->
-    <?php echo $this->Html->script('CakeLte./js/adminlte.js'); ?>
+    <?php echo $this->Html->script('CakephpLte./js/adminlte.js'); ?>
 
     <?php echo $this->fetch('script'); ?>
 
