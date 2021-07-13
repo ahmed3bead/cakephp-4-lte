@@ -7,7 +7,7 @@ use Cake\Core\Configure; ?>
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title><?php echo Configure::read('Theme.title'); ?> | <?php echo $this->fetch('title'); ?></title>
+  <title><?php echo Configure::read('CakeLteTheme.title'); ?> | <?php echo $this->fetch('title'); ?></title>
 
 
   <?php echo $this->Html->css('https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback'); ?>
@@ -24,7 +24,7 @@ use Cake\Core\Configure; ?>
     <!-- /.login-logo -->
     <div class="card card-outline card-primary">
       <div class="card-header text-center">
-        <a class="h1" href="<?php echo $this->Url->build(); ?>"><?php echo Configure::read('CakeLteTheme.logo.large') ?></a>
+        <a class="h1" href="<?php echo $this->Url->build(); ?>"><?php echo Configure::read('CakeLteCakeLteTheme.logo.large') ?></a>
       </div>
       <div class="card-body">
         <p class="login-box-msg">Sign in to start your session</p>

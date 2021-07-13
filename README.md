@@ -13,8 +13,6 @@ You can install using [composer](http://getcomposer.org).
 
 ```
 composer require ahmed3bead/cakelte
-
-
 ```
 ### Copy Assets
 
@@ -22,9 +20,7 @@ After above command Run this command
 
 
 ```
-
 bin/cake plugin assets symlink
-
 ```
 
 
@@ -70,7 +66,7 @@ public function initialize()
 // new config/cakelte.php file
 
 return [
-    'Theme' => [
+    'CakeLteTheme' => [
         'title' => 'CakeLte',
         'logo' => [
             'mini' => '<b>AE</b>LT',
@@ -114,7 +110,7 @@ There are 10 layout files.
 
 ### View Blocks
 
-There are 3 Blocks where you can extend your theme.
+There are 3 Blocks where you can extend your CakeLteTheme.
 
 - **css**
 

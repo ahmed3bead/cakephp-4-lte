@@ -8,7 +8,7 @@ use Cake\Core\Configure; ?>
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title><?php echo Configure::read('Theme.title'); ?> | <?php echo $this->fetch('title'); ?></title>
+  <title><?php echo Configure::read('CakeLteTheme.title'); ?> | <?php echo $this->fetch('title'); ?></title>
   <!-- Tell the browser to be responsive to screen width -->
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
   <!-- Bootstrap 3.3.7 -->
@@ -40,13 +40,13 @@ use Cake\Core\Configure; ?>
 
 
     <div class="lockscreen-logo">
-      <img width="150" src="<?php echo Configure::read('CakeLteTheme.logo.image') ?>" alt="<?php echo Configure::read('CakeLteTheme.title') ?>" class="src">
+      <img width="150" src="<?php echo Configure::read('CakeLteCakeLteTheme.logo.image') ?>" alt="<?php echo Configure::read('CakeLteCakeLteTheme.title') ?>" class="src">
     </div>
 
   
     <!-- User name -->
     <div class="lockscreen-name">
-      <h1><?php echo Configure::read('CakeLteTheme.title') ?></h1>
+      <h1><?php echo Configure::read('CakeLteCakeLteTheme.title') ?></h1>
       <a href="<?php echo $this->Url->build('/admin'); ?>"><span>Admin Area</span></a> | 
       <a href="<?php echo $this->Url->build('/call-center'); ?>"><span>Call Center</span></a> | 
       <a href="#<?php //echo $this->Url->build('/technical-support'); ?>"><span>Technical Support</span></a>  
