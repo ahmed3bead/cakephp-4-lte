@@ -121,26 +121,19 @@ $this->layout = 'rtl';
 
 
 
-# Customize Layout
 
-# TODO
 
 # What's the features
 
 ### Layouts
 
-There are 10 layout files.
+There are 2 layout files.
 
-- boxed
-- collapsed
+
 - default **it's the main layout**
-- documentation
-- fixed
-- lockscreen
-- login
-- print
-- register
-- top
+- rtl
+
+### RTL Support
 
 ### View Blocks
 
