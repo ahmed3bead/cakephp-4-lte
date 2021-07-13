@@ -259,7 +259,7 @@
                     <!-- content here -->
 
 
-                    
+
 
                 </div><!-- /.container-fluid -->
             </section>
@@ -295,13 +295,13 @@
         $.widget.bridge('uibutton', $.ui.button)
     </script>
 
-    <!-- Bootstrap 4 rtl -->
-    <?php echo $this->Html->script('CakeLte./js/bootstrap.rtl.min.js'); ?>
+
 
     <!-- Bootstrap -->
     <?php echo $this->Html->script('CakeLte./plugins/bootstrap/js/bootstrap.bundle.min.js'); ?>
 
-
+    <!-- Bootstrap 4 rtl -->
+    <?php echo $this->Html->script('CakeLte./js/bootstrap.rtl.min.js'); ?>
 
     <?php echo $this->Html->script('CakeLte./js/adminlte.js'); ?>
 

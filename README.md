@@ -1,4 +1,7 @@
-# CakePHP AdminLTE 3 Theme (0.0.1)
+# CakePHP AdminLTE 3 Theme (0.0.2)
+
+![RTL Support](https://github.com/ahmed3bead/cakephp-4-lte/blob/main/webroot/theme-images/ltr.png?raw=true)
+
 
 **What's the news**
 
@@ -60,6 +63,9 @@ public function initialize()
 }
 ```
 
+
+
+
 ### Configure
 
 ```php
@@ -86,6 +92,34 @@ return [
 
 Configure::load('cakelte', 'default');
 ```
+# RTL Support
+
+![RTL Support](https://github.com/ahmed3bead/cakephp-4-lte/blob/main/webroot/theme-images/rtl.png?raw=true)
+
+
+Just add rtl css and js to your layout (if you overwrite it )
+
+```php
+// Css
+     <!-- Bootstrap 4 rtl -->
+     echo $this->Html->css('CakeLte./css/bootstrap.rtl.min.css'); 
+     <!-- Custom CSS rtl -->
+     echo $this->Html->css('CakeLte./css/rtl.css'); 
+
+// JS
+     <!-- Bootstrap 4 rtl -->
+     echo $this->Html->script('CakeLte./js/bootstrap.rtl.min.js'); 
+
+```
+
+or use rtl layout
+
+```php
+$this->layout = 'rtl';
+
+```
+
+
 
 # Customize Layout
 
