@@ -1,13 +1,13 @@
 {
-    "name": "ahmedebead/cakelte",
-    "description": "CakePHP 4.x AdminLTE CakeLteTheme.",
+    "name": "ahmedebead/cakephp-4-lte",
+    "description": "CakePHP 4.x AdminLTE Theme.",
     "type": "cakephp-plugin",
     "keywords": [
         "cakephp",
         "templates",
         "plugin"
     ],
-    "homepage": "https://github.com/ahmed3bead/cakelte",
+    "homepage": "https://github.com/ahmed3bead/cakephp-4-lte",
     "license": "MIT",
     "authors": [{
         "name": "Ahmed Ebead",
@@ -24,17 +24,17 @@
     },
     "autoload": {
         "psr-4": {
-            "CakeLte\\": "src/"
+            "cakephp-4-lte\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "CakeLte\\Test\\": "tests/",
+            "cakephp-4-lte\\Test\\": "tests/",
             "Cake\\Test\\": "vendor/cakephp/cakephp/tests/"
         }
     },
     "support": {
-        "issues": "https://github.com/ahmed3bead/cakelte/issues",
-        "source": "https://github.com/ahmed3bead/cakelte"
+        "issues": "https://github.com/ahmed3bead/cakephp-4-lte/issues",
+        "source": "https://github.com/ahmed3bead/cakephp-4-lte"
     }
 }
