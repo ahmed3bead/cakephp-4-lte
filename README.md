@@ -47,6 +47,7 @@ use Cake\Event\EventInterface;
 public function beforeRender(EventInterface  $event)
 {
     $this->viewBuilder()->setTheme('CakephpLte');
+    $this->viewBuilder()->setClassName('CakephpLte.CakephpLte');
 }
 ```
 
