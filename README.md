@@ -69,7 +69,7 @@ public function initialize()
 ### Configure
 
 ```php
-// new config/cakelte.php file
+// new config/cakephplte.php file
 
 return [
     'CakephpLteTheme' => [
