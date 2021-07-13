@@ -15,7 +15,7 @@ The CakePHP was updated version compatible to 4.2.0.
 You can install using [composer](http://getcomposer.org).
 
 ```
-composer require ahmed3bead/cakelte
+composer require ahmedebead/cakephp-4-lte
 ```
 ### Copy Assets
 
