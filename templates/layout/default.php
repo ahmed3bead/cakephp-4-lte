@@ -60,111 +60,108 @@ use Cake\Core\Configure; ?>
 
     <!-- scripts -->
 
-    
-
-  <!-- jQuery -->
-  <?php echo $this->Html->script('CakeLte./plugins/jquery/jquery.min.js'); ?>
 
 
-<!-- jQuery UI 1.11.4 -->
-<?php echo $this->Html->script('CakeLte./plugins/jquery-ui/jquery-ui.min.js'); ?>
+    <!-- jQuery -->
+    <?php echo $this->Html->script('CakeLte./plugins/jquery/jquery.min.js'); ?>
 
 
-<!-- Resolve conflict in jQuery UI tooltip with Bootstrap tooltip -->
+    <!-- jQuery UI 1.11.4 -->
+    <?php echo $this->Html->script('CakeLte./plugins/jquery-ui/jquery-ui.min.js'); ?>
+
+
+    <!-- Resolve conflict in jQuery UI tooltip with Bootstrap tooltip -->
 
 
 
-<!-- Bootstrap -->
-<?php echo $this->Html->script('CakeLte./plugins/bootstrap/js/bootstrap.bundle.min.js'); ?>
-<!-- AdminLTE -->
-<?php echo $this->Html->script('CakeLte./js/adminlte.js'); ?>
+    <!-- Bootstrap -->
+    <?php echo $this->Html->script('CakeLte./plugins/bootstrap/js/bootstrap.bundle.min.js'); ?>
+    <!-- AdminLTE -->
+    <?php echo $this->Html->script('CakeLte./js/adminlte.js'); ?>
 
-<?php echo $this->fetch('script'); ?>
+    <?php echo $this->fetch('script'); ?>
 
-<?php echo $this->fetch('scriptBottom'); ?>
+    <?php echo $this->fetch('scriptBottom'); ?>
 
-<script>
-  
-
-  $(document).ready(function(){
-    $.widget.bridge('uibutton', $.ui.button);
+    <script>
+      $(document).ready(function() {
+        $.widget.bridge('uibutton', $.ui.button);
 
 
-      
-      var a = $('a[href="<?php echo $this->Url->build() ?>"]');
-      if (!a.parent().hasClass('treeview') && !a.parent().parent().hasClass('pagination')) {
+
+        var a = $('a[href="<?php echo $this->Url->build() ?>"]');
+        if (!a.parent().hasClass('treeview') && !a.parent().parent().hasClass('pagination')) {
           a.parent().addClass('active').parents('.treeview').addClass('active');
-      }
-      
-  });
+        }
 
-</script>
-
-
-<script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
-<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
-
-<script type="text/javascript">
-  $(function() {
+      });
+    </script>
 
 
-      var start = moment().subtract(29, 'days');
-      var end = moment();
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
 
-      <?php
-      if (isset($_GET['range_date']) && !empty($_GET['range_date'])) {
+    <script type="text/javascript">
+      $(function() {
+
+
+        var start = moment().subtract(29, 'days');
+        var end = moment();
+
+        <?php
+        if (isset($_GET['range_date']) && !empty($_GET['range_date'])) {
 
           $range = explode(' - ', $_GET['range_date']);
           if (count($range) > 1) {
-              echo "start = moment('" . $range[0] . "');";
-              echo "end =  moment('" . $range[1] . "');";
+            echo "start = moment('" . $range[0] . "');";
+            echo "end =  moment('" . $range[1] . "');";
           }
 
 
-      ?>
+        ?>
 
-      <?php
-      }
+        <?php
+        }
 
-      ?>
+        ?>
 
-      function cb(start, end) {
+        function cb(start, end) {
           $('input[name="range_date"] span').html(start.format('YYYY-MM-DD') + ' - ' + end.format('YYYY-MM-DD'));
-      }
+        }
 
 
 
 
-      $('input[name="range_date"]').daterangepicker({
+        $('input[name="range_date"]').daterangepicker({
           startDate: start,
           endDate: end,
           ranges: {
-              'Today': [moment(), moment()],
-              'Yesterday': [moment().subtract(1, 'days'), moment().subtract(1, 'days')],
-              'Last 7 Days': [moment().subtract(6, 'days'), moment()],
-              'Last 30 Days': [moment().subtract(29, 'days'), moment()],
-              'This Month': [moment().startOf('month'), moment().endOf('month')],
-              'Last Month': [moment().subtract(1, 'month').startOf('month'), moment().subtract(1, 'month').endOf('month')]
+            'Today': [moment(), moment()],
+            'Yesterday': [moment().subtract(1, 'days'), moment().subtract(1, 'days')],
+            'Last 7 Days': [moment().subtract(6, 'days'), moment()],
+            'Last 30 Days': [moment().subtract(29, 'days'), moment()],
+            'This Month': [moment().startOf('month'), moment().endOf('month')],
+            'Last Month': [moment().subtract(1, 'month').startOf('month'), moment().subtract(1, 'month').endOf('month')]
           },
           locale: {
-              format: 'YYYY-MM-DD'
+            format: 'YYYY-MM-DD'
           }
-      }, cb);
+        }, cb);
 
-      cb(start, end);
+        cb(start, end);
 
 
-      $('input[name="range_date"]').on('apply.daterangepicker', function(ev, picker) {
+        $('input[name="range_date"]').on('apply.daterangepicker', function(ev, picker) {
           $(this).val(picker.startDate.format('YYYY-MM-DD') + ' - ' + picker.endDate.format('YYYY-MM-DD'));
-      });
+        });
 
-      $('input[name="range_date"]').on('cancel.daterangepicker', function(ev, picker) {
+        $('input[name="range_date"]').on('cancel.daterangepicker', function(ev, picker) {
           $(this).val('');
-      });
+        });
 
-  });
-</script>
+      });
+    </script>
 
 
 
