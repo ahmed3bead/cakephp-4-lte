@@ -1,4 +1,4 @@
-# CakePHP AdminLTE 3 Theme (0.0.2)
+# CakePHP AdminLTE 3 Theme (0.3.1)
 
 ![RTL Support](https://github.com/ahmed3bead/cakephp-4-lte/blob/main/webroot/theme-images/ltr.png?raw=true)
 
