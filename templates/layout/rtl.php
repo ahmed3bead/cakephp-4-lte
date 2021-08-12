@@ -8,7 +8,7 @@ use Cake\Core\Configure; ?>
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title><?php echo Configure::read('CakephpLteCakephpLteTheme.title'); ?> | <?php echo $this->fetch('title'); ?></title>
+  <title><?php echo Configure::read('CakephpLteTheme.title'); ?> | <?php echo isset($pageTitle) ? $pageTitle : $this->fetch('title'); ?></title>
 
   <!-- Google Font: Source Sans Pro -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
@@ -19,12 +19,14 @@ use Cake\Core\Configure; ?>
   <!-- Theme style -->
   <?php echo $this->Html->css('CakephpLte./css/adminlte-rtl.min.css'); ?>
 
-  <?php // echo $this->Html->css('CakephpLte./css/adminlte.min.css'); ?>
+  <?php // echo $this->Html->css('CakephpLte./css/adminlte.min.css'); 
+  ?>
 
   <!-- Bootstrap 4 rtl -->
-  <?php echo $this->Html->css('CakephpLte./css/bootstrap.rtl.min.css'); ?>
+  <?php echo $this->Html->css('https://cdn.rtlcss.com/bootstrap/v4.2.1/css/bootstrap.min.css'); ?>
   <!-- Custom CSS rtl -->
   <?php echo $this->Html->css('CakephpLte./css/rtl.css'); ?>
+  <?php echo $this->Html->css('CakephpLte./css/cairo.css'); ?>
 
   <?php echo $this->fetch('css'); ?>
 
