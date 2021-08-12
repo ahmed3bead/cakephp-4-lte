@@ -13,7 +13,7 @@
 .content-wrapper,
 .main-footer,
 .main-header {
-   margin-left: 0px !important;
+    margin-left: 0px;
     margin-right: 250px;
 }
 
@@ -81,4 +81,51 @@
     .sidebar-open .main-sidebar::before {
         margin-right: 0;
     }
+}
+
+.card-header {
+    padding: 0.35rem 1.25rem;
+    margin-bottom: 0;
+    background-color: transparent;
+    margin-bottom: 0.40rem;
+}
+
+.card-title {
+    padding-top: 5px;
+    margin-bottom: 0.45rem;
+}
+
+.float-sm-left {
+    float: left !important;
+}
+
+.float-sm-right {
+    float: right !important;
+}
+
+.float-sm-none {
+    float: none !important;
+}
+
+.badge {
+    display: inline-block;
+    padding: 0.10em 0.4em;
+    font-size: 70%;
+    font-weight: 700;
+    line-height: 1;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: baseline;
+    border-radius: 0.25rem;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.notifications,
+.messages {
+    width: 300px;
+}
+
+.languages {
+    max-width: 130px;
+    min-width: 130px;
 }

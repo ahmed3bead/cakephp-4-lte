@@ -17,7 +17,9 @@ use Cake\Core\Configure; ?>
   <!-- IonIcons -->
   <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
   <!-- Theme style -->
-  <?php echo $this->Html->css('CakephpLte./css/adminlte.min.css'); ?>
+  <?php echo $this->Html->css('CakephpLte./css/adminlte-rtl.min.css'); ?>
+
+  <?php // echo $this->Html->css('CakephpLte./css/adminlte.min.css'); ?>
 
   <!-- Bootstrap 4 rtl -->
   <?php echo $this->Html->css('CakephpLte./css/bootstrap.rtl.min.css'); ?>
