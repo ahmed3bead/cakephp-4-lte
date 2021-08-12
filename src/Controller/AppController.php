@@ -1,7 +1,7 @@
 <?php
 declare(strict_types=1);
 
-namespace CakeLte\Controller;
+namespace CakephpLte\Controller;
 
 use App\Controller\AppController as BaseController;
 

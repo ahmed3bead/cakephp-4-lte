@@ -46,7 +46,7 @@
           <a href="#" class="dropdown-item">
             <!-- Message Start -->
             <div class="media">
-            <?php echo $this->Html->image('CakeLte./img/user1-128x128.jpg',['alt'=>'User Avatar','class'=>'img-size-50 mr-3 img-circle']); ?>
+            <?php echo $this->Html->image('CakephpLte./img/user1-128x128.jpg',['alt'=>'User Avatar','class'=>'img-size-50 mr-3 img-circle']); ?>
               <div class="media-body">
                 <h3 class="dropdown-item-title">
                   Brad Diesel
@@ -62,7 +62,7 @@
           <a href="#" class="dropdown-item">
             <!-- Message Start -->
             <div class="media">
-            <?php echo $this->Html->image('CakeLte./img/user1-128x128.jpg',['alt'=>'User Avatar','class'=>'img-size-50 img-circle mr-3']); ?>
+            <?php echo $this->Html->image('CakephpLte./img/user1-128x128.jpg',['alt'=>'User Avatar','class'=>'img-size-50 img-circle mr-3']); ?>
 
               <div class="media-body">
                 <h3 class="dropdown-item-title">
@@ -79,7 +79,7 @@
           <a href="#" class="dropdown-item">
             <!-- Message Start -->
             <div class="media">
-            <?php echo $this->Html->image('CakeLte./img/user3-128x128.jpg',['alt'=>'User Avatar','class'=>'img-size-50 img-circle mr-3']); ?>
+            <?php echo $this->Html->image('CakephpLte./img/user3-128x128.jpg',['alt'=>'User Avatar','class'=>'img-size-50 img-circle mr-3']); ?>
 
               <div class="media-body">
                 <h3 class="dropdown-item-title">

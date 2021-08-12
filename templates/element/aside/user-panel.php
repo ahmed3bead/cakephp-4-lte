@@ -2,7 +2,7 @@
         <div class="image">
         
 
-          <?php echo $this->Html->image('CakeLte./img/user2-160x160.jpg',['alt'=>'User Image','class'=>'img-circle elevation-2']); ?>
+          <?php echo $this->Html->image('CakephpLte./img/user2-160x160.jpg',['alt'=>'User Image','class'=>'img-circle elevation-2']); ?>
         </div>
         <div class="info">
           <a href="#" class="d-block">Ahmed Ebead</a>

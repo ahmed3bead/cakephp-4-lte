@@ -4,7 +4,7 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title><?php echo Configure::read('CakeLteTheme.title'); ?></title>
+    <title><?php echo Configure::read('CakephpLteTheme.title'); ?></title>
     <!-- Tell the browser to be responsive to screen width -->
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
     <!-- Bootstrap 3.3.5 -->
@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
     <!-- Theme style -->
     <?php echo $this->Html->css('AdminLTE.AdminLTE.min'); ?>
-    <?php echo $this->Html->css('AdminLTE.skins/skin-'. Configure::read('CakeLteTheme.skin') .'.min'); ?>
+    <?php echo $this->Html->css('AdminLTE.skins/skin-'. Configure::read('CakephpLteTheme.skin') .'.min'); ?>
     <?php echo $this->Html->css('AdminLTE.documentation'); ?>
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -25,7 +25,7 @@
         <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
   </head>
-  <body class="skin-<?php echo Configure::read('CakeLteTheme.skin'); ?> fixed" data-spy="scroll" data-target="#scrollspy">
+  <body class="skin-<?php echo Configure::read('CakephpLteTheme.skin'); ?> fixed" data-spy="scroll" data-target="#scrollspy">
     <div class="wrapper">
 
     <header class="main-header">
@@ -33,9 +33,9 @@
         <!-- Logo -->
         <a href="<?php echo $this->Url->build('/'); ?>" class="logo">
           <!-- mini logo for sidebar mini 50x50 pixels -->
-          <span class="logo-mini"><?php echo Configure::read('CakeLteTheme.logo.mini'); ?></span>
+          <span class="logo-mini"><?php echo Configure::read('CakephpLteTheme.logo.mini'); ?></span>
           <!-- logo for regular state and mobile devices -->
-          <span class="logo-lg"><?php echo Configure::read('CakeLteTheme.logo.large'); ?></span>
+          <span class="logo-lg"><?php echo Configure::read('CakephpLteTheme.logo.large'); ?></span>
         </a>
         <!-- Header Navbar: style can be found in header.less -->
         <nav class="navbar navbar-static-top" role="navigation">

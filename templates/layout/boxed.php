@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title><?php echo Configure::read('CakeLteTheme.title'); ?> | <?php echo $this->fetch('title'); ?></title>
+  <title><?php echo Configure::read('CakephpLteTheme.title'); ?> | <?php echo $this->fetch('title'); ?></title>
   <!-- Tell the browser to be responsive to screen width -->
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
   <!-- Bootstrap 3.3.7 -->
@@ -33,7 +33,7 @@
 
 </head>
 <!-- ADD THE CLASS layout-boxed TO GET A BOXED LAYOUT -->
-<body class="hold-transition skin-<?php echo Configure::read('CakeLteTheme.skin'); ?> layout-boxed sidebar-mini">
+<body class="hold-transition skin-<?php echo Configure::read('CakephpLteTheme.skin'); ?> layout-boxed sidebar-mini">
 <!-- Site wrapper -->
 <div class="wrapper">
 
@@ -41,9 +41,9 @@
     <!-- Logo -->
     <a href="<?php echo $this->Url->build('/'); ?>" class="logo">
       <!-- mini logo for sidebar mini 50x50 pixels -->
-      <span class="logo-mini"><?php echo Configure::read('CakeLteTheme.logo.mini'); ?></span>
+      <span class="logo-mini"><?php echo Configure::read('CakephpLteTheme.logo.mini'); ?></span>
       <!-- logo for regular state and mobile devices -->
-      <span class="logo-lg"><?php echo Configure::read('CakeLteTheme.logo.large'); ?></span>
+      <span class="logo-lg"><?php echo Configure::read('CakephpLteTheme.logo.large'); ?></span>
     </a>
     <!-- Header Navbar: style can be found in header.less -->
 

@@ -19,6 +19,11 @@ use Cake\Core\Configure; ?>
   <!-- Theme style -->
   <?php echo $this->Html->css('CakephpLte./css/adminlte.min.css'); ?>
 
+  <!-- Bootstrap 4 rtl -->
+  <?php echo $this->Html->css('CakephpLte./css/bootstrap.rtl.min.css'); ?>
+  <!-- Custom CSS rtl -->
+  <?php echo $this->Html->css('CakephpLte./css/rtl.css'); ?>
+
   <?php echo $this->fetch('css'); ?>
 
 </head>
@@ -61,31 +66,27 @@ use Cake\Core\Configure; ?>
     <!-- scripts -->
 
 
-  <!-- jQuery -->
-  <?php echo $this->Html->script('CakephpLte./plugins/jquery/jquery.min.js'); ?>
 
     <!-- jQuery -->
-    <?php echo $this->Html->script('CakeLte./plugins/jquery/jquery.min.js'); ?>
+    <?php echo $this->Html->script('CakephpLte./plugins/jquery/jquery.min.js'); ?>
 
-<!-- jQuery UI 1.11.4 -->
-<?php echo $this->Html->script('CakephpLte./plugins/jquery-ui/jquery-ui.min.js'); ?>
 
     <!-- jQuery UI 1.11.4 -->
-    <?php echo $this->Html->script('CakeLte./plugins/jquery-ui/jquery-ui.min.js'); ?>
+    <?php echo $this->Html->script('CakephpLte./plugins/jquery-ui/jquery-ui.min.js'); ?>
 
 
     <!-- Resolve conflict in jQuery UI tooltip with Bootstrap tooltip -->
 
 
-<!-- Bootstrap -->
-<?php echo $this->Html->script('CakephpLte./plugins/bootstrap/js/bootstrap.bundle.min.js'); ?>
-<!-- AdminLTE -->
-<?php echo $this->Html->script('CakephpLte./js/adminlte.js'); ?>
 
     <!-- Bootstrap -->
-    <?php echo $this->Html->script('CakeLte./plugins/bootstrap/js/bootstrap.bundle.min.js'); ?>
+    <?php echo $this->Html->script('CakephpLte./plugins/bootstrap/js/bootstrap.bundle.min.js'); ?>
+
+    <!-- Bootstrap 4 rtl -->
+    <?php echo $this->Html->script('CakephpLte./js/bootstrap.rtl.min.js'); ?>
+
     <!-- AdminLTE -->
-    <?php echo $this->Html->script('CakeLte./js/adminlte.js'); ?>
+    <?php echo $this->Html->script('CakephpLte./js/adminlte.js'); ?>
 
     <?php echo $this->fetch('script'); ?>
 

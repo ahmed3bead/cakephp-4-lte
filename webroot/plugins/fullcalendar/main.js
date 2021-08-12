@@ -26,8 +26,10 @@ var FullCalendar = (function(exports) {
         extendStatics = Object.setPrototypeOf ||
             ({ __proto__: [] }
                 instanceof Array && function(d, b) { d.__proto__ = b; }) ||
-            function(d, b) { for (var p in b)
-                    if (Object.prototype.hasOwnProperty.call(b, p)) d[p] = b[p]; };
+            function(d, b) {
+                for (var p in b)
+                    if (Object.prototype.hasOwnProperty.call(b, p)) d[p] = b[p];
+            };
         return extendStatics(d, b);
     };
 
@@ -64,13 +66,21 @@ var FullCalendar = (function(exports) {
 
     function s(n, l) { for (var u in l) n[u] = l[u]; return n }
 
-    function a(n) { var l = n.parentNode;
-        l && l.removeChild(n); }
+    function a(n) {
+        var l = n.parentNode;
+        l && l.removeChild(n);
+    }
 
-    function v(n, l, u) { var i, t, o, r = arguments,
-            f = {}; for (o in l) "key" == o ? i = l[o] : "ref" == o ? t = l[o] : f[o] = l[o]; if (arguments.length > 3)
-            for (u = [u], o = 3; o < arguments.length; o++) u.push(r[o]); if (null != u && (f.children = u), "function" == typeof n && null != n.defaultProps)
-            for (o in n.defaultProps) void 0 === f[o] && (f[o] = n.defaultProps[o]); return h(n, f, i, t, null) }
+    function v(n, l, u) {
+        var i, t, o, r = arguments,
+            f = {};
+        for (o in l) "key" == o ? i = l[o] : "ref" == o ? t = l[o] : f[o] = l[o];
+        if (arguments.length > 3)
+            for (u = [u], o = 3; o < arguments.length; o++) u.push(r[o]);
+        if (null != u && (f.children = u), "function" == typeof n && null != n.defaultProps)
+            for (o in n.defaultProps) void 0 === f[o] && (f[o] = n.defaultProps[o]);
+        return h(n, f, i, t, null)
+    }
 
     function h(l, u, i, t, o) { var r = { type: l, props: u, key: i, ref: t, __k: null, __: null, __b: 0, __e: null, __d: void 0, __c: null, __h: null, constructor: void 0, __v: null == o ? ++n.__v : o }; return null != n.vnode && n.vnode(r), r }
 
@@ -80,49 +90,82 @@ var FullCalendar = (function(exports) {
 
     function d(n, l) { this.props = n, this.context = l; }
 
-    function _(n, l) { if (null == l) return n.__ ? _(n.__, n.__.__k.indexOf(n) + 1) : null; for (var u; l < n.__k.length; l++)
+    function _(n, l) {
+        if (null == l) return n.__ ? _(n.__, n.__.__k.indexOf(n) + 1) : null;
+        for (var u; l < n.__k.length; l++)
             if (null != (u = n.__k[l]) && null != u.__e) return u.__e;
-        return "function" == typeof n.type ? _(n) : null }
+        return "function" == typeof n.type ? _(n) : null
+    }
 
-    function w(n) { var l, u; if (null != (n = n.__) && null != n.__c) { for (n.__e = n.__c.base = null, l = 0; l < n.__k.length; l++)
+    function w(n) {
+        var l, u;
+        if (null != (n = n.__) && null != n.__c) {
+            for (n.__e = n.__c.base = null, l = 0; l < n.__k.length; l++)
                 if (null != (u = n.__k[l]) && null != u.__e) { n.__e = n.__c.base = u.__e; break }
-            return w(n) } }
+            return w(n)
+        }
+    }
 
     function k(l) {
-        (!l.__d && (l.__d = !0) && u.push(l) && !g.__r++ || t !== n.debounceRendering) && ((t = n.debounceRendering) || i)(g); }
+        (!l.__d && (l.__d = !0) && u.push(l) && !g.__r++ || t !== n.debounceRendering) && ((t = n.debounceRendering) || i)(g);
+    }
 
-    function g() { for (var n; g.__r = u.length;) n = u.sort(function(n, l) { return n.__v.__b - l.__v.__b }), u = [], n.some(function(n) { var l, u, i, t, o, r, f;
-            n.__d && (r = (o = (l = n).__v).__e, (f = l.__P) && (u = [], (i = s({}, o)).__v = o.__v + 1, t = $(f, o, i, l.__n, void 0 !== f.ownerSVGElement, null != o.__h ? [r] : null, u, null == r ? _(o) : r, o.__h), j(u, o), t != r && w(o))); }); }
+    function g() {
+        for (var n; g.__r = u.length;) n = u.sort(function(n, l) { return n.__v.__b - l.__v.__b }), u = [], n.some(function(n) {
+            var l, u, i, t, o, r, f;
+            n.__d && (r = (o = (l = n).__v).__e, (f = l.__P) && (u = [], (i = s({}, o)).__v = o.__v + 1, t = $(f, o, i, l.__n, void 0 !== f.ownerSVGElement, null != o.__h ? [r] : null, u, null == r ? _(o) : r, o.__h), j(u, o), t != r && w(o)));
+        });
+    }
 
-    function m(n, l, u, i, t, o, r, c, s, v) { var y, d, w, k, g, m, b, A = i && i.__k || e,
-            P = A.length; for (s == f && (s = null != r ? r[0] : P ? _(i, 0) : null), u.__k = [], y = 0; y < l.length; y++)
-            if (null != (k = u.__k[y] = null == (k = l[y]) || "boolean" == typeof k ? null : "string" == typeof k || "number" == typeof k ? h(null, k, null, null, k) : Array.isArray(k) ? h(p, { children: k }, null, null, null) : null != k.__e || null != k.__c ? h(k.type, k.props, k.key, null, k.__v) : k)) { if (k.__ = u, k.__b = u.__b + 1, null === (w = A[y]) || w && k.key == w.key && k.type === w.type) A[y] = void 0;
+    function m(n, l, u, i, t, o, r, c, s, v) {
+        var y, d, w, k, g, m, b, A = i && i.__k || e,
+            P = A.length;
+        for (s == f && (s = null != r ? r[0] : P ? _(i, 0) : null), u.__k = [], y = 0; y < l.length; y++)
+            if (null != (k = u.__k[y] = null == (k = l[y]) || "boolean" == typeof k ? null : "string" == typeof k || "number" == typeof k ? h(null, k, null, null, k) : Array.isArray(k) ? h(p, { children: k }, null, null, null) : null != k.__e || null != k.__c ? h(k.type, k.props, k.key, null, k.__v) : k)) {
+                if (k.__ = u, k.__b = u.__b + 1, null === (w = A[y]) || w && k.key == w.key && k.type === w.type) A[y] = void 0;
                 else
-                    for (d = 0; d < P; d++) { if ((w = A[d]) && k.key == w.key && k.type === w.type) { A[d] = void 0; break }
-                        w = null; }
-                g = $(n, k, w = w || f, t, o, r, c, s, v), (d = k.ref) && w.ref != d && (b || (b = []), w.ref && b.push(w.ref, null, k), b.push(d, k.__c || g, k)), null != g ? (null == m && (m = g), s = x(n, k, w, A, r, g, s), v || "option" != u.type ? "function" == typeof u.type && (u.__d = s) : n.value = "") : s && w.__e == s && s.parentNode != n && (s = _(w)); }
+                    for (d = 0; d < P; d++) {
+                        if ((w = A[d]) && k.key == w.key && k.type === w.type) { A[d] = void 0; break }
+                        w = null;
+                    }
+                g = $(n, k, w = w || f, t, o, r, c, s, v), (d = k.ref) && w.ref != d && (b || (b = []), w.ref && b.push(w.ref, null, k), b.push(d, k.__c || g, k)), null != g ? (null == m && (m = g), s = x(n, k, w, A, r, g, s), v || "option" != u.type ? "function" == typeof u.type && (u.__d = s) : n.value = "") : s && w.__e == s && s.parentNode != n && (s = _(w));
+            }
         if (u.__e = m, null != r && "function" != typeof u.type)
-            for (y = r.length; y--;) null != r[y] && a(r[y]); for (y = P; y--;) null != A[y] && L(A[y], A[y]); if (b)
-            for (y = 0; y < b.length; y++) I(b[y], b[++y], b[++y]); }
+            for (y = r.length; y--;) null != r[y] && a(r[y]);
+        for (y = P; y--;) null != A[y] && L(A[y], A[y]);
+        if (b)
+            for (y = 0; y < b.length; y++) I(b[y], b[++y], b[++y]);
+    }
 
-    function x(n, l, u, i, t, o, r) { var f, e, c; if (void 0 !== l.__d) f = l.__d, l.__d = void 0;
+    function x(n, l, u, i, t, o, r) {
+        var f, e, c;
+        if (void 0 !== l.__d) f = l.__d, l.__d = void 0;
         else if (t == u || o != r || null == o.parentNode) n: if (null == r || r.parentNode !== n) n.appendChild(o), f = null;
-            else { for (e = r, c = 0;
+            else {
+                for (e = r, c = 0;
                     (e = e.nextSibling) && c < i.length; c += 2)
                     if (e == o) break n;
-                n.insertBefore(o, r), f = r; }
-        return void 0 !== f ? f : o.nextSibling }
+                n.insertBefore(o, r), f = r;
+            }
+        return void 0 !== f ? f : o.nextSibling
+    }
 
     function A(n, l, u, i, t) { var o; for (o in u) "children" === o || "key" === o || o in l || C(n, o, null, u[o], i); for (o in l) t && "function" != typeof l[o] || "children" === o || "key" === o || "value" === o || "checked" === o || u[o] === l[o] || C(n, o, l[o], u[o], i); }
 
     function P(n, l, u) { "-" === l[0] ? n.setProperty(l, u) : n[l] = null == u ? "" : "number" != typeof u || c.test(l) ? u : u + "px"; }
 
-    function C(n, l, u, i, t) { var o, r, f; if (t && "className" == l && (l = "class"), "style" === l)
+    function C(n, l, u, i, t) {
+        var o, r, f;
+        if (t && "className" == l && (l = "class"), "style" === l)
             if ("string" == typeof u) n.style.cssText = u;
-            else { if ("string" == typeof i && (n.style.cssText = i = ""), i)
-                    for (l in i) u && l in u || P(n.style, l, ""); if (u)
-                    for (l in u) i && u[l] === i[l] || P(n.style, l, u[l]); }
-        else "o" === l[0] && "n" === l[1] ? (o = l !== (l = l.replace(/Capture$/, "")), (r = l.toLowerCase()) in n && (l = r), l = l.slice(2), n.l || (n.l = {}), n.l[l + o] = u, f = o ? N : z, u ? i || n.addEventListener(l, f, o) : n.removeEventListener(l, f, o)) : "list" !== l && "tagName" !== l && "form" !== l && "type" !== l && "size" !== l && "download" !== l && "href" !== l && !t && l in n ? n[l] = null == u ? "" : u : "function" != typeof u && "dangerouslySetInnerHTML" !== l && (l !== (l = l.replace(/xlink:?/, "")) ? null == u || !1 === u ? n.removeAttributeNS("http://www.w3.org/1999/xlink", l.toLowerCase()) : n.setAttributeNS("http://www.w3.org/1999/xlink", l.toLowerCase(), u) : null == u || !1 === u && !/^ar/.test(l) ? n.removeAttribute(l) : n.setAttribute(l, u)); }
+            else {
+                if ("string" == typeof i && (n.style.cssText = i = ""), i)
+                    for (l in i) u && l in u || P(n.style, l, "");
+                if (u)
+                    for (l in u) i && u[l] === i[l] || P(n.style, l, u[l]);
+            }
+        else "o" === l[0] && "n" === l[1] ? (o = l !== (l = l.replace(/Capture$/, "")), (r = l.toLowerCase()) in n && (l = r), l = l.slice(2), n.l || (n.l = {}), n.l[l + o] = u, f = o ? N : z, u ? i || n.addEventListener(l, f, o) : n.removeEventListener(l, f, o)) : "list" !== l && "tagName" !== l && "form" !== l && "type" !== l && "size" !== l && "download" !== l && "href" !== l && !t && l in n ? n[l] = null == u ? "" : u : "function" != typeof u && "dangerouslySetInnerHTML" !== l && (l !== (l = l.replace(/xlink:?/, "")) ? null == u || !1 === u ? n.removeAttributeNS("http://www.w3.org/1999/xlink", l.toLowerCase()) : n.setAttributeNS("http://www.w3.org/1999/xlink", l.toLowerCase(), u) : null == u || !1 === u && !/^ar/.test(l) ? n.removeAttribute(l) : n.setAttribute(l, u));
+    }
 
     function z(l) { this.l[l.type + !1](n.event ? n.event(l) : l); }
 
@@ -130,45 +173,95 @@ var FullCalendar = (function(exports) {
 
     function T(n, l, u) { var i, t; for (i = 0; i < n.__k.length; i++)(t = n.__k[i]) && (t.__ = n, t.__e && ("function" == typeof t.type && t.__k.length > 1 && T(t, l, u), l = x(u, t, t, n.__k, null, t.__e, l), "function" == typeof n.type && (n.__d = l))); }
 
-    function $(l, u, i, t, o, r, f, e, c) { var a, v, h, y, _, w, k, g, b, x, A, P = u.type; if (void 0 !== u.constructor) return null;
-        null != i.__h && (c = i.__h, e = u.__e = i.__e, u.__h = null, r = [e]), (a = n.__b) && a(u); try { n: if ("function" == typeof P) { if (g = u.props, b = (a = P.contextType) && t[a.__c], x = a ? b ? b.props.value : a.__ : t, i.__c ? k = (v = u.__c = i.__c).__ = v.__E : ("prototype" in P && P.prototype.render ? u.__c = v = new P(g, x) : (u.__c = v = new d(g, x), v.constructor = P, v.render = M), b && b.sub(v), v.props = g, v.state || (v.state = {}), v.context = x, v.__n = t, h = v.__d = !0, v.__h = []), null == v.__s && (v.__s = v.state), null != P.getDerivedStateFromProps && (v.__s == v.state && (v.__s = s({}, v.__s)), s(v.__s, P.getDerivedStateFromProps(g, v.__s))), y = v.props, _ = v.state, h) null == P.getDerivedStateFromProps && null != v.componentWillMount && v.componentWillMount(), null != v.componentDidMount && v.__h.push(v.componentDidMount);
-                    else { if (null == P.getDerivedStateFromProps && g !== y && null != v.componentWillReceiveProps && v.componentWillReceiveProps(g, x), !v.__e && null != v.shouldComponentUpdate && !1 === v.shouldComponentUpdate(g, v.__s, x) || u.__v === i.__v) { v.props = g, v.state = v.__s, u.__v !== i.__v && (v.__d = !1), v.__v = u, u.__e = i.__e, u.__k = i.__k, v.__h.length && f.push(v), T(u, e, l); break n }
-                        null != v.componentWillUpdate && v.componentWillUpdate(g, v.__s, x), null != v.componentDidUpdate && v.__h.push(function() { v.componentDidUpdate(y, _, w); }); }
-                    v.context = x, v.props = g, v.state = v.__s, (a = n.__r) && a(u), v.__d = !1, v.__v = u, v.__P = l, a = v.render(v.props, v.state, v.context), v.state = v.__s, null != v.getChildContext && (t = s(s({}, t), v.getChildContext())), h || null == v.getSnapshotBeforeUpdate || (w = v.getSnapshotBeforeUpdate(y, _)), A = null != a && a.type == p && null == a.key ? a.props.children : a, m(l, Array.isArray(A) ? A : [A], u, i, t, o, r, f, e, c), v.base = u.__e, u.__h = null, v.__h.length && f.push(v), k && (v.__E = v.__ = null), v.__e = !1; } else null == r && u.__v === i.__v ? (u.__k = i.__k, u.__e = i.__e) : u.__e = H(i.__e, u, i, t, o, r, f, c);
-                (a = n.diffed) && a(u); }
-        catch (l) { u.__v = null, (c || null != r) && (u.__e = e, u.__h = !!c, r[r.indexOf(e)] = null), n.__e(l, u, i); } return u.__e }
+    function $(l, u, i, t, o, r, f, e, c) {
+        var a, v, h, y, _, w, k, g, b, x, A, P = u.type;
+        if (void 0 !== u.constructor) return null;
+        null != i.__h && (c = i.__h, e = u.__e = i.__e, u.__h = null, r = [e]), (a = n.__b) && a(u);
+        try {
+            n: if ("function" == typeof P) {
+                    if (g = u.props, b = (a = P.contextType) && t[a.__c], x = a ? b ? b.props.value : a.__ : t, i.__c ? k = (v = u.__c = i.__c).__ = v.__E : ("prototype" in P && P.prototype.render ? u.__c = v = new P(g, x) : (u.__c = v = new d(g, x), v.constructor = P, v.render = M), b && b.sub(v), v.props = g, v.state || (v.state = {}), v.context = x, v.__n = t, h = v.__d = !0, v.__h = []), null == v.__s && (v.__s = v.state), null != P.getDerivedStateFromProps && (v.__s == v.state && (v.__s = s({}, v.__s)), s(v.__s, P.getDerivedStateFromProps(g, v.__s))), y = v.props, _ = v.state, h) null == P.getDerivedStateFromProps && null != v.componentWillMount && v.componentWillMount(), null != v.componentDidMount && v.__h.push(v.componentDidMount);
+                    else {
+                        if (null == P.getDerivedStateFromProps && g !== y && null != v.componentWillReceiveProps && v.componentWillReceiveProps(g, x), !v.__e && null != v.shouldComponentUpdate && !1 === v.shouldComponentUpdate(g, v.__s, x) || u.__v === i.__v) { v.props = g, v.state = v.__s, u.__v !== i.__v && (v.__d = !1), v.__v = u, u.__e = i.__e, u.__k = i.__k, v.__h.length && f.push(v), T(u, e, l); break n }
+                        null != v.componentWillUpdate && v.componentWillUpdate(g, v.__s, x), null != v.componentDidUpdate && v.__h.push(function() { v.componentDidUpdate(y, _, w); });
+                    }
+                    v.context = x, v.props = g, v.state = v.__s, (a = n.__r) && a(u), v.__d = !1, v.__v = u, v.__P = l, a = v.render(v.props, v.state, v.context), v.state = v.__s, null != v.getChildContext && (t = s(s({}, t), v.getChildContext())), h || null == v.getSnapshotBeforeUpdate || (w = v.getSnapshotBeforeUpdate(y, _)), A = null != a && a.type == p && null == a.key ? a.props.children : a, m(l, Array.isArray(A) ? A : [A], u, i, t, o, r, f, e, c), v.base = u.__e, u.__h = null, v.__h.length && f.push(v), k && (v.__E = v.__ = null), v.__e = !1;
+                } else null == r && u.__v === i.__v ? (u.__k = i.__k, u.__e = i.__e) : u.__e = H(i.__e, u, i, t, o, r, f, c);
+                (a = n.diffed) && a(u);
+        }
+        catch (l) { u.__v = null, (c || null != r) && (u.__e = e, u.__h = !!c, r[r.indexOf(e)] = null), n.__e(l, u, i); }
+        return u.__e
+    }
 
     function j(l, u) { n.__c && n.__c(u, l), l.some(function(u) { try { l = u.__h, u.__h = [], l.some(function(n) { n.call(u); }); } catch (l) { n.__e(l, u.__v); } }); }
 
-    function H(n, l, u, i, t, o, r, c) { var s, a, v, h, y, p = u.props,
-            d = l.props; if (t = "svg" === l.type || t, null != o)
+    function H(n, l, u, i, t, o, r, c) {
+        var s, a, v, h, y, p = u.props,
+            d = l.props;
+        if (t = "svg" === l.type || t, null != o)
             for (s = 0; s < o.length; s++)
                 if (null != (a = o[s]) && ((null === l.type ? 3 === a.nodeType : a.localName === l.type) || n == a)) { n = a, o[s] = null; break }
-        if (null == n) { if (null === l.type) return document.createTextNode(d);
-            n = t ? document.createElementNS("http://www.w3.org/2000/svg", l.type) : document.createElement(l.type, d.is && { is: d.is }), o = null, c = !1; } if (null === l.type) p === d || c && n.data === d || (n.data = d);
-        else { if (null != o && (o = e.slice.call(n.childNodes)), v = (p = u.props || f).dangerouslySetInnerHTML, h = d.dangerouslySetInnerHTML, !c) { if (null != o)
+        if (null == n) {
+            if (null === l.type) return document.createTextNode(d);
+            n = t ? document.createElementNS("http://www.w3.org/2000/svg", l.type) : document.createElement(l.type, d.is && { is: d.is }), o = null, c = !1;
+        }
+        if (null === l.type) p === d || c && n.data === d || (n.data = d);
+        else {
+            if (null != o && (o = e.slice.call(n.childNodes)), v = (p = u.props || f).dangerouslySetInnerHTML, h = d.dangerouslySetInnerHTML, !c) {
+                if (null != o)
                     for (p = {}, y = 0; y < n.attributes.length; y++) p[n.attributes[y].name] = n.attributes[y].value;
-                (h || v) && (h && (v && h.__html == v.__html || h.__html === n.innerHTML) || (n.innerHTML = h && h.__html || "")); }
-            A(n, d, p, t, c), h ? l.__k = [] : (s = l.props.children, m(n, Array.isArray(s) ? s : [s], l, u, i, "foreignObject" !== l.type && t, o, r, f, c)), c || ("value" in d && void 0 !== (s = d.value) && (s !== n.value || "progress" === l.type && !s) && C(n, "value", s, p.value, !1), "checked" in d && void 0 !== (s = d.checked) && s !== n.checked && C(n, "checked", s, p.checked, !1)); } return n }
+                (h || v) && (h && (v && h.__html == v.__html || h.__html === n.innerHTML) || (n.innerHTML = h && h.__html || ""));
+            }
+            A(n, d, p, t, c), h ? l.__k = [] : (s = l.props.children, m(n, Array.isArray(s) ? s : [s], l, u, i, "foreignObject" !== l.type && t, o, r, f, c)), c || ("value" in d && void 0 !== (s = d.value) && (s !== n.value || "progress" === l.type && !s) && C(n, "value", s, p.value, !1), "checked" in d && void 0 !== (s = d.checked) && s !== n.checked && C(n, "checked", s, p.checked, !1));
+        }
+        return n
+    }
 
     function I(l, u, i) { try { "function" == typeof l ? l(u) : l.current = u; } catch (l) { n.__e(l, i); } }
 
-    function L(l, u, i) { var t, o, r; if (n.unmount && n.unmount(l), (t = l.ref) && (t.current && t.current !== l.__e || I(t, null, u)), i || "function" == typeof l.type || (i = null != (o = l.__e)), l.__e = l.__d = void 0, null != (t = l.__c)) { if (t.componentWillUnmount) try { t.componentWillUnmount(); } catch (l) { n.__e(l, u); }
-            t.base = t.__P = null; } if (t = l.__k)
+    function L(l, u, i) {
+        var t, o, r;
+        if (n.unmount && n.unmount(l), (t = l.ref) && (t.current && t.current !== l.__e || I(t, null, u)), i || "function" == typeof l.type || (i = null != (o = l.__e)), l.__e = l.__d = void 0, null != (t = l.__c)) {
+            if (t.componentWillUnmount) try { t.componentWillUnmount(); } catch (l) { n.__e(l, u); }
+            t.base = t.__P = null;
+        }
+        if (t = l.__k)
             for (r = 0; r < t.length; r++) t[r] && L(t[r], u, i);
-        null != o && a(o); }
+        null != o && a(o);
+    }
 
     function M(n, l, u) { return this.constructor(n, u) }
 
-    function O(l, u, i) { var t, r, c;
-        n.__ && n.__(l, u), r = (t = i === o) ? null : i && i.__k || u.__k, l = v(p, null, [l]), c = [], $(u, (t ? u : i || u).__k = l, r || f, f, void 0 !== u.ownerSVGElement, i && !t ? [i] : r ? null : u.childNodes.length ? e.slice.call(u.childNodes) : null, c, i || f, t), j(c, l); }
+    function O(l, u, i) {
+        var t, r, c;
+        n.__ && n.__(l, u), r = (t = i === o) ? null : i && i.__k || u.__k, l = v(p, null, [l]), c = [], $(u, (t ? u : i || u).__k = l, r || f, f, void 0 !== u.ownerSVGElement, i && !t ? [i] : r ? null : u.childNodes.length ? e.slice.call(u.childNodes) : null, c, i || f, t), j(c, l);
+    }
 
-    function B(n, l) { var u = { __c: l = "__cC" + r++, __: n, Consumer: function(n, l) { return n.children(l) }, Provider: function(n, u, i) { return this.getChildContext || (u = [], (i = {})[l] = this, this.getChildContext = function() { return i }, this.shouldComponentUpdate = function(n) { this.props.value !== n.value && u.some(k); }, this.sub = function(n) { u.push(n); var l = n.componentWillUnmount;
-                    n.componentWillUnmount = function() { u.splice(u.indexOf(n), 1), l && l.call(n); }; }), n.children } }; return u.Provider.__ = u.Consumer.contextType = u }
-    n = { __e: function(n, l) { for (var u, i, t, o = l.__h; l = l.__;)
+    function B(n, l) {
+        var u = {
+            __c: l = "__cC" + r++,
+            __: n,
+            Consumer: function(n, l) { return n.children(l) },
+            Provider: function(n, u, i) {
+                return this.getChildContext || (u = [], (i = {})[l] = this, this.getChildContext = function() { return i }, this.shouldComponentUpdate = function(n) { this.props.value !== n.value && u.some(k); }, this.sub = function(n) {
+                    u.push(n);
+                    var l = n.componentWillUnmount;
+                    n.componentWillUnmount = function() { u.splice(u.indexOf(n), 1), l && l.call(n); };
+                }), n.children
+            }
+        };
+        return u.Provider.__ = u.Consumer.contextType = u
+    }
+    n = {
+        __e: function(n, l) {
+            for (var u, i, t, o = l.__h; l = l.__;)
                 if ((u = l.__c) && !u.__) try { if ((i = u.constructor) && null != i.getDerivedStateFromError && (u.setState(i.getDerivedStateFromError(n)), t = u.__d), null != u.componentDidCatch && (u.componentDidCatch(n), t = u.__d), t) return l.__h = o, u.__E = u } catch (l) { n = l; }
-                throw n }, __v: 0 }, d.prototype.setState = function(n, l) { var u;
-        u = null != this.__s && this.__s !== this.state ? this.__s : this.__s = s({}, this.state), "function" == typeof n && (n = n(s({}, u), this.props)), n && s(u, n), null != n && this.__v && (l && this.__h.push(l), k(this)); }, d.prototype.forceUpdate = function(n) { this.__v && (this.__e = !0, n && this.__h.push(n), k(this)); }, d.prototype.render = p, u = [], i = "function" == typeof Promise ? Promise.prototype.then.bind(Promise.resolve()) : setTimeout, g.__r = 0, o = f, r = 0;
+            throw n
+        },
+        __v: 0
+    }, d.prototype.setState = function(n, l) {
+        var u;
+        u = null != this.__s && this.__s !== this.state ? this.__s : this.__s = s({}, this.state), "function" == typeof n && (n = n(s({}, u), this.props)), n && s(u, n), null != n && this.__v && (l && this.__h.push(l), k(this));
+    }, d.prototype.forceUpdate = function(n) { this.__v && (this.__e = !0, n && this.__h.push(n), k(this)); }, d.prototype.render = p, u = [], i = "function" == typeof Promise ? Promise.prototype.then.bind(Promise.resolve()) : setTimeout, g.__r = 0, o = f, r = 0;
 
     var globalObj = typeof globalThis !== 'undefined' ? globalThis : window; // // TODO: streamline when killing IE11 support
     if (globalObj.FullCalendarVDom) {
@@ -4650,7 +4743,7 @@ var FullCalendar = (function(exports) {
         } else {
             if (meta.isToday) {
                 classNames.push('fc-day-today');
-                classNames.push(CakeLteTheme.getClass('today'));
+                classNames.push(CakephpLteTheme.getClass('today'));
             }
             if (meta.isPast) {
                 classNames.push('fc-day-past');
@@ -4675,7 +4768,7 @@ var FullCalendar = (function(exports) {
         } else {
             if (meta.isToday) {
                 classNames.push('fc-slot-today');
-                classNames.push(CakeLteTheme.getClass('today'));
+                classNames.push(CakephpLteTheme.getClass('today'));
             }
             if (meta.isPast) {
                 classNames.push('fc-slot-past');
@@ -5108,7 +5201,7 @@ var FullCalendar = (function(exports) {
                 this.setIconOverride(calendarOptions[this.iconOverrideOption]);
             }
         }
-        CakeLteTheme.prototype.setIconOverride = function(iconOverrideHash) {
+        CakephpLteTheme.prototype.setIconOverride = function(iconOverrideHash) {
             var iconClassesCopy;
             var buttonName;
             if (typeof iconOverrideHash === 'object' && iconOverrideHash) { // non-null object
@@ -5121,17 +5214,17 @@ var FullCalendar = (function(exports) {
                 this.iconClasses = {};
             }
         };
-        CakeLteTheme.prototype.applyIconOverridePrefix = function(className) {
+        CakephpLteTheme.prototype.applyIconOverridePrefix = function(className) {
             var prefix = this.iconOverridePrefix;
             if (prefix && className.indexOf(prefix) !== 0) { // if not already present
                 className = prefix + className;
             }
             return className;
         };
-        CakeLteTheme.prototype.getClass = function(key) {
+        CakephpLteTheme.prototype.getClass = function(key) {
             return this.classes[key] || '';
         };
-        CakeLteTheme.prototype.getIconClass = function(buttonName, isRtl) {
+        CakephpLteTheme.prototype.getIconClass = function(buttonName, isRtl) {
             var className;
             if (isRtl && this.rtlIconClasses) {
                 className = this.rtlIconClasses[buttonName] || this.iconClasses[buttonName];
@@ -5143,7 +5236,7 @@ var FullCalendar = (function(exports) {
             }
             return '';
         };
-        CakeLteTheme.prototype.getCustomButtonIconClass = function(customButtonProps) {
+        CakephpLteTheme.prototype.getCustomButtonIconClass = function(customButtonProps) {
             var className;
             if (this.iconOverrideCustomButtonOption) {
                 className = customButtonProps[this.iconOverrideCustomButtonOption];
@@ -5155,10 +5248,10 @@ var FullCalendar = (function(exports) {
         };
         return Theme;
     }());
-    CakeLteTheme.prototype.classes = {};
-    CakeLteTheme.prototype.iconClasses = {};
-    CakeLteTheme.prototype.baseIconClass = '';
-    CakeLteTheme.prototype.iconOverridePrefix = '';
+    CakephpLteTheme.prototype.classes = {};
+    CakephpLteTheme.prototype.iconClasses = {};
+    CakephpLteTheme.prototype.baseIconClass = '';
+    CakephpLteTheme.prototype.iconOverridePrefix = '';
 
     /// <reference types="@fullcalendar/core-preact" />
     if (typeof FullCalendarVDom === 'undefined') {
@@ -5807,30 +5900,30 @@ var FullCalendar = (function(exports) {
         }
         return StandardTheme;
     }(Theme));
-    StandardCakeLteTheme.prototype.classes = {
+    StandardCakephpLteTheme.prototype.classes = {
         root: 'fc-theme-standard',
         tableCellShaded: 'fc-cell-shaded',
         buttonGroup: 'fc-button-group',
         button: 'fc-button fc-button-primary',
         buttonActive: 'fc-button-active',
     };
-    StandardCakeLteTheme.prototype.baseIconClass = 'fc-icon';
-    StandardCakeLteTheme.prototype.iconClasses = {
+    StandardCakephpLteTheme.prototype.baseIconClass = 'fc-icon';
+    StandardCakephpLteTheme.prototype.iconClasses = {
         close: 'fc-icon-x',
         prev: 'fc-icon-chevron-left',
         next: 'fc-icon-chevron-right',
         prevYear: 'fc-icon-chevrons-left',
         nextYear: 'fc-icon-chevrons-right',
     };
-    StandardCakeLteTheme.prototype.rtlIconClasses = {
+    StandardCakephpLteTheme.prototype.rtlIconClasses = {
         prev: 'fc-icon-chevron-right',
         next: 'fc-icon-chevron-left',
         prevYear: 'fc-icon-chevrons-right',
         nextYear: 'fc-icon-chevrons-left',
     };
-    StandardCakeLteTheme.prototype.iconOverrideOption = 'buttonIcons'; // TODO: make TS-friendly
-    StandardCakeLteTheme.prototype.iconOverrideCustomButtonOption = 'icon';
-    StandardCakeLteTheme.prototype.iconOverridePrefix = 'fc-icon-';
+    StandardCakephpLteTheme.prototype.iconOverrideOption = 'buttonIcons'; // TODO: make TS-friendly
+    StandardCakephpLteTheme.prototype.iconOverrideCustomButtonOption = 'icon';
+    StandardCakephpLteTheme.prototype.iconOverridePrefix = 'fc-icon-';
 
     function compileViewDefs(defaultConfigs, overrideConfigs) {
         var hash = {};
@@ -6783,8 +6876,8 @@ var FullCalendar = (function(exports) {
                             customButtonProps.click.call(ev.target, ev, ev.target);
                         }
                     };
-                    (buttonIcon = CakeLteTheme.getCustomButtonIconClass(customButtonProps)) ||
-                    (buttonIcon = CakeLteTheme.getIconClass(buttonName, isRtl)) ||
+                    (buttonIcon = CakephpLteTheme.getCustomButtonIconClass(customButtonProps)) ||
+                    (buttonIcon = CakephpLteTheme.getIconClass(buttonName, isRtl)) ||
                     (buttonText = customButtonProps.text);
                 } else if ((viewSpec = viewSpecs[buttonName])) {
                     viewsWithButtons.push(buttonName);
@@ -6792,14 +6885,14 @@ var FullCalendar = (function(exports) {
                         calendarApi.changeView(buttonName);
                     };
                     (buttonText = viewSpec.buttonTextOverride) ||
-                    (buttonIcon = CakeLteTheme.getIconClass(buttonName, isRtl)) ||
+                    (buttonIcon = CakephpLteTheme.getIconClass(buttonName, isRtl)) ||
                     (buttonText = viewSpec.buttonTextDefault);
                 } else if (calendarApi[buttonName]) { // a calendarApi method
                     buttonClick = function() {
                         calendarApi[buttonName]();
                     };
                     (buttonText = calendarButtonTextOverrides[buttonName]) ||
-                    (buttonIcon = CakeLteTheme.getIconClass(buttonName, isRtl)) ||
+                    (buttonIcon = CakephpLteTheme.getIconClass(buttonName, isRtl)) ||
                     (buttonText = calendarButtonText[buttonName]);
                     //            ^ everything else is considered default
                 }
@@ -7891,9 +7984,9 @@ var FullCalendar = (function(exports) {
                     children.push(createElement("h2", { className: "fc-toolbar-title" }, props.title));
                 } else {
                     var ariaAttrs = buttonIcon ? { 'aria-label': buttonName } : {};
-                    var buttonClasses = ["fc-" + buttonName + "-button", CakeLteTheme.getClass('button')];
+                    var buttonClasses = ["fc-" + buttonName + "-button", CakephpLteTheme.getClass('button')];
                     if (buttonName === props.activeButton) {
-                        buttonClasses.push(CakeLteTheme.getClass('buttonActive'));
+                        buttonClasses.push(CakephpLteTheme.getClass('buttonActive'));
                     }
                     var isDisabled = (!props.isTodayEnabled && buttonName === 'today') ||
                         (!props.isPrevEnabled && buttonName === 'prev') ||
@@ -7902,7 +7995,7 @@ var FullCalendar = (function(exports) {
                 }
             }
             if (children.length > 1) {
-                var groupClassName = (isOnlyButtons && CakeLteTheme.getClass('buttonGroup')) || '';
+                var groupClassName = (isOnlyButtons && CakephpLteTheme.getClass('buttonGroup')) || '';
                 return createElement.apply(void 0, __spreadArrays(['div', { className: groupClassName }], children));
             }
             return children[0];
@@ -8305,7 +8398,7 @@ var FullCalendar = (function(exports) {
                 'fc',
                 forPrint ? 'fc-media-print' : 'fc-media-screen',
                 "fc-direction-" + options.direction,
-                props.CakeLteTheme.getClass('root'),
+                props.CakephpLteTheme.getClass('root'),
             ];
             if (!getCanVGrowWithinCell()) {
                 classNames.push('fc-liquid-hack');
@@ -8362,9 +8455,7 @@ var FullCalendar = (function(exports) {
             var classNames = [CLASS_NAME].concat(getDayClassNames(dayMeta, theme));
             var text = dateEnv.format(date, props.dayHeaderFormat);
             // if colCnt is 1, we are already in a day-view and don't need a navlink
-            var navLinkAttrs = (options.navLinks && !dayMeta.isDisabled && props.colCnt > 1) ?
-                { 'data-navlink': buildNavLinkData(date), tabIndex: 0 } :
-                {};
+            var navLinkAttrs = (options.navLinks && !dayMeta.isDisabled && props.colCnt > 1) ? { 'data-navlink': buildNavLinkData(date), tabIndex: 0 } : {};
             var hookProps = __assign(__assign(__assign({ date: dateEnv.toDate(date), view: viewApi }, props.extraHookProps), { text: text }), dayMeta);
             return (createElement(RenderHook, { hookProps: hookProps, classNames: options.dayHeaderClassNames, content: options.dayHeaderContent, defaultContent: renderInner, didMount: options.dayHeaderDidMount, willUnmount: options.dayHeaderWillUnmount }, function(rootElRef, customClassNames, innerElRef, innerContent) {
                 return (createElement("th", __assign({ ref: rootElRef, className: classNames.concat(customClassNames).join(' '), "data-date": !dayMeta.isDisabled ? formatDayString(date) : undefined, colSpan: props.colSpan }, props.extraDataAttrs),
@@ -9039,7 +9130,7 @@ var FullCalendar = (function(exports) {
     function getScrollGridClassNames(liquid, context) {
         var classNames = [
             'fc-scrollgrid',
-            context.CakeLteTheme.getClass('table'),
+            context.CakephpLteTheme.getClass('table'),
         ];
         if (liquid) {
             classNames.push('fc-scrollgrid-liquid');
@@ -9431,8 +9522,7 @@ var FullCalendar = (function(exports) {
                 viewApi: context.viewApi,
                 dateEnv: context.dateEnv,
             });
-            var classNames = getDayClassNames(hookProps, context.theme).concat(hookProps.isDisabled ?
-                [] // don't use custom classNames if disabled
+            var classNames = getDayClassNames(hookProps, context.theme).concat(hookProps.isDisabled ? [] // don't use custom classNames if disabled
                 :
                 this.normalizeClassNames(options.dayCellClassNames, hookProps));
             var dataAttrs = hookProps.isDisabled ? {} : {
@@ -11897,9 +11987,7 @@ var FullCalendar = (function(exports) {
         }
         TableCellTop.prototype.render = function() {
             var props = this.props;
-            var navLinkAttrs = this.context.options.navLinks ?
-                { 'data-navlink': buildNavLinkData(props.date), tabIndex: 0 } :
-                {};
+            var navLinkAttrs = this.context.options.navLinks ? { 'data-navlink': buildNavLinkData(props.date), tabIndex: 0 } : {};
             return (createElement(DayCellContent, { date: props.date, dateProfile: props.dateProfile, todayRange: props.todayRange, showDayNumber: props.showDayNumber, extraHookProps: props.extraHookProps, defaultContent: renderTopInner }, function(innerElRef, innerContent) {
                 return ((innerContent || props.forceDayTop) && (createElement("div", { className: "fc-daygrid-day-top", ref: innerElRef },
                     createElement("a", __assign({ className: "fc-daygrid-day-number" }, navLinkAttrs), innerContent || createElement(Fragment, null, "\u00A0")))));
@@ -11952,9 +12040,7 @@ var FullCalendar = (function(exports) {
                 text: props.buildMoreLinkText(props.moreCnt),
                 view: viewApi,
             };
-            var navLinkAttrs = options.navLinks ?
-                { 'data-navlink': buildNavLinkData(date, 'week'), tabIndex: 0 } :
-                {};
+            var navLinkAttrs = options.navLinks ? { 'data-navlink': buildNavLinkData(date, 'week'), tabIndex: 0 } : {};
             return (createElement(DayCellRoot, { date: date, dateProfile: dateProfile, todayRange: props.todayRange, showDayNumber: props.showDayNumber, extraHookProps: props.extraHookProps, elRef: this.handleRootEl }, function(dayElRef, dayClassNames, rootDataAttrs, isDisabled) {
                 return (createElement("td", __assign({ ref: dayElRef, className: ['fc-daygrid-day'].concat(dayClassNames, props.extraClassNames || []).join(' ') }, rootDataAttrs, props.extraDataAttrs),
                     createElement("div", { className: "fc-daygrid-day-frame fc-scrollgrid-sync-inner", ref: props.innerElRef /* different from hook system! RENAME */ },
@@ -12549,13 +12635,13 @@ var FullCalendar = (function(exports) {
             var props = this.props;
             var classNames = [
                 'fc-popover',
-                CakeLteTheme.getClass('popover'),
+                CakephpLteTheme.getClass('popover'),
             ].concat(props.extraClassNames || []);
             return (createElement("div", __assign({ className: classNames.join(' ') }, props.extraAttrs, { ref: this.handleRootEl }),
-                createElement("div", { className: 'fc-popover-header ' + CakeLteTheme.getClass('popoverHeader') },
+                createElement("div", { className: 'fc-popover-header ' + CakephpLteTheme.getClass('popoverHeader') },
                     createElement("span", { className: "fc-popover-title" }, props.title),
-                    createElement("span", { className: 'fc-popover-close ' + CakeLteTheme.getIconClass('close'), onClick: this.handleCloseClick })),
-                createElement("div", { className: 'fc-popover-body ' + CakeLteTheme.getClass('popoverContent') }, props.children)));
+                    createElement("span", { className: 'fc-popover-close ' + CakephpLteTheme.getIconClass('close'), onClick: this.handleCloseClick })),
+                createElement("div", { className: 'fc-popover-body ' + CakephpLteTheme.getClass('popoverContent') }, props.children)));
         };
         Popover.prototype.componentDidMount = function() {
             document.addEventListener('mousedown', this.handleDocumentMousedown);
@@ -12789,8 +12875,7 @@ var FullCalendar = (function(exports) {
                                 return (createElement(TableRow, {
                                     ref: _this.rowRefs.createRef(row),
                                     key: cells.length ?
-                                        cells[0].date.toISOString() /* best? or put key on cell? or use diff formatter? */ :
-                                        row // in case there are no cells (like when resource view is loading)
+                                        cells[0].date.toISOString() /* best? or put key on cell? or use diff formatter? */ : row // in case there are no cells (like when resource view is loading)
                                         ,
                                     showDayNumbers: rowCnt > 1,
                                     showWeekNumbers: props.showWeekNumbers,
@@ -13169,8 +13254,7 @@ var FullCalendar = (function(exports) {
                 var dayCnt = diffDays(range.start, range.end);
                 var navLinkAttrs = (options.navLinks && dayCnt === 1) // only do in day views (to avoid doing in week views that dont need it)
                     ?
-                    { 'data-navlink': buildNavLinkData(range.start, 'week'), tabIndex: 0 } :
-                    {};
+                    { 'data-navlink': buildNavLinkData(range.start, 'week'), tabIndex: 0 } : {};
                 if (options.weekNumbers && rowKey === 'day') {
                     return (createElement(WeekNumberRoot, { date: range.start, defaultFormat: DEFAULT_WEEK_NUM_FORMAT$1 }, function(rootElRef, classNames, innerElRef, innerContent) {
                         return (createElement("th", {
@@ -13249,7 +13333,7 @@ var FullCalendar = (function(exports) {
                     key: 'all-day-divider',
                     outerContent: ( // TODO: rename to cellContent so don't need to define <tr>?
                         createElement("tr", { className: "fc-scrollgrid-section" },
-                            createElement("td", { className: 'fc-timegrid-divider ' + context.CakeLteTheme.getClass('tableCellShaded') }))),
+                            createElement("td", { className: 'fc-timegrid-divider ' + context.CakephpLteTheme.getClass('tableCellShaded') }))),
                 });
             }
             sections.push({
@@ -13318,7 +13402,7 @@ var FullCalendar = (function(exports) {
                     type: 'body',
                     outerContent: ( // TODO: rename to cellContent so don't need to define <tr>?
                         createElement("tr", { className: "fc-scrollgrid-section" },
-                            createElement("td", { colSpan: 2, className: 'fc-timegrid-divider ' + context.CakeLteTheme.getClass('tableCellShaded') }))),
+                            createElement("td", { colSpan: 2, className: 'fc-timegrid-divider ' + context.CakephpLteTheme.getClass('tableCellShaded') }))),
                 });
             }
             var isNowIndicator = context.options.nowIndicator;
@@ -13508,7 +13592,7 @@ var FullCalendar = (function(exports) {
                 context = _a.context;
             return (createElement("div", { className: "fc-timegrid-slots", ref: this.rootElRef },
                 createElement("table", {
-                        className: context.CakeLteTheme.getClass('table'),
+                        className: context.CakephpLteTheme.getClass('table'),
                         style: {
                             minWidth: props.tableMinWidth,
                             width: props.clientWidth,
@@ -14361,7 +14445,7 @@ var FullCalendar = (function(exports) {
             return (createElement(RenderHook, { hookProps: hookProps, classNames: options.dayHeaderClassNames, content: options.dayHeaderContent, defaultContent: renderInnerContent$4, didMount: options.dayHeaderDidMount, willUnmount: options.dayHeaderWillUnmount }, function(rootElRef, customClassNames, innerElRef, innerContent) {
                 return (createElement("tr", { ref: rootElRef, className: classNames.concat(customClassNames).join(' '), "data-date": formatDayString(dayDate) },
                     createElement("th", { colSpan: 3 },
-                        createElement("div", { className: 'fc-list-day-cushion ' + CakeLteTheme.getClass('tableCellShaded'), ref: innerElRef }, innerContent))));
+                        createElement("div", { className: 'fc-list-day-cushion ' + CakephpLteTheme.getClass('tableCellShaded'), ref: innerElRef }, innerContent))));
             }));
         };
         return ListViewHeaderRow;
@@ -14370,8 +14454,7 @@ var FullCalendar = (function(exports) {
     function renderInnerContent$4(props) {
         var navLinkAttrs = props.navLinkData // is there a type for this?
             ?
-            { 'data-navlink': props.navLinkData, tabIndex: 0 } :
-            {};
+            { 'data-navlink': props.navLinkData, tabIndex: 0 } : {};
         return (createElement(Fragment, null,
             props.text && (createElement("a", __assign({ className: "fc-list-day-text" }, navLinkAttrs), props.text)),
             props.sideText && (createElement("a", __assign({ className: "fc-list-day-side-text" }, navLinkAttrs), props.sideText))));
@@ -14490,7 +14573,7 @@ var FullCalendar = (function(exports) {
                 context = _a.context;
             var extraClassNames = [
                 'fc-list',
-                context.CakeLteTheme.getClass('table'),
+                context.CakephpLteTheme.getClass('table'),
                 context.options.stickyHeaderDates !== false ? 'fc-list-sticky' : '',
             ];
             var _b = this.computeDateVars(props.dateProfile),
@@ -14537,7 +14620,7 @@ var FullCalendar = (function(exports) {
                         }
                     }
                 }
-                return (createElement("table", { className: 'fc-list-table ' + CakeLteTheme.getClass('table') },
+                return (createElement("table", { className: 'fc-list-table ' + CakephpLteTheme.getClass('table') },
                     createElement("tbody", null, innerNodes)));
             }));
         };
@@ -14676,7 +14759,7 @@ var FullCalendar = (function(exports) {
         }
         return BootstrapTheme;
     }(Theme));
-    BootstrapCakeLteTheme.prototype.classes = {
+    BootstrapCakephpLteTheme.prototype.classes = {
         root: 'fc-theme-bootstrap',
         table: 'table-bordered',
         tableCellShaded: 'table-active',
@@ -14687,23 +14770,23 @@ var FullCalendar = (function(exports) {
         popoverHeader: 'popover-header',
         popoverContent: 'popover-body',
     };
-    BootstrapCakeLteTheme.prototype.baseIconClass = 'fa';
-    BootstrapCakeLteTheme.prototype.iconClasses = {
+    BootstrapCakephpLteTheme.prototype.baseIconClass = 'fa';
+    BootstrapCakephpLteTheme.prototype.iconClasses = {
         close: 'fa-times',
         prev: 'fa-chevron-left',
         next: 'fa-chevron-right',
         prevYear: 'fa-angle-double-left',
         nextYear: 'fa-angle-double-right',
     };
-    BootstrapCakeLteTheme.prototype.rtlIconClasses = {
+    BootstrapCakephpLteTheme.prototype.rtlIconClasses = {
         prev: 'fa-chevron-right',
         next: 'fa-chevron-left',
         prevYear: 'fa-angle-double-right',
         nextYear: 'fa-angle-double-left',
     };
-    BootstrapCakeLteTheme.prototype.iconOverrideOption = 'bootstrapFontAwesome'; // TODO: make TS-friendly. move the option-processing into this plugin
-    BootstrapCakeLteTheme.prototype.iconOverrideCustomButtonOption = 'bootstrapFontAwesome';
-    BootstrapCakeLteTheme.prototype.iconOverridePrefix = 'fa-';
+    BootstrapCakephpLteTheme.prototype.iconOverrideOption = 'bootstrapFontAwesome'; // TODO: make TS-friendly. move the option-processing into this plugin
+    BootstrapCakephpLteTheme.prototype.iconOverrideCustomButtonOption = 'bootstrapFontAwesome';
+    BootstrapCakephpLteTheme.prototype.iconOverridePrefix = 'fa-';
     var plugin = createPlugin({
         themeClasses: {
             bootstrap: BootstrapTheme,

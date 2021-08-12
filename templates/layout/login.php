@@ -7,13 +7,13 @@ use Cake\Core\Configure; ?>
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title><?php echo Configure::read('CakeLteTheme.title'); ?> | <?php echo $this->fetch('title'); ?></title>
+  <title><?php echo Configure::read('CakephpLteTheme.title'); ?> | <?php echo $this->fetch('title'); ?></title>
 
 
   <?php echo $this->Html->css('https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback'); ?>
-  <?php echo $this->Html->css('CakeLte./plugins/fontawesome-free/css/all.min.css'); ?>
-  <?php echo $this->Html->css('CakeLte./plugins/icheck-bootstrap/icheck-bootstrap.min'); ?>
-  <?php echo $this->Html->css('CakeLte./css/adminlte.min'); ?>
+  <?php echo $this->Html->css('CakephpLte./plugins/fontawesome-free/css/all.min.css'); ?>
+  <?php echo $this->Html->css('CakephpLte./plugins/icheck-bootstrap/icheck-bootstrap.min'); ?>
+  <?php echo $this->Html->css('CakephpLte./css/adminlte.min'); ?>
 
 
   <?php echo $this->fetch('css'); ?>
@@ -24,7 +24,7 @@ use Cake\Core\Configure; ?>
     <!-- /.login-logo -->
     <div class="card card-outline card-primary">
       <div class="card-header text-center">
-        <a class="h1" href="<?php echo $this->Url->build(); ?>"><?php echo Configure::read('CakeLteCakeLteTheme.logo.large') ?></a>
+        <a class="h1" href="<?php echo $this->Url->build(); ?>"><?php echo Configure::read('CakephpLteCakephpLteTheme.logo.large') ?></a>
       </div>
       <div class="card-body">
         <p class="login-box-msg">Sign in to start your session</p>
@@ -41,9 +41,9 @@ use Cake\Core\Configure; ?>
 
 
 
-  <?php echo $this->Html->script('CakeLte./plugins/jquery/jquery.min'); ?>
-  <?php echo $this->Html->script('CakeLte./plugins/bootstrap/js/bootstrap.bundle.min'); ?>
-  <?php echo $this->Html->script('CakeLte.adminlte.min'); ?>
+  <?php echo $this->Html->script('CakephpLte./plugins/jquery/jquery.min'); ?>
+  <?php echo $this->Html->script('CakephpLte./plugins/bootstrap/js/bootstrap.bundle.min'); ?>
+  <?php echo $this->Html->script('CakephpLte.adminlte.min'); ?>
 
 
   <?php echo $this->fetch('script'); ?>

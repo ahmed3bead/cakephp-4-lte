@@ -1,6 +1,6 @@
 <?php
 
-namespace CakeLte\View\Helper;
+namespace CakephpLte\View\Helper;
 
 use Cake\View\Helper\FormHelper as CakeFormHelper;
 use Cake\Utility\Hash;
