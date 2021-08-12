@@ -24,12 +24,12 @@
     },
     "autoload": {
         "psr-4": {
-            "cakephp-4-lte\\": "src/"
+            "CakephpLte\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "cakephp-4-lte\\Test\\": "tests/",
+            "CakephpLte\\Test\\": "tests/",
             "Cake\\Test\\": "vendor/cakephp/cakephp/tests/"
         }
     },
