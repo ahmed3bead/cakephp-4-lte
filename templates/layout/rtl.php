@@ -29,6 +29,9 @@ use Cake\Core\Configure; ?>
   <?php echo $this->Html->css('CakephpLte./css/cairo.css'); ?>
 
   <?php echo $this->fetch('css'); ?>
+  
+   <!-- jQuery -->
+    <?php echo $this->Html->script('CakephpLte./plugins/jquery/jquery.min.js'); ?>
 
 </head>
 
@@ -71,8 +74,7 @@ use Cake\Core\Configure; ?>
 
 
 
-    <!-- jQuery -->
-    <?php echo $this->Html->script('CakephpLte./plugins/jquery/jquery.min.js'); ?>
+   
 
 
     <!-- jQuery UI 1.11.4 -->
