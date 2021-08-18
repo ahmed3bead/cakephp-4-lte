@@ -15,7 +15,7 @@
     <section class="content">
 
       <!-- SELECT2 EXAMPLE -->
-      <div class="box card-default">
+      <div class="card card-default">
         <div class="card-header with-border">
           <h3 class="card-title">Select2</h3>
 
@@ -99,7 +99,7 @@
       <div class="row">
         <div class="col-md-6">
 
-          <div class="box card-danger">
+          <div class="card card-danger">
             <div class="card-header">
               <h3 class="card-title">Input masks</h3>
             </div>
@@ -177,7 +177,7 @@
           </div>
           <!-- /.box -->
 
-          <div class="box card-info">
+          <div class="card card-info">
             <div class="card-header">
               <h3 class="card-title">Color & Time Picker</h3>
             </div>
@@ -228,7 +228,7 @@
         </div>
         <!-- /.col (left) -->
         <div class="col-md-6">
-          <div class="box card-primary">
+          <div class="card card-primary">
             <div class="card-header">
               <h3 class="card-title">Date picker</h3>
             </div>
@@ -296,7 +296,7 @@
           <!-- /.box -->
 
           <!-- iCheck -->
-          <div class="box card-success">
+          <div class="card card-success">
             <div class="card-header">
               <h3 class="card-title">iCheck - Checkbox &amp; Radio Inputs</h3>
             </div>

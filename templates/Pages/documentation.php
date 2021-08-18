@@ -24,7 +24,7 @@
   </p>
   <div class="row">
     <div class="col-sm-6">
-      <div class="box card-primary">
+      <div class="card card-primary">
         <div class="card-header with-border">
           <h3 class="card-title">Ready</h3>
           <span class="label label-primary pull-right"><i class="fa fa-html5"></i></span>
@@ -36,7 +36,7 @@
       </div><!-- /.box -->
     </div><!-- /.col -->
     <div class="col-sm-6">
-      <div class="box card-danger">
+      <div class="card card-danger">
         <div class="card-header with-border">
           <h3 class="card-title">Source Code</h3>
           <span class="label label-danger pull-right"><i class="fa fa-database"></i></span>
@@ -133,7 +133,7 @@ AdminLTE/
   <p class="lead">Skins can be found in the dist/css/skins folder.
     Choose and the skin file that you want then add the appropriate
     class to the body tag to change the template's appearance. Here is the list of available skins:</p>
-  <div class="box card-solid" style="max-width: 300px;">
+  <div class="card card-solid" style="max-width: 300px;">
     <div class="card-body no-padding">
       <table id="layout-skins-list" class="table table-striped bring-up nth-2-center">
         <thead>
@@ -352,7 +352,7 @@ AdminLTE/
     navbar differs slightly from Bootstrap because it has components that Bootstrap doesn't provide.
     The navbar can be constructed in two way. This an example for the normal navbar and next we will provide an example for
     the top nav layout.</p>
-  <div class="box card-solid">
+  <div class="card card-solid">
     <div class="card-body" style="position: relative;">
       <span class="eg">Main Header Example</span>
       <header class="main-header" style="position: relative;">
@@ -631,7 +631,7 @@ AdminLTE/
     <h4>Reminder!</h4>
     <p>To use this main header instead of the regular one, you must add the <code>layout-top-nav</code> class to the body tag.</p>
   </div>
-  <div class="box card-solid">
+  <div class="card card-solid">
     <div class="card-body layout-top-nav">
       <span class="eg">Top Nav Example</span>
       <header class="main-header">
@@ -1011,7 +1011,7 @@ AdminLTE/
       </div><!-- /.box -->
     </div>
     <div class="col-md-4">
-      <div class="box card-primary">
+      <div class="card card-primary">
         <div class="card-header with-border">
           <h3 class="card-title">Primary Box Example</h3>
         </div><!-- /.card-header -->
@@ -1021,7 +1021,7 @@ AdminLTE/
       </div><!-- /.box -->
     </div>
     <div class="col-md-4">
-      <div class="box card-info">
+      <div class="card card-info">
         <div class="card-header with-border">
           <h3 class="card-title">Info Box Example</h3>
         </div><!-- /.card-header -->
@@ -1032,7 +1032,7 @@ AdminLTE/
     </div>
     <div class="clearfix"></div>
     <div class="col-md-4">
-      <div class="box card-warning">
+      <div class="card card-warning">
         <div class="card-header with-border">
           <h3 class="card-title">Warning Box Example</h3>
         </div><!-- /.card-header -->
@@ -1042,7 +1042,7 @@ AdminLTE/
       </div><!-- /.box -->
     </div>
     <div class="col-md-4">
-      <div class="box card-success">
+      <div class="card card-success">
         <div class="card-header with-border">
           <h3 class="card-title">Success Box Example</h3>
         </div><!-- /.card-header -->
@@ -1052,7 +1052,7 @@ AdminLTE/
       </div><!-- /.box -->
     </div>
     <div class="col-md-4">
-      <div class="box card-danger">
+      <div class="card card-danger">
         <div class="card-header with-border">
           <h3 class="card-title">Danger Box Example</h3>
         </div><!-- /.card-header -->
@@ -1062,12 +1062,12 @@ AdminLTE/
       </div><!-- /.box -->
     </div>
   </div><!-- /.row -->
-  <pre class="prettyprint">&LT;div class="box card-default">...&LT;/div>
-&LT;div class="box card-primary">...&LT;/div>
-&LT;div class="box card-info">...&LT;/div>
-&LT;div class="box card-warning">...&LT;/div>
-&LT;div class="box card-success">...&LT;/div>
-&LT;div class="box card-danger">...&LT;/div></pre>
+  <pre class="prettyprint">&LT;div class="card card-default">...&LT;/div>
+&LT;div class="card card-primary">...&LT;/div>
+&LT;div class="card card-info">...&LT;/div>
+&LT;div class="card card-warning">...&LT;/div>
+&LT;div class="card card-success">...&LT;/div>
+&LT;div class="card card-danger">...&LT;/div></pre>
 
   <h4>Solid Box</h4>
   <p class="lead">Solid Boxes are alternative ways to display boxes.
@@ -1075,7 +1075,7 @@ AdminLTE/
     You may also use contextual classes with you solid boxes.</p>
   <div class="row">
     <div class="col-md-4">
-      <div class="box card-solid card-default">
+      <div class="card card-solid card-default">
         <div class="card-header">
           <h3 class="card-title">Default Solid Box Example</h3>
         </div><!-- /.card-header -->
@@ -1085,7 +1085,7 @@ AdminLTE/
       </div><!-- /.box -->
     </div>
     <div class="col-md-4">
-      <div class="box card-solid card-primary">
+      <div class="card card-solid card-primary">
         <div class="card-header">
           <h3 class="card-title">Primary Solid Box Example</h3>
         </div><!-- /.card-header -->
@@ -1095,7 +1095,7 @@ AdminLTE/
       </div><!-- /.box -->
     </div>
     <div class="col-md-4">
-      <div class="box card-solid card-info">
+      <div class="card card-solid card-info">
         <div class="card-header">
           <h3 class="card-title">Info Solid Box Example</h3>
         </div><!-- /.card-header -->
@@ -1106,7 +1106,7 @@ AdminLTE/
     </div>
     <div class="clearfix"></div>
     <div class="col-md-4">
-      <div class="box card-solid card-warning">
+      <div class="card card-solid card-warning">
         <div class="card-header">
           <h3 class="card-title">Warning Solid Box Example</h3>
         </div><!-- /.card-header -->
@@ -1116,7 +1116,7 @@ AdminLTE/
       </div><!-- /.box -->
     </div>
     <div class="col-md-4">
-      <div class="box card-solid card-success">
+      <div class="card card-solid card-success">
         <div class="card-header">
           <h3 class="card-title">Success Solid Box Example</h3>
         </div><!-- /.card-header -->
@@ -1126,7 +1126,7 @@ AdminLTE/
       </div><!-- /.box -->
     </div>
     <div class="col-md-4">
-      <div class="box card-solid card-danger">
+      <div class="card card-solid card-danger">
         <div class="card-header">
           <h3 class="card-title">Danger Solid Box Example</h3>
         </div><!-- /.card-header -->
@@ -1137,12 +1137,12 @@ AdminLTE/
     </div>
   </div><!-- /.row -->
   <pre class="prettyprint">
-&LT;div class="box card-solid card-default">...&LT;/div>
-&LT;div class="box card-solid card-primary">...&LT;/div>
-&LT;div class="box card-solid card-info">...&LT;/div>
-&LT;div class="box card-solid card-warning">...&LT;/div>
-&LT;div class="box card-solid card-success">...&LT;/div>
-&LT;div class="box card-solid card-danger">...&LT;/div></pre>
+&LT;div class="card card-solid card-default">...&LT;/div>
+&LT;div class="card card-solid card-primary">...&LT;/div>
+&LT;div class="card card-solid card-info">...&LT;/div>
+&LT;div class="card card-solid card-warning">...&LT;/div>
+&LT;div class="card card-solid card-success">...&LT;/div>
+&LT;div class="card card-solid card-danger">...&LT;/div></pre>
   <h4>Box Tools</h4>
   <p class="lead">Boxes can contain tools to deploy a specific event or provide simple info. The following examples makes use
     of multiple AdminLTE components within the header of the box.</p>
@@ -1155,7 +1155,7 @@ AdminLTE/
 &LT;button class="btn btn-card-tool" data-widget="collapse" data-toggle="tooltip" title="Collapse">&LT;i class="fa fa-minus">&LT;/i>&LT;/button></pre>
   <div class="row">
     <div class="col-md-4">
-      <div class="box card-default">
+      <div class="card card-default">
         <div class="card-header with-border">
           <h3 class="card-title">Collapsable</h3>
           <div class="card-tools pull-right">
@@ -1167,7 +1167,7 @@ AdminLTE/
         </div><!-- /.card-body -->
       </div><!-- /.box -->
       <pre class="prettyprint">
-&LT;div class="box card-default">
+&LT;div class="card card-default">
   &LT;div class="card-header with-border">
     &LT;h3 class="card-title">Collapsable&LT;/h3>
     &LT;div class="card-tools pull-right">
@@ -1180,7 +1180,7 @@ AdminLTE/
 &LT;/div>&LT;!-- /.box --></pre>
     </div>
     <div class="col-md-4">
-      <div class="box card-default">
+      <div class="card card-default">
         <div class="card-header with-border">
           <h3 class="card-title">Removable</h3>
           <div class="card-tools pull-right">
@@ -1192,7 +1192,7 @@ AdminLTE/
         </div><!-- /.card-body -->
       </div><!-- /.box -->
       <pre class="prettyprint">
-&LT;div class="box card-default">
+&LT;div class="card card-default">
   &LT;div class="card-header with-border">
     &LT;h3 class="card-title">Removable&LT;/h3>
     &LT;div class="card-tools pull-right">
@@ -1205,7 +1205,7 @@ AdminLTE/
 &LT;/div>&LT;!-- /.box --></pre>
     </div>
     <div class="col-md-4">
-      <div class="box card-default collapsed-box">
+      <div class="card card-default collapsed-box">
         <div class="card-header with-border">
           <h3 class="card-title">Expandable</h3>
           <div class="card-tools pull-right">
@@ -1217,7 +1217,7 @@ AdminLTE/
         </div><!-- /.card-body -->
       </div><!-- /.box -->
       <pre class="prettyprint">
-&LT;div class="box card-default collapsed-box">
+&LT;div class="card card-default collapsed-box">
   &LT;div class="card-header with-border">
     &LT;h3 class="card-title">Expandable&LT;/h3>
     &LT;div class="card-tools pull-right">
@@ -1233,7 +1233,7 @@ AdminLTE/
   <p>We can also add labels, badges, pagination, tooltips, inputs and many more in the box tools. A few examples:</p>
   <div class="row">
     <div class="col-md-4">
-      <div class="box card-default">
+      <div class="card card-default">
         <div class="card-header with-border">
           <h3 class="card-title">Labels</h3>
           <div class="card-tools pull-right">
@@ -1245,7 +1245,7 @@ AdminLTE/
         </div><!-- /.card-body -->
       </div><!-- /.box -->
       <pre class="prettyprint">
-&LT;div class="box card-default">
+&LT;div class="card card-default">
   &LT;div class="card-header with-border">
     &LT;h3 class="card-title">Labels&LT;/h3>
     &LT;div class="card-tools pull-right">
@@ -1258,7 +1258,7 @@ AdminLTE/
 &LT;/div>&LT;!-- /.box --></pre>
     </div>
     <div class="col-md-4">
-      <div class="box card-default">
+      <div class="card card-default">
         <div class="card-header with-border">
           <h3 class="card-title">Input</h3>
           <div class="card-tools pull-right">
@@ -1273,7 +1273,7 @@ AdminLTE/
         </div><!-- /.card-body -->
       </div><!-- /.box -->
       <pre class="prettyprint">
-&LT;div class="box card-default">
+&LT;div class="card card-default">
   &LT;div class="card-header with-border">
     &LT;h3 class="card-title">Input&LT;/h3>
     &LT;div class="card-tools pull-right">
@@ -1289,7 +1289,7 @@ AdminLTE/
 &LT;/div>&LT;!-- /.box --></pre>
     </div>
     <div class="col-md-4">
-      <div class="box card-default">
+      <div class="card card-default">
         <div class="card-header with-border">
           <h3 class="card-title">Tootips on buttons</h3>
           <div class="card-tools pull-right">
@@ -1302,7 +1302,7 @@ AdminLTE/
         </div><!-- /.card-body -->
       </div><!-- /.box -->
       <pre class="prettyprint">
-&LT;div class="box card-default">
+&LT;div class="card card-default">
   &LT;div class="card-header with-border">
     &LT;h3 class="card-title">Tooltips on buttons&LT;/h3>
     &LT;div class="card-tools pull-right">
@@ -1327,7 +1327,7 @@ AdminLTE/
   <h4>Loading States</h4>
   <div class="row">
     <div class="col-md-6">
-      <div class="box card-default">
+      <div class="card card-default">
         <div class="card-header with-border">
           <h3 class="card-title">Loading state</h3>
         </div>
@@ -1343,7 +1343,7 @@ AdminLTE/
     </div><!-- /.col -->
 
     <div class="col-md-6">
-      <div class="box card-default card-solid">
+      <div class="card card-default card-solid">
         <div class="card-header with-border">
           <h3 class="card-title">Loading state (.card-solid)</h3>
         </div>
@@ -1372,7 +1372,7 @@ AdminLTE/
   <div class="row">
     <div class="col-md-3">
       <!-- DIRECT CHAT PRIMARY -->
-      <div class="box card-primary direct-chat direct-chat-primary">
+      <div class="card card-primary direct-chat direct-chat-primary">
         <div class="card-header with-border">
           <h3 class="card-title">Direct Chat</h3>
           <div class="card-tools pull-right">
@@ -1445,7 +1445,7 @@ AdminLTE/
 
     <div class="col-md-3">
       <!-- DIRECT CHAT SUCCESS -->
-      <div class="box card-success direct-chat direct-chat-success">
+      <div class="card card-success direct-chat direct-chat-success">
         <div class="card-header with-border">
           <h3 class="card-title">Direct Chat</h3>
           <div class="card-tools pull-right">
@@ -1518,7 +1518,7 @@ AdminLTE/
 
     <div class="col-md-3">
       <!-- DIRECT CHAT WARNING -->
-      <div class="box card-warning direct-chat direct-chat-warning">
+      <div class="card card-warning direct-chat direct-chat-warning">
         <div class="card-header with-border">
           <h3 class="card-title">Direct Chat</h3>
           <div class="card-tools pull-right">
@@ -1591,7 +1591,7 @@ AdminLTE/
 
     <div class="col-md-3">
       <!-- DIRECT CHAT DANGER -->
-      <div class="box card-danger direct-chat direct-chat-danger">
+      <div class="card card-danger direct-chat direct-chat-danger">
         <div class="card-header with-border">
           <h3 class="card-title">Direct Chat</h3>
           <div class="card-tools pull-right">
@@ -1667,7 +1667,7 @@ AdminLTE/
 &LT;!-- Construct the box with style you want. Here we are using card-danger -->
 &LT;!-- Then add the class direct-chat and choose the direct-chat-* contexual class -->
 &LT;!-- The contextual class should match the box, so we are using direct-chat-danger -->
-&LT;div class="box card-danger direct-chat direct-chat-danger">
+&LT;div class="card card-danger direct-chat direct-chat-danger">
   &LT;div class="card-header with-border">
     &LT;h3 class="card-title">Direct Chat&LT;/h3>
     &LT;div class="card-tools pull-right">
@@ -1741,7 +1741,7 @@ AdminLTE/
   <div class="row">
     <div class="col-md-6">
       <!-- DIRECT CHAT WARNING -->
-      <div class="box card-primary card-solid direct-chat direct-chat-primary">
+      <div class="card card-primary card-solid direct-chat direct-chat-primary">
         <div class="card-header">
           <h3 class="card-title">Direct Chat in a Solid Box</h3>
           <div class="card-tools pull-right">
@@ -1814,7 +1814,7 @@ AdminLTE/
 
     <div class="col-md-6">
       <!-- DIRECT CHAT DANGER -->
-      <div class="box card-info card-solid direct-chat direct-chat-info">
+      <div class="card card-info card-solid direct-chat direct-chat-info">
         <div class="card-header">
           <h3 class="card-title">Direct Chat in a Solid Box</h3>
           <div class="card-tools pull-right">

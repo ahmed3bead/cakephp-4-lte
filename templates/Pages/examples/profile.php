@@ -17,7 +17,7 @@
         <div class="col-md-3">
 
           <!-- Profile Image -->
-          <div class="box card-primary">
+          <div class="card card-primary">
             <div class="card-body card-profile">
               <?php echo $this->Html->image('user4-128x128.jpg', ['class' => 'profile-user-img img-responsive img-circle', 'alt' => 'User profile picture']); ?>
 
@@ -44,7 +44,7 @@
           <!-- /.box -->
 
           <!-- About Me Box -->
-          <div class="box card-primary">
+          <div class="card card-primary">
             <div class="card-header with-border">
               <h3 class="card-title">About Me</h3>
             </div>

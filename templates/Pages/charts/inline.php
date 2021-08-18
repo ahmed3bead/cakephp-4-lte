@@ -18,7 +18,7 @@
       <div class="row">
         <div class="col-xs-12">
           <!-- jQuery Knob -->
-          <div class="box card-solid">
+          <div class="card card-solid">
             <div class="card-header">
               <i class="fa fa-bar-chart-o"></i>
 
@@ -87,7 +87,7 @@
 
       <div class="row">
         <div class="col-xs-12">
-          <div class="box card-solid">
+          <div class="card card-solid">
             <div class="card-header">
               <i class="fa fa-bar-chart-o"></i>
 
@@ -140,7 +140,7 @@
 
       <div class="row">
         <div class="col-xs-12">
-          <div class="box card-solid">
+          <div class="card card-solid">
             <div class="card-header">
               <i class="fa fa-bar-chart-o"></i>
 
@@ -201,7 +201,7 @@
 
       <div class="row">
         <div class="col-md-4">
-          <div class="box card-solid">
+          <div class="card card-solid">
             <div class="card-header">
               <h3 class="card-title text-danger">Sparkline Pie</h3>
 
@@ -222,7 +222,7 @@
         <!-- /.col -->
 
         <div class="col-md-4">
-          <div class="box card-solid">
+          <div class="card card-solid">
             <div class="card-header">
               <h3 class="card-title text-blue">Sparkline line</h3>
 
@@ -243,7 +243,7 @@
         <!-- /.col -->
 
         <div class="col-md-4">
-          <div class="box card-solid">
+          <div class="card card-solid">
             <div class="card-header">
               <h3 class="card-title text-warning">Sparkline Bar</h3>
 
@@ -267,7 +267,7 @@
 
       <div class="row">
         <div class="col-xs-12">
-          <div class="box card-solid">
+          <div class="card card-solid">
             <div class="card-header">
               <h3 class="card-title">Sparkline examples</h3>
 
