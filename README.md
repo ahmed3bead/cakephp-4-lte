@@ -117,7 +117,7 @@ Just add rtl css and js to your layout (if you overwrite it )
 or use rtl layout
 
 ```php
-$this->layout = 'rtl';
+$this->layout = 'CakephpLte.rtl';
 
 ```
 
