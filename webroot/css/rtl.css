@@ -129,3 +129,10 @@
     max-width: 130px;
     min-width: 130px;
 }
+
+.btn.btn-flat {
+  border-radius: 0;
+  border-width: 1px;
+  box-shadow: none;
+  margin: 0px 4px 5px 5px !important
+}
