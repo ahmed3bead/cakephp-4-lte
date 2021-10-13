@@ -27,7 +27,7 @@
       <p>The construction of this layout differs from the normal one. In other words, the HTML markup of the navbar
         and the content will slightly differ than that of the normal layout.</p>
     </div>
-    <div class="box card-default">
+    <div class="card card-default">
       <div class="card-header with-border">
         <h3 class="card-title">Blank Box</h3>
       </div>

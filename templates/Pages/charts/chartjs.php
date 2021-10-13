@@ -16,7 +16,7 @@
       <div class="row">
         <div class="col-md-6">
           <!-- AREA CHART -->
-          <div class="box card-primary">
+          <div class="card card-primary">
             <div class="card-header with-border">
               <h3 class="card-title">Area Chart</h3>
 
@@ -36,7 +36,7 @@
           <!-- /.box -->
 
           <!-- DONUT CHART -->
-          <div class="box card-danger">
+          <div class="card card-danger">
             <div class="card-header with-border">
               <h3 class="card-title">Donut Chart</h3>
 
@@ -57,7 +57,7 @@
         <!-- /.col (LEFT) -->
         <div class="col-md-6">
           <!-- LINE CHART -->
-          <div class="box card-info">
+          <div class="card card-info">
             <div class="card-header with-border">
               <h3 class="card-title">Line Chart</h3>
 
@@ -77,7 +77,7 @@
           <!-- /.box -->
 
           <!-- BAR CHART -->
-          <div class="box card-success">
+          <div class="card card-success">
             <div class="card-header with-border">
               <h3 class="card-title">Bar Chart</h3>
 

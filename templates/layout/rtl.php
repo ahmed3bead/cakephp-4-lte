@@ -179,7 +179,7 @@ if (isset($_GET['range_date']) && !empty($_GET['range_date'])) {
 
 
 
-           <?php echo $this->element('footer'); ?>
+    <?php echo $this->element('footer'); ?>
 
             <!-- Control Sidebar -->
             <aside class="control-sidebar control-sidebar-dark">

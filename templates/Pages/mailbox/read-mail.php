@@ -15,7 +15,7 @@
         <div class="col-md-3">
           <a href="<?php echo $this->Url->build(['controller' => 'pages', 'action' => 'display', 'mailbox', 'compose']); ?>" class="btn btn-primary margin-bottom">Compose</a>
 
-          <div class="box card-solid">
+          <div class="card card-solid">
             <div class="card-header with-border">
               <h3 class="card-title">Folders</h3>
 
@@ -38,7 +38,7 @@
             <!-- /.card-body -->
           </div>
           <!-- /. box -->
-          <div class="box card-solid">
+          <div class="card card-solid">
             <div class="card-header with-border">
               <h3 class="card-title">Labels</h3>
 
@@ -60,7 +60,7 @@
         </div>
         <!-- /.col -->
         <div class="col-md-9">
-          <div class="box card-primary">
+          <div class="card card-primary">
             <div class="card-header with-border">
               <h3 class="card-title">Read Mail</h3>
 

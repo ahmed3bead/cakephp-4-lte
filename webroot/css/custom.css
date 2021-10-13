@@ -131,8 +131,5 @@
 }
 
 .btn.btn-flat {
-  border-radius: 0;
-  border-width: 1px;
-  box-shadow: none;
-  margin: 0px 4px 5px 5px !important
+    margin: 0px 4px 0 5px !important
 }

@@ -14,24 +14,17 @@
  */
 #}
 {% set fields = Bake.filterFields(fields, schema, modelObject, indexColumns, ['binary', 'text']) %}
-<!-- Content Header (Page header) -->
-<section class="content-header">
-  <h1>
-    {{ pluralHumanName }}
 
-    <div class="pull-right"><?php echo $this->Html->link(__('New'), ['action' => 'add'], ['class'=>'btn btn-success btn-xs']) ?></div>
-  </h1>
-</section>
 
 <!-- Main content -->
 <section class="content">
   <div class="row">
     <div class="col-xs-12">
-      <div class="box">
-        <div class="box-header">
-          <h3 class="box-title"><?php echo __('List'); ?></h3>
+      <div class="card">
+        <div class="card-header">
+          <h3 class="card-title"><?php echo __('List'); ?></h3>
 
-          <div class="box-tools">
+          <div class="card-tools">
             <form action="<?php echo $this->Url->build(); ?>" method="POST">
               <div class="input-group input-group-sm" style="width: 150px;">
                 <input type="text" name="table_search" class="form-control pull-right" placeholder="<?php echo __('Search'); ?>">
@@ -43,8 +36,8 @@
             </form>
           </div>
         </div>
-        <!-- /.box-header -->
-        <div class="box-body table-responsive no-padding">
+        <!-- /.card-header -->
+        <div class="card-body table-responsive no-padding">
           <table class="table table-hover">
             <thead>
               <tr>
@@ -85,9 +78,9 @@
             </tbody>
           </table>
         </div>
-        <!-- /.box-body -->
+        <!-- /.card-body -->
       </div>
-      <!-- /.box -->
+      <!-- /.card -->
     </div>
   </div>
 </section>

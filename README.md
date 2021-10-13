@@ -1,4 +1,5 @@
-# CakePHP AdminLTE 3 Theme (0.0.2)
+# CakePHP AdminLTE 3 Theme
+[![Latest Stable Version](http://poser.pugx.org/ahmedebead/cakephp-4-lte/v)](https://packagist.org/packages/ahmedebead/cakephp-4-lte) [![Total Downloads](http://poser.pugx.org/ahmedebead/cakephp-4-lte/downloads)](https://packagist.org/packages/ahmedebead/cakephp-4-lte) [![Latest Unstable Version](http://poser.pugx.org/ahmedebead/cakephp-4-lte/v/unstable)](https://packagist.org/packages/ahmedebead/cakephp-4-lte) [![License](http://poser.pugx.org/ahmedebead/cakephp-4-lte/license)](https://packagist.org/packages/ahmedebead/cakephp-4-lte)
 
 ![RTL Support](https://github.com/ahmed3bead/cakephp-4-lte/blob/main/webroot/theme-images/ltr.png?raw=true)
 
@@ -34,7 +35,7 @@ bin/cake plugin assets symlink
 
 public function bootstrap()
 {
-    $this->addPlugin('CakephpLte');
+    $this->addPlugin('CakephpLte', ['autoload' => true, 'bootstrap' => true, 'routes' => true]);
 }
 ```
 
@@ -116,7 +117,7 @@ Just add rtl css and js to your layout (if you overwrite it )
 or use rtl layout
 
 ```php
-$this->layout = 'rtl';
+$this->layout = 'CakephpLte.rtl';
 
 ```
 
@@ -243,7 +244,8 @@ When you configure `App.defaultLocale` to `pt_BR` this Locale is util.
 
 Added link to default page of CakePHP.
 
-![Page debug](docs/page-debug.png)
+![Depug page](https://github.com/ahmed3bead/cakephp-4-lte/blob/main/webroot/theme-images/debug.png?raw=true)
+
 
 # Contributing
 

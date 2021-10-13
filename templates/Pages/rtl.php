@@ -4,7 +4,7 @@
 <!DOCTYPE html>
 <html>
 
-<head>
+<head> 
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>AdminLTE 3 | Dashboard</title>
@@ -21,13 +21,48 @@
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
 
     <!-- Bootstrap 4 rtl -->
-    <?php echo $this->Html->css('CakephpLte./css/bootstrap.rtl.min.css'); ?>
+    <?php echo $this->Html->css('https://cdn.rtlcss.com/bootstrap/v4.2.1/css/bootstrap.min.css'); ?>
     <!-- Custom CSS rtl -->
     <?php echo $this->Html->css('CakephpLte./css/rtl.css'); ?>
+    <?php echo $this->Html->css('CakephpLte./css/cairo.css'); ?>
+    <style type="text/css">
+        .buttons-print {
+            color: #fff;
+            background-color: #007bff;
+            border-color: #007bff;
+            border-radius: 0;
+        }
 
+        .buttons-excel,
+        .buttons-csv {
+            color: #fff;
+            background-color: #28a745;
+            border-color: #28a745;
+            border-radius: 0;
+        }
+
+        .buttons-pdf,
+        .deleteBtn {
+            color: #fff;
+            background-color: #dc3545;
+            border-color: #dc3545;
+            border-radius: 0;
+        }
+
+        .buttons-reload {
+            color: #fff;
+            background-color: #17a2b8;
+            border-color: #17a2b8;
+            border-radius: 0;
+        }
+
+        .table-responsive {
+            min-height: 400px;
+        }
+    </style>
 </head>
 
-<body class="hold-transition sidebar-mini">
+<body class="hold-transition sidebar-mini layout-fixed">
     <div class="wrapper">
 
         <!-- Navbar -->
