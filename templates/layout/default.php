@@ -18,6 +18,8 @@ use Cake\Core\Configure; ?>
   <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
   <!-- Theme style -->
   <?php echo $this->Html->css('CakephpLte./css/adminlte.min.css'); ?>
+    <?php echo $this->Html->css('CakephpLte./css/toastr.min.css'); ?>
+
 
   <?php echo $this->fetch('css'); ?>
 
@@ -78,7 +80,8 @@ use Cake\Core\Configure; ?>
 <?php echo $this->Html->script('CakephpLte./plugins/bootstrap/js/bootstrap.bundle.min.js'); ?>
 <!-- AdminLTE -->
 <?php echo $this->Html->script('CakephpLte./js/adminlte.js'); ?>
-
+<?php echo $this->Html->script('CakephpLte./js/toastr.min.js'); ?>
+<?php echo $this->Html->script('CakephpLte./js/script'); ?>
 <?php echo $this->fetch('script'); ?>
 
 <?php echo $this->fetch('scriptBottom'); ?>
@@ -170,14 +173,7 @@ use Cake\Core\Configure; ?>
 
 
 
-    <footer class="main-footer">
-      <strong>Copyright &copy; 2014-2021 <a href="https://adminlte.io">AdminLTE.io</a>.</strong>
-      All rights reserved.
-      <div class="float-right d-none d-sm-inline-block">
-        <b>Version</b> 3.1.0
-      </div>
-    </footer>
-
+    <?php echo $this->element('footer'); ?>
     <!-- Control Sidebar -->
     <aside class="control-sidebar control-sidebar-dark">
       <!-- Control sidebar content goes here -->
