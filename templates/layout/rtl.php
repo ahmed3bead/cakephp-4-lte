@@ -24,9 +24,10 @@ use Cake\Core\Configure; ?>
         <!-- Custom CSS rtl -->
         <?php echo $this->Html->css('CakephpLte./css/rtl.css'); ?>
         <?php echo $this->Html->css('CakephpLte./css/toastr.min.css'); ?>
+        <?php echo $this->Html->script('CakephpLte./plugins/jquery/jquery.min.js'); ?>
 
         <?php echo $this->fetch('css'); ?>
-
+        <?php echo $this->fetch('script'); ?>
     </head>
 
     <body class="hold-transition sidebar-mini">
@@ -69,7 +70,7 @@ use Cake\Core\Configure; ?>
 
 
             <!-- jQuery -->
-            <?php echo $this->Html->script('CakephpLte./plugins/jquery/jquery.min.js'); ?>
+            
 
 
             <!-- jQuery UI 1.11.4 -->
@@ -93,7 +94,7 @@ use Cake\Core\Configure; ?>
             <?php echo $this->Html->script('CakephpLte./js/toastr.min.js'); ?>
             <?php echo $this->Html->script('CakephpLte./js/script'); ?>
 
-            <?php echo $this->fetch('script'); ?>
+            
 
 
             <?php echo $this->fetch('scriptBottom'); ?>
