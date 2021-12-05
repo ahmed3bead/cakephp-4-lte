@@ -28,7 +28,7 @@ use Cake\Core\Configure; ?>
       </div>
       <div class="card-body">
         <p class="login-box-msg">Sign in to start your session</p>
-
+<?= $this->Flash->render() ?>
         <?php echo $this->fetch('content'); ?>
 
 
