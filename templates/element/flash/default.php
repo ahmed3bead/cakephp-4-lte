@@ -6,10 +6,17 @@
  */
 $class = 'message';
 if (!empty($params['class'])) {
-    $class .= ' ' . $params['class'];
+    
+    if(is_array($params['class'])){
+        $extraClasses = implode(' ', $params['class']);
+        $class .= ' ' . $extraClasses;
+    }else{
+       $class .= ' ' . $params['class']; 
+    }
+    
 }
 if (!isset($params['escape']) || $params['escape'] !== false) {
     $message = h($message);
 }
 ?>
-<div class="<?= h($class) ?> info" onclick="this.classList.add('hidden');"><?= $message ?></div>
+<div id='flashMessage' class="<?= h($class) ?> info" onclick="this.classList.add('hidden');"><?= $message ?></div>
