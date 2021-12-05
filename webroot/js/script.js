@@ -41,6 +41,7 @@ function notification(type, text) {
         "showMethod": "fadeIn",
         "hideMethod": "fadeOut"
     }
+    toastr.options.closeHtml = '<button><i class="icon-off"></i></button>';
     $icon = '';
     if (type == 'success') {
         $icon = '<i class="fa fa-check"></i> ';
